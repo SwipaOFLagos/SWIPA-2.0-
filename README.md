@@ -40,7 +40,7 @@ Follow these steps to get the project up and running on your local machine.
 
 ```bash
 git clone https://github.com/Final-Project-Dec2023/Dec2023.git
-cd Final-Project-Dec2023
+cd Dec2023
 ```
 
 ### Install Dependencies
