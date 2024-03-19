@@ -1,6 +1,6 @@
 import React from 'react'
 import '../CSS/AllFragance.css'
-import ProductM from './Product'
+import ProductM from '../components/ProductCard'
 import Accord from '../components/Accordion'
 
 const AllFragance = () => {
@@ -8,7 +8,7 @@ const AllFragance = () => {
   return (
     <>
         <section className='m-section'>
-            <header className='m-header'>BY QIWI</header>
+            <header className='m-header'>BY PEACE</header>
             <main className='m-main'>
                 <div className='m-title'>
                     <div className="title-left">
