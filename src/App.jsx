@@ -1,13 +1,13 @@
 
 import './App.css'
-import Register from './assets/icons/Page/Register'
+import Login from './pages/Login'
 
 function App() {
 
   return (
     <>
-    <h1>Final Project</h1>
-      <Register/>
+    <h1 className='bg-primary'>Final Project</h1>
+      
     </>
   )
 }
