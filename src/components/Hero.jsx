@@ -5,6 +5,9 @@ import img1 from "../assets/images/Frame 1171276215.png"
 import img2 from "../assets/images/Frame 1171276214.png"
 import img3 from "../assets/images/Frame 1171276219.png"
 import img4 from "../assets/images/Frame 1171276220.png"
+import cusIcon from "../assets/icons/Customer service.png"
+import cardIcon from "../assets/icons/Online payment.png"
+import badgeIcon from "../assets/icons/Badge.png"
 
 function Hero() {
   const [index, setIndex] = useState(0);
@@ -14,6 +17,9 @@ function Hero() {
   };
 
   return (
+    <body>
+      
+    
     <Carousel activeIndex={index} onSelect={handleSelect} controls={false}>
       <Carousel.Item className=''>
         
@@ -68,12 +74,24 @@ function Hero() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <div className="section">
-        <div className="texts">
-          
-        </div>
-      </div>
     </Carousel>
+        <section>
+            <div className="texts">
+              <div className="text1 d-flex alignItem-center my-4">
+                <img src={badgeIcon} alt="" />
+                <p>100% Authentic Fragrance</p>
+              </div>
+              <div className="text2 d-flex">
+                <img src={cardIcon} alt="" />
+                <p>Secure & Safe Payment</p>
+              </div>
+              <div className="text3 d-flex">
+                <img src={cusIcon} alt="" />
+                <p>Top-Notch Customer Support</p>
+              </div>
+            </div>
+        </section>
+    </body>
   );
 }
 
