@@ -1,0 +1,190 @@
+.text-body{
+    /* margin-bottom: 7rem; */
+    width: 100%;
+}
+
+.text-body1 h1{
+    font-size: 1.5rem;
+    width: 100% ;
+    display: flex;
+    margin-left: -8rem;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+.text-body1 p{
+    font-size: 0.7rem;
+    width: 80%;
+    display: flex;
+    margin-left: -7.5rem;
+    margin-bottom: 4rem !important;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+.text-body2 h1{
+    font-size: 1.5rem;
+    width: 100% ;
+    display: flex;
+    margin-left: -8rem;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+.text-body2 p{
+    font-size: 0.7rem;
+    width: 80%;
+    display: flex;
+    margin-left: -7.7rem;
+    margin-bottom: 4rem !important;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+.text-body3 h1{
+    font-size: 1.5rem;
+    width: 100% ;
+    display: flex;
+    margin-left: -8rem;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+.text-body3 p{
+    font-size: 0.7rem;
+    width: 80%;
+    display: flex;
+    margin-left: -7.9rem;
+    margin-bottom: 4rem !important;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+.text-body4 h1{
+    font-size: 1.5rem;
+    width: 100% ;
+    display: flex;
+    margin-left: -8rem;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+.text-body4 p{
+    font-size: 0.7rem;
+    width: 80%;
+    display: flex;
+    margin-left: -7.9rem;
+    margin-bottom: 4rem !important;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  .btn{
+    width: 140px !important;
+    height: 40px;
+    font-weight: 600;
+    margin-left: -14rem !important;
+  }
+.carousel-indicators [data-bs-target]{
+    width: 15px !important; ;
+    height: 15px  !important;
+    /* border: 2px solid rgb(255, 0, 0) !important; */
+    border-radius: 50%;
+    /* background-color: transparent !important; */
+    /* color: aqua !important; */
+  }
+  .btn{
+    width: 170px !important;
+    height: 45px;
+    display: flex !important;
+    justify-content: center;
+    font-weight: 400;
+    margin-left: -8rem !important;
+    margin-bottom: 2rem;
+    /* display: flex; */
+  }
+  .btn-mobile{
+    display: none !important;
+  }
+  [data-bs-target] {
+        border: 2px solid white !important;
+        background: transparent !important;
+  }
+  /* [data-bs-target]:focus {
+    background: white !important;
+  } */
+  .active{
+    background: white!important;
+  }
+ 
+  @media (max-width: 767px) {
+    img{
+        width: 100%;
+        height: 230px !important;
+    }
+   .text-body1 h1{
+        font-size: 1.5rem;
+        width: 100% !important;
+        margin-left: -3rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 0rem !important;
+        
+      }
+   .text-body1 p{
+        font-size: 0.7rem;
+        width: 80% !important;
+        margin-left: -3rem !important;
+        margin-bottom: 0.5rem !important;
+        /* margin-top: 0 !important; */
+        
+      }
+   .text-body2 h1{
+        font-size: 1.5rem;
+        width: 100% !important;
+        margin-left: -3rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 0rem !important;
+      }
+   .text-body2 p{
+        font-size: 0.7rem;
+        width: 80% !important;
+        margin-left: -4rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+   .text-body3 h1{
+        font-size: 1.5rem;
+        width: 100% !important;
+        margin-left: -3rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 0rem !important;
+      }
+   .text-body3 p{
+        font-size: 0.7rem;
+        width: 80% !important;
+        margin-left: -3rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+   .text-body4 h1{
+        font-size: 1.5rem;
+        width: 100% !important;
+        margin-left: -3rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 0rem !important;
+      }
+   .text-body4 p{
+        font-size: 0.7rem;
+        width: 80% !important;
+        margin-left: -3rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+      .btn{
+        display: none !important;
+      }
+      .btn-mobile{
+        display: block !important;
+        width: 140px !important;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        margin-left: -3rem !important;
+        /* margin-bottom: 2rem !important; */
+      }
+      .btn-mobile:hover{
+        background-color: rgb(74, 74, 74);
+      }
+  }
