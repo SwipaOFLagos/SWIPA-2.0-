@@ -1,55 +1,129 @@
-import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-import '../css/Accordion.css'
+import '../CSS/Accordion.css'
 
-function Accordions() {
+function Accord() {
+    const alphabelts = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
   return (
-    <div className="">
-        <h3>Product Details</h3>
-        <Accordion defaultActiveKey="0" alwaysOpen accordion-flush className='border border-0'>
-      <Accordion.Item eventKey="0" >
-        <div className="ganiyat border-top border-2">
-        <Accordion.Header ><p style={{fontSize:'24px', fontWeight:'500'}}>About The Product</p></Accordion.Header>
-        <Accordion.Body>
-        The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume. Maison Francis Kurkdjian's unique personality is fostered by the creative power of a man who has a taste for precision. Recognized as one of the world's most celebrated perfumers, Francis Kurkdjian imagined a fragrance territory of a free, sensual and delicate perfectionism
+    <Accordion defaultActiveKey={['']} alwaysOpen>
+      <Accordion.Item eventKey="0" className='accord'>
+        <Accordion.Header><span className='accord-text'>Gender</span></Accordion.Header>
+        <Accordion.Body className='accord-gender'>
+            <label>
+                <input type="checkbox" name="male" />
+                Male
+            </label>
+            <label>
+                <input type="checkbox" name="female" />
+                Female
+            </label>
+            <label>
+                <input type="checkbox" name="unisex" />
+                Unisex
+            </label>
         </Accordion.Body>
-        </div>
       </Accordion.Item>
-      <Accordion.Item eventKey="1" >
-        <div className="ganiyat border-top border-2">
-        <Accordion.Header><p style={{fontSize:'24px', fontWeight:'500'}}>Scent Profile</p></Accordion.Header>
-        <Accordion.Body>
-        Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.
+      <Accordion.Item eventKey="1" className='accord'>
+        <Accordion.Header><span className='accord-text'>Brand</span></Accordion.Header>
+        <Accordion.Body className='accord-brand'>
+        {alphabelts.map((alphabelt) =>{
+            return <span>{alphabelt.toUpperCase()}</span>
+        })}
         </Accordion.Body>
-        </div>
       </Accordion.Item>
-      <Accordion.Item eventKey="2" >
-       <div className="ganiyat border-top border-2">
-       <Accordion.Header><p style={{fontSize:'24px', fontWeight:'500'}}>Scent Type</p></Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat necessitatibus nisi rerum cum aut dolore sequi quod dignissimos suscipit consequuntur recusandae, eius vitae mollitia laborum cupiditate numquam unde. Dolorum, iusto!
+      <Accordion.Item eventKey="2" className='accord'>
+        <Accordion.Header><span className='accord-text'>Fragrance Type</span></Accordion.Header>
+        <Accordion.Body className='accord-price'>
+        <label>
+                <input type="checkbox" />
+                Body Spray
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Deodorant
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Eau De Cologue
+            </label>
+            <label>
+                <input type="checkbox" />
+                Eau De Parfum
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Eau De Toilette
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Perfum Oil
+            </label>
         </Accordion.Body>
-       </div>
       </Accordion.Item>
-      <Accordion.Item eventKey="3" >
-        <div className="ganiyat border-top border-2">
-        <Accordion.Header><p style={{fontSize:'24px', fontWeight:'500'}}>Suggested For Use</p></Accordion.Header>
-        <Accordion.Body>
-        For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.
+      <Accordion.Item eventKey="3" className='accord'>
+        <Accordion.Header><span className='accord-text'>Scent Type</span></Accordion.Header>
+        <Accordion.Body className='accord-price'>
+        <label>
+                <input type="checkbox" />
+                Cedar
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Citrus
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Floral
+            </label>
+            <label>
+                <input type="checkbox" />
+                Fresh
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Lemon
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Mush, Amber
+            </label>
+            <label>
+                <input type="checkbox" />
+                Rose
+            </label>
+            <label>
+                <input type="checkbox"/>
+                Vanilla
+            </label>
         </Accordion.Body>
-        </div>
       </Accordion.Item>
-      <Accordion.Item eventKey="4" >
-        <div className="ganiyat border-top border-2 border-bottom">
-        <Accordion.Header><p style={{fontSize:'24px', fontWeight:'500'}}>Refund Policy</p></Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum itaque temporibus in sequi obcaecati voluptas illo at modi maxime nostrum, saepe repellendus. Nisi, repudiandae quos.
+      <Accordion.Item eventKey="4" className='accord'>
+        <Accordion.Header><span className='accord-text'>Price</span></Accordion.Header>
+        <Accordion.Body className='accord-price'>
+            <label>
+                <input type="checkbox" />
+                Under $10,000
+            </label>
+            <label>
+                <input type="checkbox"/>
+                $10,000 - $50,000
+            </label>
+            <label>
+                <input type="checkbox"/>
+                $50,000+
+            </label>
         </Accordion.Body>
-        </div>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5" className='accord'>
+        <Accordion.Header><span className='accord-text'>Availability</span></Accordion.Header>
+        <Accordion.Body className='accord-availability'>
+           <ul>
+            <li>In Stock</li>
+            <li>Out of Stock</li>
+           </ul>
+        </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-    </div>
   );
 }
 
-export default Accordions;
+export default Accord;
