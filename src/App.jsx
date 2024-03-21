@@ -9,7 +9,6 @@ function App() {
     <>
     {/* <h1>Final Project</h1> */}
     <AllFragance/>
-    <h1 className='bg-primary'>Final Project</h1>
       
     </>
   )
