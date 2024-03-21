@@ -75,7 +75,7 @@ function Hero() {
       </Carousel.Item>
 
     </Carousel>
-        <section>
+        <div className='section-b'>
             <div className="texts">
               <div className="text1 d-flex alignItem-center my-4">
                 <img src={badgeIcon} alt="" />
@@ -90,7 +90,7 @@ function Hero() {
                 <p>Top-Notch Customer Support</p>
               </div>
             </div>
-        </section>
+        </div>
     </body>
   );
 }

@@ -15,7 +15,7 @@
     font-size: 0.7rem;
     width: 80%;
     display: flex;
-    margin-left: -7.5rem;
+    margin-left: -8rem;
     margin-bottom: 4rem !important;
     font-size: 1.3rem;
     font-weight: 100;
@@ -32,7 +32,7 @@
     font-size: 0.7rem;
     width: 80%;
     display: flex;
-    margin-left: -7.7rem;
+    margin-left: -8rem;
     margin-bottom: 4rem !important;
     font-size: 1.3rem;
     font-weight: 100;
@@ -49,7 +49,7 @@
     font-size: 0.7rem;
     width: 80%;
     display: flex;
-    margin-left: -7.9rem;
+    margin-left: -8rem;
     margin-bottom: 4rem !important;
     font-size: 1.3rem;
     font-weight: 100;
@@ -66,7 +66,7 @@
     font-size: 0.7rem;
     width: 80%;
     display: flex;
-    margin-left: -7.9rem;
+    margin-left: -8rem;
     margin-bottom: 4rem !important;
     font-size: 1.3rem;
     font-weight: 100;
@@ -108,7 +108,7 @@
   .active{
     background: white!important;
   }
-  section{
+  .section-b{
     width: 100% !important;
     height: 100px !important;
     background-color: #E2FAFF !important;
@@ -165,7 +165,7 @@
    .text-body1 p{
         font-size: 0.7rem;
         width: 80% !important;
-        margin-left: -3rem !important;
+        margin-left: -3.9rem !important;
         margin-bottom: 0.5rem !important;
         /* margin-top: 0 !important; */
         
@@ -180,7 +180,7 @@
    .text-body2 p{
         font-size: 0.7rem;
         width: 80% !important;
-        margin-left: -4rem !important;
+        margin-left: -3.4rem !important;
         margin-bottom: 0.5rem !important;
       }
    .text-body3 h1{
@@ -193,7 +193,7 @@
    .text-body3 p{
         font-size: 0.7rem;
         width: 80% !important;
-        margin-left: -3rem !important;
+        margin-left: -4.1rem !important;
         margin-bottom: 0.5rem !important;
       }
    .text-body4 h1{
@@ -206,7 +206,7 @@
    .text-body4 p{
         font-size: 0.7rem;
         width: 80% !important;
-        margin-left: -3rem !important;
+        margin-left: -3.4rem !important;
         margin-bottom: 0.5rem !important;
       }
       .btn{
@@ -227,7 +227,7 @@
       .btn-mobile:hover{
         background-color: rgb(74, 74, 74);
       }
-      section{
+      .section-b{
         width: 100% !important;
         height: 100px !important;
         background-color:#E2FAFF        !important;
