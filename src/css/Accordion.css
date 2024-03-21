@@ -1,0 +1,27 @@
+.accordion{
+    --bs-accordion-border-width: none !important;
+    --bs-accordion-border-color: none !important;
+    --bs-accordion-active-color: none !important;
+} 
+
+.accordion-button{
+    background: none !important;
+}
+.accordion-button::after {
+    background-image: url("../assets/images/ic_sharp-plus.jpg") !important;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("../assets/images/ic_outline-minus.jpg") !important;
+  }
+  .accordion-button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    background: none !important; ;
+  }
+  /* .ganiyat{
+    border-top: 2px solid black!important;
+    border-bottom: 2px solid black!important;
+  } */
+  
+  
