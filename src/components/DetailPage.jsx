@@ -11,6 +11,7 @@ import RelatedProd from './RelatedProd';
 import Plus from '../assets/images/ic_sharp-plus.png'
 import Minus from '../assets/images/ic_sharp-minus.png'
 import YouTube from '../components/YouTube'
+import { useParams } from 'react-router-dom'
 
 // import QuantityInput from './QuantityInput';
 
@@ -83,7 +84,7 @@ const DetailPage = () => {
 
     <div className='d-flex  p-4 justify-content-between'>
     <div style={{width:'42rem', height: '100rem'}} className='row d-flex justify-content-between'>
-        <Accordions height='60%'/>
+        <Accordions height='60%' scenttype={name}/>
         
         <YouTube height='40%'/>
       
