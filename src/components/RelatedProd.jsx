@@ -21,7 +21,7 @@ const RelatedProd = ({product}) => {
       
           <div >
             <h3>Related Products</h3>
-            <div className='rpG border-lg border-dark rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
+            <div className='rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
         {data.filter((product, index)=>product.brand === 'Addidas'
         ).slice(0,2).map((item)=>{
           return <Card className='cardG mb-lg-4 '  key={item._id} >

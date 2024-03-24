@@ -1,13 +1,14 @@
 .rpG{
 width: 26rem !important;
-height: 60rem !important;
+height: 65rem !important;
+border: 1px solid black;
 }
 .cardG{
     width: 23rem !important;
     height: 30rem !important;
 }
 .imgGa{
-    height: 300px;
+    height: 250px;
 }
 @media (min-width: 370px) and (max-width: 767px) {
    .rpG{
