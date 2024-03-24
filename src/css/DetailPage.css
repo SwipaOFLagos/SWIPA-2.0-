@@ -1,49 +1,16 @@
-.productDetail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.all-details{
     min-height: 100vh;
-}
-.productCont{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 70rem;
-    height: 30rem;
-    border: 1px solid green;
+    justify-content: center;
 }
-.productImg{
-    width: 60%;
-    height: 100%;
-    border: 1px solid red;
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 370px) and (max-width: 767px) {
+   /* .all-details{
+    max-height: 370px !important;
     display: flex;
-}
-.selectImg{
-    width: 20%;
-    border: 1px solid black;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    padding-left: 1rem;
-}
-.clickedImg{
-    width: 70%;
-    border: 1px solid purple;
-    height: 100%;
-}
-.clickedImg img{
-    height: 100%;
-    width: 100%;
-}
-.productInfo{
-    width: 40%;
-    height: 100%;
-    border: 1px solid blue;
-}
-.btn{
-    border: 1px solid #D7D7D7 !important;
-}
-
-
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+   } */
+}   

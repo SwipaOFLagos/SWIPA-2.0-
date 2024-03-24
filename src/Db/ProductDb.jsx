@@ -18,41 +18,41 @@ import img17 from '../assets/images/burberry-weekend-women-edp-100ml-perfume-phi
 import img18 from '../assets/images/c8145f2b7df9c2ec4c039cd5c4ac27c3.png'
 import img19 from '../assets/images/d196981c714866bdaabd4a0c60483e97.png'
 import img20 from '../assets/images/d252dcfaa6adea82c5762e035b318808.png'
-import img111 from '../assets/images/img111.png'
-import img112 from '../assets/images/img112.png'
-import img112 from '../assets/images/img112.png'
+import img111 from  '../assets/images/image34.png'
+import img112 from  '../assets/images/img111.png'
+import img113 from '../assets/images/img112.png'
 
 
 export const data=[
         {
           _id: 1,
-          name: 'maison francis kurkdjian paris',
-          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          name: 'Maison Francis Kurkdjian Paris',
+          description: 'Grand Soir Eau De Parfum',
           gender: 'male',
           brand: 'Addidas',
           image: img1,
           fragrance_type: 'Perfume',
-          scent_type: 'fresh',
+          scent_type: 'Fresh',
           priceCents: 6600000,
           size: 2.3,
-          availability: true,
+          isAvailable: false,
           about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            "one": img111,
+            "two": img112,
+            "three": img113,
           }
         },
         {
           _id: 2,
           name: 'maison francis kurkdjian paris',
-          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          description: 'Lorem ipsum dolor sit amet',
           gender: 'female',
-          brand: 'Hugo boss',
+          brand: 'Addidas',
           image: img2,
           fragrance_type: 'Perfume',
           scent_type: 'Cedar',
@@ -67,15 +67,15 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 3,
           name: 'maison francis kurkdjian paris',
-          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          description: 'Lorem ipsum dolor sit amet',
           gender: 'male',
-          brand: 'Armani',
+          brand: 'Addidas',
           image: img3,
           fragrance_type: 'Perfume',
           scent_type: 'Citirus',
@@ -90,15 +90,15 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 4,
           name: 'maison francis kurkdjian paris',
-          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          description: 'Lorem ipsum dolor sit amet',
           gender: 'female',
-          brand: 'adidas',
+          brand: 'Addidas',
           image: img4,
           fragrance_type: 'Perfume',
           scent_type: 'Floral',
@@ -113,7 +113,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -136,7 +136,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -159,7 +159,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -182,7 +182,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -205,7 +205,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -228,7 +228,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -251,7 +251,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -274,7 +274,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -297,7 +297,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -320,7 +320,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -343,7 +343,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -366,7 +366,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -389,7 +389,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -412,7 +412,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -435,7 +435,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -458,7 +458,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
@@ -481,7 +481,7 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
 
