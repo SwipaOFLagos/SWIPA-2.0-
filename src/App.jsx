@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <Router>
-    <Menu/>
+    {/* <Menu/> */}
     <SideNav/>
       <Routes >
         <Route path='/' element={<Home/>}/>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../CSS/FilterbyM.css'; // Create a CSS file for styling
+import '../css/FilterbyM.css'; // Create a CSS file for styling
 import { LuFilter } from "react-icons/lu";
 import Accord from './AccordionM';
 
