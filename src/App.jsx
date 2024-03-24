@@ -1,4 +1,3 @@
-
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home  from './pages/Home'
@@ -6,6 +5,7 @@ import AllFragance from './pages/AllFragance'
 
 
 // WARNING: Do Not change anything in this than just adding your pages to the route.
+
 
 function App() {
 
