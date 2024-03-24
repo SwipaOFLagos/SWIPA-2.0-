@@ -11,7 +11,7 @@ import OffCanvasButton from "../components/FilterbyM";
 
 
 
-const AllFragance = () => {
+const AllFragrance = () => {
     //general data
     const [currentProducts, setCurrentProducts] = useState(data);
     //pagination
@@ -190,4 +190,4 @@ const AllFragance = () => {
   );
 };
 
-export default AllFragance;
+export default AllFragrance;
