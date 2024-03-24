@@ -7,6 +7,7 @@
     /* border: 2px solid black; */
 }
 .m-header{
+    opacity: 0;
     height: 160px;
     background-color: lightblue;
     width: 100%;
@@ -45,8 +46,8 @@
 select{
     width: 170px;
     height: 49px;
-    padding: 10px 20px;
-    border-radius: 6px;
+    /* padding: 10px 20px; */
+    /* border-radius: 6px; */
     gap: 10px;
 }
 

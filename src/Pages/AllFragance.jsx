@@ -1,5 +1,5 @@
 import React from 'react'
-import '../CSS/AllFragance.css'
+import '../css/AllFragance.css'
 import ProductM from '../components/ProductCard'
 import Accord from '../components/Accordion'
 
