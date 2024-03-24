@@ -56,7 +56,72 @@
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 320px) {
+    .m-card-Container{
+        border: 1px solid #d7d7d7;
+        width: 280px;
+        height: 270px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 0%;
+        
+    }
+    .m-image{
+        width: 100%;
+        height: 55%;
+        border-radius: 8px;
+    }
+    .m-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .m-card-info{
+        width: 90%;
+        height: 45%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 0px;
+        
+    }
+    .m-card-text{
+        width: 100%;
+        height: 65%;
+        /* border: 1px solid yellow; */
+        color: #000000;
+
+    }
+    .m-card-text h4{
+     font-size: 11px;
+    }
+    .m-card-text p{
+        font-size: 8px;
+        padding: none;
+        margin: none;
+    }
+    .m-card-text h2{
+        padding: none;
+        margin: none;
+        font-size: 12px;
+    }
+    .m-card-btn{
+        height: 30%;
+    }
+    .m-card-btn button{
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        border: none;
+        color: white;
+        background-color: #000000;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 767px) {
     .m-card-Container{
         border: 1px solid #d7d7d7;
         width: 170px;
