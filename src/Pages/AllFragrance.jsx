@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../CSS/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
 import { data } from "../DB/ProductDb";
@@ -144,7 +144,7 @@ const AllFragrance = () => {
   return (
     <>
       <div className="m-section">
-        <header className="m-header">BY PEACE</header>
+        {/* <header className="m-header">BY PEACE</header> */}
         <div className="m-main">
           <div className="m-title">
             <div className="title-left">
