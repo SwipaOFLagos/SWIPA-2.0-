@@ -30,7 +30,7 @@ return(
 
     
 <div className='d-flex  justify-content-center mt-4' >
-    <RelatedProd />
+    <RelatedProd productG={productG}/>
 </div>
 
 <div className="d-lg-none">

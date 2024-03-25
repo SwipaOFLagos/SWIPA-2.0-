@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import '../css/DetailCard.css'
+import '../css/DetailCards.css'
 import Star from '../assets/images/Vector.png'
 import Plus from '../assets/images/ic_sharp-plus.png'
 import Minus from '../assets/images/ic_sharp-minus.png'
@@ -49,28 +48,6 @@ const DetailCard = ({product}) => {
             </div>
         </div>
         <div className="productInfo p-3">
-        {/* <Card style={{ width: '25rem', height: '30rem'}} >
-      <Card.Body className='row d-flex justify-content-between align-items-center px-4'>
-        <Card.Title>
-             <h1 className='' >{product?.name}</h1> 
-        </Card.Title>
-        <Card.Text>
-        <p >{product?.description} </p>
-        
-        </Card.Text>
-        
-        <Card.Text>
-           
-        </Card.Text>
-        <Card.Text>
-        
-        </Card.Text>
-        <Card.Text>
-          
-        </Card.Text>
-        
-      </Card.Body>
-     </Card> */}
 
         
             <h1 className='hG'>{product?.name}</h1>
@@ -92,7 +69,7 @@ const DetailCard = ({product}) => {
            <p className='mb-2' style={{fontSize:'18px'}}>Size: <span style={{fontSize:'14px'}}>2.3 Oz</span></p> 
           <div> <button className='bg-dark text-light' style={{width:'59px', height:'39px', fontSize:'14px', fontWeight:'500', borderRadius:'4px'}}>2.3 Oz</button> <button className='bg-light text-dark border border-dark' style={{width:'59px', height:'39px', fontSize:'14px', fontWeight:'500', borderRadius:'4px'}}>6.3 Oz</button> </div>
           
-          <div className="d-flex my-2 border border-primary" >
+          <div className="d-flex my-2 border border-primary align-items-center" >
             <span className='pe-4'style={{fontSize:'18px'}}>Quantity:</span>
             <button className='btn1  bg-transparent rounded-0 rounded-start'  onClick={handleDecrease}><img src={Minus} alt="" /></button>
             <Button className='btnGg rounded-0 bg-transparent text-dark fw-bold'>{count}</Button>
