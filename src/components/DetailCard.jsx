@@ -8,6 +8,7 @@ import Minus from '../assets/images/ic_sharp-minus.png'
 
 
 const DetailCard = ({product}) => {
+    let price = (product.priceCents/100).toLocaleString(undefined, {minimumFractionDigits: 2})
         const [selectedImage, setSelectedImage] = useState(product.imageUrl.two);
     
         const handleImageClick = (imageUrl) => {
@@ -87,15 +88,16 @@ const DetailCard = ({product}) => {
             <span style={{fontSize:'10px', fontWeight: '300', marginLeft:'20px' }}>4.7 (<span>40 Reviews</span>)</span>
         
         </div>
-            <p className='my-2' style={{fontSize:'18px'}}>Price: <span className='' style={{fontSize:'26px', fontWeight:'500'}}>{product?.priceCents}</span></p>
+            <p className='my-2' style={{fontSize:'18px'}}>Price: <span className='' style={{fontSize:'26px', fontWeight:'500'}}>&#x20A6;{price}</span></p>
            <p className='mb-2' style={{fontSize:'18px'}}>Size: <span style={{fontSize:'14px'}}>2.3 Oz</span></p> 
           <div> <button className='bg-dark text-light' style={{width:'59px', height:'39px', fontSize:'14px', fontWeight:'500', borderRadius:'4px'}}>2.3 Oz</button> <button className='bg-light text-dark border border-dark' style={{width:'59px', height:'39px', fontSize:'14px', fontWeight:'500', borderRadius:'4px'}}>6.3 Oz</button> </div>
           
-          <div className="my-2" >
+          <div className="d-flex my-2 border border-primary" >
             <span className='pe-4'style={{fontSize:'18px'}}>Quantity:</span>
-            <button className='btn  bg-transparent rounded-0 rounded-start'  onClick={handleDecrease}><img src={Minus} alt="" /></button>
-            <Button className='rounded-0 bg-transparent text-dark fw-bold' style={{width:'4rem', height:'2.5rem'}}>{count}</Button>
-            <button className='btn  bg-transparent rounded-0 rounded-end' onClick={handleIncrease}><img src={Plus} alt="" /></button>
+            <button className='btn1  bg-transparent rounded-0 rounded-start'  onClick={handleDecrease}><img src={Minus} alt="" /></button>
+            <Button className='btnGg rounded-0 bg-transparent text-dark fw-bold'>{count}</Button>
+            <button className='btn1  bg-transparent rounded-0 rounded-end' onClick={handleIncrease}><img src={Plus} alt="" /></button>
+            
         </div>
         
         <div className='d-flex'>

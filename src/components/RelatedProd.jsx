@@ -22,7 +22,7 @@ const RelatedProd = ({product}) => {
           <div >
             <h3>Related Products</h3>
             <div className='rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
-        {data.filter((product, index)=>product.brand === 'Addidas'
+        {data.filter((product, index)=>product.brand === 'Armani'
         ).slice(0,2).map((item)=>{
           return <Card className='cardG mb-lg-4 '  key={item._id} >
       <Card.Img variant="top" src={item?.image}  className='imgGa'/>
