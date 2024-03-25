@@ -7,10 +7,11 @@ import SideNav from './components/SideNav'
 import CartEmpty from './page/Chart'
 import { ToastContainer } from 'react-toastify'
 import SignUp from './page/SignUp'
+import CustomerDetails from './components/CustomerDetails'
 // import DetailPage from './pages/DetailPage'
 
 
-// WARNING: Do Not change anything in this than just adding your pages to the route.
+// WARNING: Do Not change anything in this page.
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/> 
 
         {/* <Route path='/detail' element={<DetailPage/>}/>         */}
+        <Route path='/customer-details' element={<CustomerDetails/>}/>        
       </Routes>
     </Router>
     </>

@@ -22,7 +22,7 @@ function Menu() {
           </Link>
         </div>
         <div className="search-sec">
-           <input type="text" placeholder="search" className='search md-d-nonek'/> 
+           <input type="text" placeholder="search" className='search d-md-none'/> 
            <div className='select-container'>
               <select className='select-box'>
                  <option value="">All Categories</option>

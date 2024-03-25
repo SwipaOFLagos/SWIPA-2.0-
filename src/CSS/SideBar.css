@@ -5,9 +5,12 @@
         display: flex;
         justify-content: space-between;
         background-color: #0098B8 !important;
+        padding: 0 5px;
     }
+   
 
     .left-nav {
+        width: 20%;
         display: flex;
     }
 
@@ -15,11 +18,15 @@
         margin: 0 !important;
     }
 
-    .off-head1 {
-        display: flex !important;
-        width: 20px !important;
-        height: 100% !important;
+    /* .off-head1 {
+        margin: 0 !important;
+        width: 20px;
+        height: 15px;
     }
+    .off-head1 img{
+        width: 40px;
+    } */
+
 
     .off-head:hover{
         color: black !important;
@@ -37,7 +44,7 @@
     .logs {
         display: flex;
         align-items: center;
-        margin-left: 9rem;
+        /* margin-left: 9rem; */
     }
 
     
@@ -51,7 +58,7 @@
     .right-icons img {
         width: 20px;
         height: 20px;
-        margin-right: 14px;
+        /* margin-right: 14px; */
     }
 
     .show-header {
