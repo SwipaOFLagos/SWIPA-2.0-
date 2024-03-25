@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+// import "../css/AllFragance.css";
+// import "../csst/AllFragance.css";
 import "../css/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
 import { data } from "../Db/ProductDb";
@@ -31,7 +33,7 @@ const AllFragrance = () => {
 
 
 // ---------------Pagination Start---------
-    const productsPerPage = 18;
+    const productsPerPage = 15;
     const totalPages = Math.ceil(data.length / productsPerPage);
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
