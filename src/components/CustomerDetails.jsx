@@ -1,7 +1,10 @@
 import React from 'react'
-import '../CSS/CustomerDetails.css'
+import '../css/CustomerDetails.css'
 import icon from "../assets/icons/Frame 1171276257.png"
 import icon2 from "../assets/icons/Vector (2).png"
+
+
+
 const CustomerDetails = () => {
   return (
     <div className='buni'>
@@ -35,7 +38,7 @@ const CustomerDetails = () => {
             </div>
             <div className="form col-6 d-flex flex-column">
               <label>Region</label>
-              <select name="select" id="region">
+              <select className="sect" id="region">
                 <option value="">Select Region</option>
                 <option value="">Africa</option>
                 <option value="">Asia</option>
@@ -44,25 +47,25 @@ const CustomerDetails = () => {
             </div>
             <div className="form col-6 d-flex flex-column">
               <label>City</label>
-              <select name="select" id="city">
+              <select className="sect" id="city">
                 <option value="">Select City</option>
               </select>
             </div>
           </div>
         </div>
 
-        <div className="total d-none d-md-block">
+        <div className="id d-none d-md-block">
           <h3>Total Items(1)</h3>
-          <div className="total-1">
+          <div className="id-1">
             <p>Subtotal <b> &#8358;46,000.00</b></p>
             <p>Delivery Cost <b>&#8358;1000.00</b> </p>
           </div>
-          <div className="total-2">
+          <div className="id-2">
             <p>Total <b>&#8358;47,000.00</b></p>
           </div>
-          <div className="confirm">
-            <div class="confirm-btn">
-              <a class="btn btn-dark" href="" id="nextBtn">Confirm order</a>
+          <div className="firm">
+            <div className="firm-botn">
+              <a className="" href="" id="">Confirm order</a>
             </div>
             <h6>(complete the steps in order to proceed)</h6>
           </div>
@@ -95,7 +98,7 @@ const CustomerDetails = () => {
               <div className="details">
                 <input type="radio" name='card' value="Door Delivery" /><span className='ms-2'>Pay With Credit Card</span>
               </div>
-              <div className="icon-2">
+              <div className="minus">
                 <img src={icon} alt="" />
               </div>
             </div>
@@ -122,28 +125,28 @@ const CustomerDetails = () => {
             <div className="details">
               <input type="radio" name='card' value="Pick up" /> <span className='ms-2'>Pay With Paypal</span>
             </div>
-            <div className="icon-p">
+            <div className="plus">
               <img src={icon2} alt="" />
             </div>
           </div>
         </div>
       </div>
       <div className="total-m d-lg-none">
-          <h3>Total Items(1)</h3>
-          <div className="total-1">
-            <p>Subtotal <b> &#8358;46,000.00</b></p>
-            <p>Delivery Cost <b>&#8358;1000.00</b> </p>
-          </div>
-          <div className="total-2">
-            <p>Total <b>&#8358;47,000.00</b></p>
-          </div>
-          <div className="confirm">
-            <div class="confirm-btn">
-              <a class="btn btn-dark" href="" id="nextBtn">Confirm order</a>
-            </div>
-            <h6>(complete the steps in order to proceed)</h6>
-          </div>
+        <h3>Total Items(1)</h3>
+        <div className="total-1">
+          <p>Subtotal <b> &#8358;46,000.00</b></p>
+          <p>Delivery Cost <b>&#8358;1000.00</b> </p>
         </div>
+        <div className="total-2">
+          <p>Total <b>&#8358;47,000.00</b></p>
+        </div>
+        <div className="firm">
+          <div class="firm-botn">
+            <a class="" href="" id="">Confirm order</a>
+          </div>
+          <h6>(complete the steps in order to proceed)</h6>
+        </div>
+      </div>
     </div>
   )
 }
