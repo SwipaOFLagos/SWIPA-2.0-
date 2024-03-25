@@ -41,9 +41,9 @@ import img37 from '../assets/images/image 21.png'
 import img38 from '../assets/images/image 22.png'
 import img39 from '../assets/images/image 25.png'
 import img40 from '../assets/images/image 29.png'
-import img111 from '../assets/images/img111.png'
-import img112 from '../assets/images/img112.png'
-import img113 from '../assets/images/img112.png'
+// import img111 from '../assets/images/img111.png'
+// import img112 from '../assets/images/img112.png'
+// import img113 from '../assets/images/img112.png'
 import img114 from '../assets/images/img112.png'
 import img115 from '../assets/images/img112.png'
 
@@ -69,9 +69,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            "one": img111,
-            "two": img112,
-            "three": img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -115,9 +115,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            1: img113,
+            2: img114,
+            3: img115,
           }
         },
         {
@@ -244,7 +244,7 @@ export const data=[
           image: img9,
           fragrance_type: 'Eau De Cologne',
           scent_type: 'Mush.Amber',
-          priceCents: 6600000,
+          priceCents: 6600000, 
           size: 2.3,
           availability: false,
           about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',

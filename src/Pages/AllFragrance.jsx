@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../css/AllFragance.css";
+// import "../css/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
 import { data } from "../db/ProductDb";
 import Accord from "../components/AccordionM";
