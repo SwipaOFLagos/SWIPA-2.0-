@@ -7,6 +7,7 @@ import Logo from "../assets/images/Frame 579.png"
 import Profileimg from "../assets/icons/Vector (1).png"
 import Cartimg from "../assets/icons/Vector (2).png"
 import Seicon from "../assets/icons/Vector (5).png"
+import { Link } from 'react-router-dom';
 
 
 
@@ -16,7 +17,9 @@ function Menu() {
     <div className='sticky-top header'>
       <div className="top-nav">
         <div className="logo">
-           <img src={Logo} alt=""/>
+          <Link to="/">
+            <img src={Logo} alt=""/>
+          </Link>
         </div>
         <div className="search-sec">
            <input type="text" placeholder="search" className='search md-d-nonek'/> 
@@ -45,7 +48,7 @@ function Menu() {
              <div className='select-container'>
               <select className='select-box'>
                  <option value="">My Account</option>
-                 <option value="first"> Sign In</option>
+                 <option value="first">Sign Up</option>
               </select>
              </div>
         </div>
@@ -62,8 +65,8 @@ function Menu() {
         <Navbar.Collapse id="basic-navbar-nav">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Nav className="me-auto">
-            <Nav.Link href="#home" className='text-white'>Home</Nav.Link>
-            <Nav.Link href="#link" className='text-white'>All Fragrance</Nav.Link>
+            <Nav.Link href="/" className='text-white'>Home</Nav.Link>
+            <Nav.Link href="/all-fragrances" className='text-white'>All Fragrance</Nav.Link>
             <NavDropdown className='dropp text-white' id="basic-nav-dropdown" title="All Brands" >
               <NavDropdown.Item href="#action/3.1">Adidas</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Armaf</NavDropdown.Item>
@@ -82,9 +85,9 @@ function Menu() {
               <NavDropdown.Item href="#action/3.1">Yves Saint Laurent</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Zaien</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link" className='text-white'>New Arrival</Nav.Link>               
-            <Nav.Link href="#link" className='text-white'>Blog</Nav.Link>               
-            <Nav.Link href="#link" className='text-white'>Contact Us</Nav.Link>               
+            <Nav.Link href="/new-arrival" className='text-white'>New Arrival</Nav.Link>               
+            <Nav.Link href="/blog" className='text-white'>Blog</Nav.Link>               
+            <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>               
           </Nav>
         </Navbar.Collapse>
       </Container>
