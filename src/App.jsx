@@ -10,6 +10,7 @@ import SignUp from './page/SignUp'
 import CustomerDetails from './components/CustomerDetails'
 import CartItems from './components/CartItems'
 import Order from './page/Order'
+import Newarrival from './page/Newarrival'
 // import DetailPage from './pages/DetailPage'
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path='/customer-details' element={<CustomerDetails/>}/>        
         <Route path='/cart' element={<CartItems/>}/>        
         <Route path='/order' element={<Order/>}/>        
+        <Route path='/new-arrivals' element={<Newarrival/>}/>        
 
         {/* <Route path='/detail' element={<DetailPage/>}/>         */}
       </Routes>
