@@ -8,10 +8,14 @@ import CartEmpty from './page/Chart'
 import { ToastContainer } from 'react-toastify'
 import SignUp from './page/SignUp'
 import CustomerDetails from './components/CustomerDetails'
+import CartItems from './components/CartItems'
 // import DetailPage from './pages/DetailPage'
 
 
+
+
 // WARNING: Do Not change anything in this page.
+
 
 
 function App() {
@@ -27,9 +31,10 @@ function App() {
         <Route path='/all-fragrances' element={<AllFragance/>}/>        
         <Route path='/cart-empty' element={<CartEmpty/>}/> 
         <Route path='/signup' element={<SignUp/>}/> 
+        <Route path='/customer-details' element={<CustomerDetails/>}/>        
+        <Route path='/cart' element={<CartItems/>}/>        
 
         {/* <Route path='/detail' element={<DetailPage/>}/>         */}
-        <Route path='/customer-details' element={<CustomerDetails/>}/>        
       </Routes>
     </Router>
     </>
