@@ -50,12 +50,13 @@
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
-}
+  }
 .fragrance{
-  height: 6rem;
-  width: 46%;
+  height: 5rem;
+  width: 45%;
 }
 .fragrance img{
-  width: 100%;
+  width: 140px;
+  height: 60px;
 }
 }
