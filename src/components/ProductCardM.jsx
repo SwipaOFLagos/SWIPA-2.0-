@@ -1,6 +1,6 @@
-// import '../css/ProductM.css'
-import '../csst/ProductM.css'
-// import img from '../assets/images/image 8.png'
+// import '../csst/ProductM.css'
+import React from 'react'
+import '../css/ProductM.css'
 
 const ProductCard = ({product, index}) => {
   const {name,description,priceCents, image, availability} = product

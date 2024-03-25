@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 // import "../css/AllFragance.css";
-import "../csst/AllFragance.css";
+// import "../csst/AllFragance.css";
+import "../css/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
-import { data } from "../db/ProductDb";
+import { data } from "../DB/ProductDb";
 import Accord from "../components/AccordionM";
 import Pagination from "../components/PaginationM";
 import { BiSort } from "react-icons/bi";
