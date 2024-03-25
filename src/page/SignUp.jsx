@@ -1,7 +1,6 @@
 
-
 import React, { useState } from 'react'
-import '../css/signup.css';
+import '../css/SignUp.css';
 import { ToastContainer, toast } from 'react-toastify';
 import img1 from "../assets/images/Frame 579.png"
 import registerImg from "../assets/images/Frame 1171276207.png"
