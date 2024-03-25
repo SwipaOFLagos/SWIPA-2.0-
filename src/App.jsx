@@ -1,10 +1,10 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home  from './pages/Home'
-import AllFragance from './pages/AllFragrance'
+import Home  from './page/Home'
+import AllFragance from './page/AllFragrance'
 // import Menu from './components/NavBar'
 // import SideNav from './components/SideNav'
-import CartEmpty from './pages/Chart'
+import CartEmpty from './page/Chart'
 // import DetailPage from './pages/DetailPage'
 
 
