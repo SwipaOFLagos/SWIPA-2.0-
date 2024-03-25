@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Accordion from "react-bootstrap/Accordion";
-import "../CSS/AccordionM.css";
+import "../csst/AccordionM.css";
 import { IoSearch } from "react-icons/io5";
 
 

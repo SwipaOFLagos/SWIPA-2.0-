@@ -466,7 +466,7 @@ export const data=[
           _id: 19,
           name: 'Essenza',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
-          gender: 'female',
+          gender: 'unisex',
           brand: 'Essenza',
           image: img19,
           fragrance_type: 'Perfume',
