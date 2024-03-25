@@ -11,6 +11,10 @@ import SignUp from './page/SignUp'
 
 
 // WARNING: Do Not change anything in this than just adding your pages to the route.
+import CartItems from './components/CartItems'
+
+
+
 
 
 function App() {
