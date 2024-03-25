@@ -14,6 +14,7 @@ import CartB from "../assets/icons/Vector (2).png"
 import FragLogo from "../assets/images/Frame 579.png"
 
 
+
 function SideNav() {
   const [show, setShow] = useState(false);
 
@@ -24,16 +25,13 @@ function SideNav() {
     <>
        <div className="off-body">
         
-       {/* <div className="off-head"> */}
+   
         <div className="upNav" style={{color: "white"}}>
        <div className="left-nav">
-       <Button variant="" onClick={handleShow} className='off-head d-md-none'><img src={hamburger} alt="" /></Button>
+       <Button variant="" onClick={handleShow} className='off-head1 d-flex d-lg-none'><img src={hamburger} alt="" /></Button>
      
-     {/* </div> */}
-     {/* <a href='/'>hello</a> */}
      <div className="logs">
      <img src={Logo} alt='' className='logoimg'/>
-     {/* <span>FRAGRANCEHUB</span> */}
      </div>
        </div>
 
@@ -55,11 +53,10 @@ function SideNav() {
             <img src={HumanB} alt=''/>
             <img src={CartB} alt=''/>
             </div>
-          {/* <h1>hellow</h1> */}
+     
          </div>
         <Offcanvas.Body className='off-main'>
-          {/* Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc. */}
+          
           <div className="">
           <ul className='first-li'>
             <a href='/' style={{textDecoration:"none", color: "white"}}>

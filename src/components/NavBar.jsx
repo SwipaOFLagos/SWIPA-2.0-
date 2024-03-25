@@ -16,7 +16,7 @@ import "../css/SideNav.css"
 function Menu() {
   return (
     <>
-    <div className='header'>
+    <div className='sticky-top header'>
       <div className="top-nav">
         <div className="logo">
            <img src={Logo} alt=""/>

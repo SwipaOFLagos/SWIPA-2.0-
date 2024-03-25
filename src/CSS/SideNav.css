@@ -1,15 +1,8 @@
-  .sidebar{
-    display: none;
-}
-@media (min-width: 320px) and (max-width: 767px) {
 
+@media(max-width: 767px) {
     .upNav {
         height: 56px;
-        /* position: fixed; */
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 1000;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         background-color: #0098B8 !important;
@@ -23,11 +16,10 @@
         margin: 0 !important;
     }
 
-    .off-head {
-        width: 50px !important;
+    .off-head1 {
+        display: flex !important;
+        width: 20px !important;
         height: 100% !important;
-     
-       
     }
 
     .off-head:hover{
@@ -46,12 +38,8 @@
     .logs {
         display: flex;
         align-items: center;
+        margin-left: 9rem;
     }
-
-    /* .logoimg {
-        width: 30px;
-        height:30px;
-    } */
 
     
     .right-icons {
@@ -70,7 +58,6 @@
     .show-header {
         height: 56px;
         width: 100%;
-        /* border: 1px solid brown; */
         display: flex;
         justify-content: space-between;
         

@@ -4,8 +4,8 @@ import Brands from '../components/Brand'
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <Brands/>
+        {/* <Hero/> */}
+        {/* <Brands/> */}
     </div>
   )
 }

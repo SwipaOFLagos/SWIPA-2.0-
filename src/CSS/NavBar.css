@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 767px) {
+@media(max-width: 767px) {
   .header {
     display: none;
   }
@@ -117,6 +117,10 @@ option:hover {
 
 .nav-link.show {
   color: white !important;
+}
+
+.active {
+  background-color: inherit !important;
 }
 
 
