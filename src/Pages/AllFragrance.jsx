@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // import "../csst/AllFragance.css";
 import "../css/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
-import { data } from "../DB/ProductDb";
+import { data } from "../db/ProductDb";
 import Accord from "../components/AccordionM";
 import Pagination from "../components/PaginationM";
 import { BiSort } from "react-icons/bi";
@@ -90,9 +90,9 @@ const AllFragrance = () => {
         // Filter by availability
         if (selectedAvailability !== null) {
         if (selectedAvailability === 'true') {
-            filteredProducts = filteredProducts.filter(product => product.availability === true);
+            filteredProducts = filteredProducts.filter(product => product.isavailability === true);
         } else {
-            filteredProducts = filteredProducts.filter(product => product.availability === false);
+            filteredProducts = filteredProducts.filter(product => product.isavailability === false);
         }
         }
 
