@@ -8,6 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+src/DB/Data.jsx
+/src/pages/AllFragance.jsx
 dist
 dist-ssr
 *.local

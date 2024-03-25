@@ -14,7 +14,7 @@ import CartB from "../assets/icons/Vector (2).png"
 import FragLogo from "../assets/images/Frame 579.png"
 
 
-function Example() {
+function SideNav() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -116,4 +116,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default SideNav;

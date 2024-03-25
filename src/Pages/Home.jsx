@@ -1,12 +1,11 @@
-
-
-import React from 'react'
 import Hero from '../components/Hero'
+import Brands from '../components/Brand'
 
-export const Home = () => {
+const Home = () => {
   return (
     <div>
         <Hero/>
+        <Brands/>
     </div>
   )
 }

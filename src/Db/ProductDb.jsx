@@ -13,53 +13,80 @@ import img12 from '../assets/images/6.png'
 import img13 from '../assets/images/7.png'
 import img14 from '../assets/images/837b18453a99449eb28061f0cf884aa8.png'
 import img15 from '../assets/images/ab584ce252c38550bbe229728f3cae9f.png'
-import img16 from '../assets/images/Asad-Lattafa-Perfume-Skit-Store.webp'
-import img17 from '../assets/images/burberry-weekend-women-edp-100ml-perfume-philippines-best-price.jpg'
+import img16 from'../assets/images/Asad-Lattafa-Perfume-Skit-Store.webp'
+import img17 from '../assets/images/Asad-Lattafa-Perfume-Skit-Store.webp'
 import img18 from '../assets/images/c8145f2b7df9c2ec4c039cd5c4ac27c3.png'
 import img19 from '../assets/images/d196981c714866bdaabd4a0c60483e97.png'
 import img20 from '../assets/images/d252dcfaa6adea82c5762e035b318808.png'
+import img111 from  '../assets/images/image34.png'
+import img112 from  '../assets/images/img111.png'
+import img113 from '../assets/images/img112.png'
+import img21 from '../assets/images/Dolce_Gabbana_K_EDP_M_001.webp'
+import img22 from '../assets/images/e7b3e44bccb2292966b30f44327bbfc5.png'
+import img23 from '../assets/images/f9444b05ccf2615d377621e9554f78f3.png'
+import img24 from '../assets/images/fragrance_world_aventos_green_edp_100ml_1.jpeg'
+import img25 from '../assets/images/Frame 1171276207.png'
+import img26 from '../assets/images/Frame 1171276214.png'
+import img27 from '../assets/images/Frame 1171276219.png'
+import img28 from '../assets/images/Frame 1171276220.png'
+import img29 from '../assets/images/Frame 630.png'
+import img30 from '../assets/images/image 13.png'
+import img31 from '../assets/images/image 14.png'
+import img32 from '../assets/images/image 15.png'
+import img33 from '../assets/images/image 16.png'
+import img34 from '../assets/images/image 17.png'
+import img35 from '../assets/images/image 18.png'
+// import img36 from '../assets/images/image 19.png'
+import img37 from '../assets/images/image 21.png'
+import img38 from '../assets/images/image 22.png'
+import img39 from '../assets/images/image 25.png'
+import img40 from '../assets/images/image 29.png'
 import img111 from '../assets/images/img111.png'
 import img112 from '../assets/images/img112.png'
-import img112 from '../assets/images/img112.png'
+import img113 from '../assets/images/img112.png'
+import img114 from '../assets/images/img112.png'
+import img115 from '../assets/images/img112.png'
+
+
 
 
 export const data=[
         {
           _id: 1,
-          name: 'maison francis kurkdjian paris',
+          name: 'Addidas',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
-          brand: 'Addidas',
+          brand: 'Adidas',
           image: img1,
-          fragrance_type: 'Perfume',
-          scent_type: 'fresh',
+          fragrance_type: 'Perfum Oil',
+          scent_type: 'Fresh',
           priceCents: 6600000,
           size: 2.3,
           availability: true,
-          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French Perfum Oilry, it advocates nevertheless a contemporary vision of the art of creating and wearing Perfum Oil.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            "one": img111,
+            "two": img112,
+            "three": img113,
           }
         },
         {
           _id: 2,
-          name: 'maison francis kurkdjian paris',
+          name: 'Armani',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
-          brand: 'Hugo boss',
+          brand: 'Hugo Boss',
           image: img2,
-          fragrance_type: 'Perfume',
+          fragrance_type: 'Perfum Oil',
           scent_type: 'Cedar',
           priceCents: 9700000,
           size: 2.3,
           availability: true,
-          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French Perfum Oilry, it advocates nevertheless a contemporary vision of the art of creating and wearing Perfum Oil.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
@@ -67,45 +94,45 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 3,
-          name: 'maison francis kurkdjian paris',
+          name: 'Armani',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
-          gender: 'male',
+          gender: 'female',
           brand: 'Armani',
           image: img3,
-          fragrance_type: 'Perfume',
-          scent_type: 'Citirus',
+          fragrance_type: 'Body Spray',
+          scent_type: 'Citrus',
           priceCents: 2400000,
           size: 2.3,
           availability: false,
-          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French Perfum Oilry, it advocates nevertheless a contemporary vision of the art of creating and wearing Perfum Oil.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
           _id: 4,
-          name: 'maison francis kurkdjian paris',
+          name: 'adidas',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
-          brand: 'adidas',
+          brand: 'Addidas',
           image: img4,
-          fragrance_type: 'Perfume',
+          fragrance_type: 'Perfum Oil',
           scent_type: 'Floral',
           priceCents: 7600000,
           size: 2.3,
           availability: true,
-          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French Perfum Oilry, it advocates nevertheless a contemporary vision of the art of creating and wearing Perfum Oil.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
@@ -113,22 +140,22 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 5,
-          name: 'maison francis kurkdjian paris',
+          name: 'Vitton',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
-          brand: 'Dior',
+          brand: 'Vitton',
           image: img5,
-          fragrance_type: 'Perfume',
+          fragrance_type: 'Perfum Oil',
           scent_type: 'Rose',
           priceCents: 1600000,
           size: 2.3,
           availability: true,
-          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French Perfum Oilry, it advocates nevertheless a contemporary vision of the art of creating and wearing Perfum Oil.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
@@ -136,35 +163,35 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 6,
-          name: 'maison francis kurkdjian paris',
+          name: 'Vitton',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
-          brand: 'Vitton',
+          brand: 'Calvin Klein',
           image: img6,
           fragrance_type: 'Eau De Parfum',
           scent_type: 'Lemon',
           priceCents: 4600000,
           size: 2.3,
           availability: true,
-          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French Perfum Oilry, it advocates nevertheless a contemporary vision of the art of creating and wearing Perfum Oil.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            1: img113,
+            2: img114,
+            3: img115,
           }
         },
         {
           _id: 7,
-          name: 'maison francis kurkdjian paris',
+          name: 'Giorgio Armani',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Giorgio Armani',
@@ -174,7 +201,7 @@ export const data=[
           priceCents: 1560000,
           size: 2.3,
           availability: true,
-          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French Perfum Oilry, it advocates nevertheless a contemporary vision of the art of creating and wearing Perfum Oil.',
           scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
           usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
           refund_policy: 'NO REFUND',
@@ -182,12 +209,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 8,
-          name: 'maison francis kurkdjian paris',
+          name: 'Ralph Lauren',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Ralph Lauren',
@@ -205,12 +232,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 9,
-          name: 'maison francis kurkdjian paris',
+          name: 'Mont Blanc',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Mont Blanc',
@@ -228,12 +255,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 10,
-          name: 'maison francis kurkdjian paris',
+          name: 'Lataffa',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
           brand: 'Lataffa',
@@ -249,14 +276,14 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            1: img113,
+            2: img114,
+            3: img115,
           }
         },
         {
           _id: 11,
-          name: 'maison francis kurkdjian paris',
+          name: 'Versace',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
           brand: 'Versace',
@@ -274,12 +301,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 12,
-          name: 'maison francis kurkdjian paris',
+          name: 'Zaien',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Zaien',
@@ -297,12 +324,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 13,
-          name: 'maison francis kurkdjian paris',
+          name: 'Jimmmy Choo',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Jimmmy Choo',
@@ -320,12 +347,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 14,
-          name: 'maison francis kurkdjian paris',
+          name: 'Dolce & Gabbana',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Dolce & Gabbana',
@@ -341,14 +368,14 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            1: img113,
+            2: img114,
+            3: img115,
           }
         },
         {
           _id: 15,
-          name: 'maison francis kurkdjian paris',
+          name: 'Dior',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
           brand: 'Dior',
@@ -366,12 +393,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 16,
-          name: 'maison francis kurkdjian paris',
+          name: 'Armani',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Armani',
@@ -389,12 +416,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 17,
-          name: 'maison francis kurkdjian paris',
+          name: 'Armaf',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Armaf',
@@ -412,12 +439,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 18,
-          name: 'maison francis kurkdjian paris',
+          name: 'Calvin klein',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Calvin klein',
@@ -435,12 +462,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 19,
-          name: 'maison francis kurkdjian paris',
+          name: 'Essenza',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
           brand: 'Essenza',
@@ -458,12 +485,12 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
-            3: img112,
+            3: img113,
           }
         },
         {
           _id: 20,
-          name: 'maison francis kurkdjian paris',
+          name: 'Hugo boss',
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'male',
           brand: 'Hugo boss',
@@ -481,7 +508,467 @@ export const data=[
           imageUrl: {
             1: img111,
             2: img112,
+            3: img113,
+          }
+        },
+        {
+          _id: 21,
+          name: 'Calvin klein',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Calvin klein',
+          image: img21,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 130000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
             3: img112,
+          }
+        },
+        {
+          _id: 22,
+          name: 'Calvin kleins',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Calvin klein',
+          image: img22,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 600000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 23,
+          name: 'Hugo boss',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'female',
+          brand: 'Hugo boss',
+          image: img23,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 400000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
+          }
+        },
+        {
+          _id: 24,
+          name: 'Essenza',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'female',
+          brand: 'Essenza',
+          image: img24,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 4500000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 25,
+          name: 'Essenza',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'female',
+          brand: 'Essenza',
+          image: img25,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 5600000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 26,
+          name: 'Armaf',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Armaf',
+          image: img26,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 120000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
+          }
+        },
+        {
+          _id: 27,
+          name: 'Armaf',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'female',
+          brand: 'Armaf',
+          image: img27,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 340000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 28,
+          name: 'rmani',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Armani',
+          image: img28,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 890000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
+          }
+        },
+        {
+          _id: 29,
+          name: 'rmani',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Armani',
+          image: img29,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 670000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 30,
+          name: 'Zaien',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'female',
+          brand: 'Zaien',
+          image: img30,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 540000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 31,
+          name: 'Zaien',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Zaien',
+          image: img31,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 7800000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
+          }
+        },
+        {
+          _id: 32,
+          name: 'Jimmmy Choo',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Jimmmy Choo',
+          image: img32,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 900000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 33,
+          name: 'Jimmmy Choo',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Jimmmy Choo',
+          image: img33,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 870000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 34,
+          name: 'Dior',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Dior',
+          image: img34,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 670000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 35,
+          name: 'Dior',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Dior',
+          image: img35,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 900000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 36,
+          name: 'Dior',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Dior',
+          image: img35,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 890000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
+          }
+        },
+        {
+          _id: 37,
+          name: 'Dolce & Gabbana',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Dolce & Gabbana',
+          image: img37,
+          fragrance_type: 'Body Spray',
+          scent_type: 'fresh',
+          priceCents: 760000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
+          }
+        },
+        {
+          _id: 38,
+          name: 'Dolce & Gabbana',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'female',
+          brand: 'Dolce & Gabbana',
+          image: img38,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 1200000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
+          }
+        },
+        {
+          _id: 39,
+          name: 'Lataffa',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'male',
+          brand: 'Lataffa',
+          image: img39,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 1900000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img111,
+            2: img112,
+            3: img112,
+          }
+        },
+        {
+          _id: 40,
+          name: 'Lataffa',
+          description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
+          gender: 'female',
+          brand: 'Lataffa',
+          image: img40,
+          fragrance_type: 'Perfume',
+          scent_type: 'fresh',
+          priceCents: 1100000,
+          size: 2.3,
+          availability: false,
+          about: 'The Maison Francis Kurkdjian collection is sketched like a fragrance wardrobe, with myriad of facets of emotions. Designed in the tradition of luxury French perfumery, it advocates nevertheless a contemporary vision of the art of creating and wearing perfume.',
+          scent_profile: 'Maison Francis Kurkdjian is often described as a warm, rich, and sophisticated fragrance. It typically features notes of amber, vanilla, benzoin, and tonka bean, creating a harmonious blend that exudes elegance and sensuality.',
+          usage: 'For long-lasting fragrance that you can carry throughout the day and to minimize the need for reapplying, focus on your pulse points behind your ears, at the base of your neck and on your wrists as well as warmer areas of the body, such as behind the knees and inside the elbow. These are the best places to apply your fragrance since the scent intensifies by the warmth of your body.',
+          refund_policy: 'NO REFUND',
+          isnew: false,
+          imageUrl: {
+            1: img113,
+            2: img114,
+            3: img115,
           }
         },
 
