@@ -5,11 +5,11 @@ import hamburger from "../assets/icons/ham.png";
 import Logo from "../assets/icons/Frame 579 (0).png";
 import "../css/SideBar.css";
 import Searchi from "../assets/icons/Vector (5).png";
-import Humani from "../assets/icons/Vector (hum).png";
-import Carti from "../assets/icons/Vector (cart).png";
+import Humani from "../assets/icons/person.png";
+import Carti from "../assets/icons/cart.png";
 import SearchB from "../assets/icons/Vector (searchb).png";
-import HumanB from "../assets/icons/Vector (1).png";
-import CartB from "../assets/icons/Vector (2).png";
+import HumanB from "../assets/icons/person.png";
+import CartB from "../assets/icons/cart.png";
 import FragLogo from "../assets/images/Frame 579.png";
 
 function SideNav() {

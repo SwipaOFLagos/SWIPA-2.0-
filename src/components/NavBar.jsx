@@ -4,8 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../css/Nav.css"
 import Logo from "../assets/images/Frame 579.png"
-import Profileimg from "../assets/icons/Vector (1).png"
-import Cartimg from "../assets/icons/Vector (2).png"
+import Profileimg from "../assets/icons/person.png"
+import Cartimg from "../assets/icons/cart.png"
 import Seicon from "../assets/icons/Vector (5).png"
 import { Link } from 'react-router-dom';
 
