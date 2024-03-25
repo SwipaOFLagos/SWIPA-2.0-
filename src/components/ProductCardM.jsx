@@ -1,5 +1,6 @@
 import React from 'react'
 // import '../css/ProductM.css'
+import '../csst/ProductM.css'
 // import img from '../assets/images/image 8.png'
 
 const ProductCard = ({product, index}) => {

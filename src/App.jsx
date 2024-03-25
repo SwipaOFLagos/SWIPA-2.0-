@@ -20,7 +20,7 @@ function App() {
     {/* <SideNav/> */}
       <Routes >
         <Route path='/' element={<Home/>}/>
-        {/* <Route path='/all-fragrances' element={<AllFragance/>}/>         */}
+        <Route path='/all-fragrances' element={<AllFragance/>}/>        
         <Route path='/cart-empty' element={<CartEmpty/>}/>        
         {/* <Route path='/detail' element={<DetailPage/>}/>         */}
       </Routes>
