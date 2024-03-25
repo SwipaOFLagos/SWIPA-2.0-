@@ -3,7 +3,7 @@
 ![Project Logo](public/readme.png)
 
 
-## Project Description
+## Project Description 
 
 This project is an ecommerce fullstack application built using React for the frontend and Node.js for the backend. The application allows users to browse through products, add them to their cart, and proceed to checkout.
 

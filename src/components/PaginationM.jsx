@@ -1,5 +1,5 @@
 import React from 'react';
-import '../csst/paginationM.css'
+import '../css/paginationM.css'
 import { FaLessThan, FaGreaterThan } from "react-icons/fa";
 
 const Pagination = ({ currentPage, totalPages, onPageChange, totalProductsPerPage }) => {
