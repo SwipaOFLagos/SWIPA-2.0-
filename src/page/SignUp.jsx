@@ -1,18 +1,19 @@
 
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import '../css/SignUp.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import img1 from "../assets/images/Frame 579.png"
 import registerImg from "../assets/images/Frame 1171276207.png"
 import img2 from "../assets/images/download-removebg-preview.png"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import axios from 'axios';
+import { useNavigate } from 'react-router';
 
 
 
 const SignUp = () => {
-  // hooks/
+  // hooks
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,6 +21,8 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [loading, setLoading] = useState(false)
+
+  const navigate = useNavigate()
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -37,7 +40,6 @@ const SignUp = () => {
     setConfirmPassword(e.target.value);
   }
   const handleSubmit = async (e) => {
-    console.log("Button clicked");
     e.preventDefault();
     const url = "https://blogg-api-v1.onrender.com/register";
 
@@ -84,21 +86,17 @@ const SignUp = () => {
 
   return (
     <div>
-    {/* <ToastContainer/> */}
     <div className="container-milly">
       <div className="left-side">
-       {/* <div className="logo ">
-            <img src={img1} alt="" />
-        </div> */}
-    <div class= "top-section">
+    <div className= "top-section ">
     <img src={img1} alt="" />
-    <h2><b>Join Us To Discover The Perfect Scent For You!".</b></h2>
+    <h2><b>Join Us To Discover The Perfect Scent For You!.</b></h2>
     </div>
        
     <div className="middle-section">
     <p>Let's get started by filling the information below:</p>
     </div>
-    <div class="">
+    <div className="">
           <form className='form-milly' onSubmit={handleSubmit}>
             <div className="form-action">
               <label>Name</label>
@@ -155,7 +153,7 @@ const SignUp = () => {
             </div>
           </form>
 
-         <div className='hhh'>
+         <div className='hhh my-2'>
           <input type="checkbox" />
           <p>I agree to <span className='span-milly'>Terms of service</span> and <span className='span-milly'>Privacy policies</span></p>
          </div>
@@ -165,7 +163,7 @@ const SignUp = () => {
          {loading ? (
             <>
             <span
-              class="spinner-border spinner-border-sm"
+              className="spinner-border spinner-border-sm"
               aria-hidden="true"
             ></span>
             <span role="status">Loading...</span>
@@ -175,14 +173,14 @@ const SignUp = () => {
           )}
          </button>
          </div>
-         <div className='dis'>
+         <div className='dis my-2'>
           <div className='line'></div>
           <span>
           &nbsp;&nbsp;
            or
            &nbsp;&nbsp;
          </span>
-         <div className='lines'></div>
+         <div className='line'></div>
          </div>
          
           <div className='white'>

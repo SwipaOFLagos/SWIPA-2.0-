@@ -10,16 +10,15 @@
     width: 45%;
     height: 100%;
     background-color: white;
-    /* background-color: blue; */
     display: block;
     margin: 0 auto;
 }
 .top-section{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* width: 30%; */
+    justify-content: space-evenly;
     height: 18%;
+
 }
 .top-section h2{
     font-size: 25px;
@@ -31,8 +30,6 @@
 }
 .top-section img{
     width: 30%;
-    height: 20%;
-    
 }
 .form-milly{
     display: flex;
@@ -145,14 +142,12 @@ span{
     text-align: center;
 }
 .line{
-    width: 40%;
-    height: 1px;
-    background-color: black;
-}
-.lines{
     width: 45%;
     height: 1px;
     background-color: black;
+}
+input[type="checkbox"]:checked{
+    accent-color: black;
 }
 
 
