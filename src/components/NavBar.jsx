@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import "../css/NavBar.css"
+import "../css/Nav.css"
 import Logo from "../assets/images/Frame 579.png"
 import Profileimg from "../assets/icons/Vector (1).png"
 import Cartimg from "../assets/icons/Vector (2).png"
@@ -10,7 +10,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import signupimg from "../assets/images/Frame 1171276271.png"
 import Dropimg from "../assets/icons/Vector (4).png"
 import Seicon from "../assets/icons/Vector (5).png"
-import "../css/SideNav.css"
+
 
 
 function Menu() {
