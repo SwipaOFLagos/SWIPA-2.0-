@@ -2,8 +2,8 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home  from './page/Home'
 import AllFragance from './page/AllFragrance'
-// import Menu from './components/NavBar'
-// import SideNav from './components/SideNav'
+import Menu from './components/NavBar'
+import SideNav from './components/SideNav'
 import CartEmpty from './page/Chart'
 import { ToastContainer } from 'react-toastify'
 import SignUp from './page/SignUp'
@@ -18,8 +18,8 @@ function App() {
   return (
     <>
     <Router>
-    {/* <Menu/> */}
-    {/* <SideNav/> */}
+    <Menu/>
+    <SideNav/>
     <ToastContainer/>
       <Routes >
         <Route path='/' element={<Home/>}/>
