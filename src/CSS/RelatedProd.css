@@ -1,7 +1,7 @@
 .rpG{
     width: 26rem !important;
     height: 67rem !important;
-    border: 1px solid black;
+    /* border: 1px solid black !important; */
     }
     .cardG{
         width: 23rem !important;
@@ -12,20 +12,22 @@
     }
     .btnG{
         width: 21.5rem !important;
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
     }
     
     
     @media (min-width: 370px) and (max-width: 767px) {
        .rpG{
-        width: 380px !important;
-        height: 400px !important;
+        width: 200px !important;
+        height: 300px !important;
         /* direction: ltr; */
-        border: none !important;
+        /* border: none !important; */
        }
        .cardG{ 
         width: 50% !important;
-        height: 395px !important;
-        margin-left:0.5rem !important;
+        height: 200px !important;
+        margin-left:2rem !important;
        }
        .imgGa{
         height: 200px;

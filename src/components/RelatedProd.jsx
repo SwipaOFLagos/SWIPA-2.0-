@@ -14,12 +14,12 @@ const RelatedProd = ({productG}) => {
     <div className=' mt-lg-4 mb-4'>
       
           <div >
-            <h1>{productG.brand}</h1>
+            {/* <h1>{productG.brand}</h1> */}
             <h3>Related Products</h3>
-            <div className='rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
+            <div className='rpG border border-dark rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
         {data.filter((product, index)=>product.brand === `${productG.brand}`
         ).slice(0,2).map((item)=>{ 
-          return <Card className='cardG mb-lg-4 '  key={item._id} >
+          return <Card className='cardG mb-lg-4 mx-2'  key={item._id} >
       <Card.Img variant="top" src={item?.image}  className='imgGa'/>
       <Card.Body className='row d-flex justify-content-between align-items-center'>
        
@@ -30,7 +30,7 @@ const RelatedProd = ({productG}) => {
             <p className='ppg' style={{fontSize:'26px', fontWeight:'700'}}>&#x20A6;{price}</p>
             </div>
        
-        <Button variant="dark" className='btnG mx-lg-2 mb-4 d-block'>
+        <Button variant="dark" className='btnG mx-lg-2  d-block'>
         Add to Cart
         </Button>
       </Card.Body>

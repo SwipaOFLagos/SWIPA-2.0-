@@ -190,7 +190,7 @@
 .buttonG{
     width: 305px !important;
     height: 43px !important;
-    display: flex !important;
+    /* display: flex !important; */
 }
 .btn{
     margin-bottom: 0rem !important;
