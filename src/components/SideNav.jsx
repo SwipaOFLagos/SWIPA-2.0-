@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import hamburger from "../assets/icons/ham.png"
-import close from '../assets/icons/close.png'
 import Logo from "../assets/icons/Frame 579 (0).png"
 import "../css/SideBar.css"
 import Searchi from "../assets/icons/Vector (5).png"
@@ -23,13 +22,10 @@ function SideNav() {
 
   return (
     <>
-       <div className="off-body">
-        
-   
+       <div className="sticky-top off-body d-lg-none">
         <div className="upNav" style={{color: "white"}}>
        <div className="left-nav">
-       <Button variant="" onClick={handleShow} className='off-head1 d-flex d-lg-none'><img src={hamburger} alt="" /></Button>
-     
+       <Button variant="" onClick={handleShow} className='off-head text-light'><img src={hamburger} alt="" /></Button>
      <div className="logs">
      <img src={Logo} alt='' className='logoimg'/>
      </div>

@@ -1,3 +1,4 @@
+
 @media(max-width: 767px) {
     .upNav {
         height: 56px;
@@ -9,49 +10,42 @@
 
     .left-nav {
         display: flex;
+        gap: 6px;
     }
 
-    .offcanvas-header .btn-close {
-        margin: 0 !important;
+    .off-head img {
+        width: 100%;
+        height: 20px;
     }
 
-    .off-head1 {
-        display: flex !important;
-        width: 20px !important;
-        height: 100% !important;
-    }
-
-    .off-head:hover{
-        color: black !important;
-    }
-
-    .offcanvas-body {
-        padding: 0 !important;
-    }
-
-
-    .off-main {
-        background-color: #0098B8 !important;
+    .show-header {
+        display: flex;
+        justify-content: space-evenly;
+    
     }
 
     .logs {
         display: flex;
         align-items: center;
-        margin-left: 9rem;
     }
 
     
+    .logs img {
+        height: 20px;
+        width: 140px;
+    }
+
+
     .right-icons {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 4px;
     }
 
     .right-icons img {
         width: 20px;
         height: 20px;
-        margin-right: 14px;
+        margin-right: 10px;
     }
 
     .show-header {
@@ -59,28 +53,46 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        background-color: #E2E3E3;
         
     }
 
     .left-logo {
         display: flex;
         align-items: center;
-
+        gap: 10px;
     }
 
     .left-logo img {
         height: 25px
     }
 
+    .off-header {
+        display: flex !important;
+        width: 20px !important;
+        height: 100% !important;
+    }
+
+
     .li-img {
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-right: 14px;
+        margin-right: 10px; 
     }
 
-    ol, ul {
-        padding-left: 1rem !important;
+    .li-img img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .offcanvas {
+        background-color: #0098B8 !important;
+    }
+
+    .first-li li {
+        margin-top: 5px !important;
+        padding-left: 1rem;
     }
 
     .first-li a {
@@ -88,7 +100,14 @@
       
     }
 
-    .first-li li {
+    .straight-line {
+        border: 1px solid #E2E3E3;
+        width: 100% !important;
+        margin: 2rem 0 3rem 0;
+        
+    }
+
+    .last-li li {
         margin-top: 5px !important;
         padding-left: 1rem;
     }
@@ -97,20 +116,11 @@
         font-size: 20px;
     }
 
-    .last-li li {
-        margin-top: 5px !important;
-        padding-left: 1rem;
+    ol, ul {
+    padding-left: 0 !important;
     }
-
-    .straight-line {
-        border: 1px solid #E2E3E3;
-        width: 100%;
-        margin: 2rem 0 3rem 0;
-        
-    }
-    .logs img {
-        height: 20px;
-        width: 140px;
-    }
-
 }
+
+
+
+
