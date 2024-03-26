@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-// import "../css/AllFragance.css";
-// import "../csst/AllFragance.css";
 import "../css/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
 import { data } from "../Db/ProductDb";
