@@ -24,8 +24,10 @@
     border-bottom: 2px solid black!important;
   } */
  .accordionG{
-  width: 40rem !important;
+  width: 43.45rem !important;
   height: 60rem !important;
+  align-items: center;
+  justify-content: center;
  } 
  .detailG{
   font-size: 16px;

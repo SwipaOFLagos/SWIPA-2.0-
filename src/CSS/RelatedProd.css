@@ -1,33 +1,39 @@
+.rpB{
+    width: 27.6rem !important;
+}
 .rpG{
     width: 26rem !important;
     height: 67rem !important;
-    /* border: 1px solid black !important; */
+    border: 1px solid black !important;
     }
     .cardG{
-        width: 23rem !important;
+        width: 22rem !important;
         height: 31rem !important;
     }
     .imgGa{
         height: 250px;
     }
     .btnG{
-        width: 21.5rem !important;
+        width: 20.5rem !important;
         margin-bottom: 0 !important;
         margin-left: 0 !important;
     }
     
     
     @media (min-width: 370px) and (max-width: 767px) {
-       .rpG{
-        width: 200px !important;
-        height: 300px !important;
+       /* .rpB{
+        width: 3rem !important;
+       } */
+        .rpG{
+        width: 375px !important;
+        height: 370px !important;
         /* direction: ltr; */
-        /* border: none !important; */
+        border: none !important;
        }
        .cardG{ 
         width: 50% !important;
-        height: 200px !important;
-        margin-left:2rem !important;
+        height: 350px !important;
+        /* margin-left:2rem !important; */
        }
        .imgGa{
         height: 200px;

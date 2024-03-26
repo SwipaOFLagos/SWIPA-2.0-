@@ -69,10 +69,10 @@ const DetailCard = ({product}) => {
            <p className='mb-2' style={{fontSize:'18px'}}>Size: <span style={{fontSize:'14px'}}>2.3 Oz</span></p> 
           <div> <button className='bg-dark text-light' style={{width:'59px', height:'39px', fontSize:'14px', fontWeight:'500', borderRadius:'4px'}}>2.3 Oz</button> <button className='bg-light text-dark border border-dark' style={{width:'59px', height:'39px', fontSize:'14px', fontWeight:'500', borderRadius:'4px'}}>6.3 Oz</button> </div>
           
-          <div className="d-flex my-2 border border-primary align-items-center" >
+          <div className="d-flex my-2  align-items-center" >
             <span className='pe-4'style={{fontSize:'18px'}}>Quantity:</span>
             <button className='btn1  bg-transparent rounded-0 rounded-start'  onClick={handleDecrease}><img src={Minus} alt="" /></button>
-            <Button className='btnGg rounded-0 bg-transparent text-dark fw-bold'>{count}</Button>
+            <Button className='btnGg rounded-0 bg-transparent text-dark fw-bold '>{count}</Button>
             <button className='btn1  bg-transparent rounded-0 rounded-end' onClick={handleIncrease}><img src={Plus} alt="" /></button>
             
         </div>
@@ -80,14 +80,14 @@ const DetailCard = ({product}) => {
         <div className='d-flex'>
             <p>Availability:</p> 
             <ul className='d-flex' style={{listStyle:'none', paddingLeft:'1rem'}}>
-            <li style={{color: product.isAvailable ? '#009320' : '#E70000', fontWeight:'500', fontSize:'18px'}}>
-       <span style={{backgroundColor: product.isAvailable ? '#009320' : '#E70000',
+            <li style={{color: product.isavailability ? '#009320' : '#E70000', fontWeight:'500', fontSize:'18px'}}>
+       <span style={{backgroundColor: product.isavailability ? '#009320' : '#E70000',
            width: '10px',
            height: '10px',
            borderRadius: '50%',
            display: 'inline-block',
            marginRight: '5px'}}></span>
-       {product.isAvailable ? 'In Stock' : 'Out of Stock'}
+       {product.isavailability ? 'In Stock' : 'Out of Stock'}
    </li> 
             </ul></div>
         

@@ -11,12 +11,12 @@ const RelatedProd = ({productG}) => {
 
   let brand = productG.brand
   return (
-    <div className=' mt-lg-4 mb-4'>
+    <div className='rpB mt-lg-4 mb-4'>
       
           <div >
             {/* <h1>{productG.brand}</h1> */}
             <h3>Related Products</h3>
-            <div className='rpG border border-dark rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
+            <div className='rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
         {data.filter((product, index)=>product.brand === `${productG.brand}`
         ).slice(0,2).map((item)=>{ 
           return <Card className='cardG mb-lg-4 mx-2'  key={item._id} >
