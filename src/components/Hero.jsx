@@ -68,9 +68,12 @@ function Hero() {
           <h1>Modern Chic</h1>
           <p>Uncover contemporary scents designed for the trendsetter in you.</p>
           </div>
-          
-          <button type='button' className='btn btn-dark'>Shop Now</button>
-          <button type='button' className='btn-mobile btn-dark '>Shop Now</button>
+
+          {/* <div className="pb-btn"> */}
+            <button type='button' className='btn btn-dark' id='brait'>Shop Now</button>
+            <button type='button' className='btn-mobile btn-dark ' id='brait-mobile'>Shop Now</button>
+          {/* </div> */}
+
         </Carousel.Caption>
       </Carousel.Item>
 
