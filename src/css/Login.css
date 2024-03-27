@@ -169,6 +169,9 @@ span{
     height: 1px;
     background-color: lightgrey;
 }
+.icon{
+    padding-top: 9px !important;
+}
 
 
 @media( max-width: 600px){
