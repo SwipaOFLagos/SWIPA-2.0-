@@ -1,13 +1,13 @@
 
 import  { useState } from 'react'
 import '../css/SignUp.css';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import img1 from "../assets/images/Frame 579.png"
 import registerImg from "../assets/images/Frame 1171276207.png"
 import img2 from "../assets/images/download-removebg-preview.png"
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
-import axios from 'axios';
+// import axios from 'axios';
 import { useNavigate } from 'react-router';
 
 

@@ -1,30 +1,25 @@
-import React, { useEffect, useState} from 'react'
+import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-// import '../css/RelatedProd.css'
+import '../css/RelatedProd.css'
 import { data } from '../Db/ProductDb';
-import { Link, NavLink} from 'react-router-dom';
 
 
-const RelatedProd = ({product}) => {
-  // const [relatedProducts, setRelatedProducts] = useState([]);
 
-  // useEffect(() => {
-    // Filter related products by brand of the clicked product and limit to 2
-  //   const filteredProducts = data.filter(product => product.brand === clickedProduct.brand);
-  //   setRelatedProducts(filteredProducts.slice(0, 3)); // Limit to 2 related products
-  // }, [clickedProduct]);
+const RelatedProd = ({productG}) => {
+  let price = (productG.priceCents/100).toLocaleString(undefined, {minimumFractionDigits: 2})
 
-
+  let brand = productG.brand
   return (
-    <div className=' mt-lg-4 mb-4'>
+    <div className='rpB mt-lg-4 mb-4'>
       
           <div >
+            {/* <h1>{productG.brand}</h1> */}
             <h3>Related Products</h3>
             <div className='rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
-        {data.filter((product, index)=>product.brand === 'Addidas'
-        ).slice(0,2).map((item)=>{
-          return <Card className='cardG mb-lg-4 '  key={item._id} >
+        {data.filter((product, index)=>product.brand === `${productG.brand}`
+        ).slice(0,2).map((item)=>{ 
+          return <Card className='cardG mb-lg-4 mx-2'  key={item._id} >
       <Card.Img variant="top" src={item?.image}  className='imgGa'/>
       <Card.Body className='row d-flex justify-content-between align-items-center'>
        
@@ -32,10 +27,10 @@ const RelatedProd = ({product}) => {
         <div>
             <h1 className='hg' style={{fontSize:'24px'}}>{item?.name}</h1> 
             <p className='pg' style={{fontSize:'18px', fontWeight:'400'}}>{item?.description}</p>
-            <p className='ppg' style={{fontSize:'26px', fontWeight:'700'}}>{item?.priceCents}</p>
+            <p className='ppg' style={{fontSize:'26px', fontWeight:'700'}}>&#x20A6;{price}</p>
             </div>
        
-        <Button variant="dark" className='btnG mx-lg-2' style={{width:'343px'}}>
+        <Button variant="dark" className='btnG mx-lg-2  d-block'>
         Add to Cart
         </Button>
       </Card.Body>

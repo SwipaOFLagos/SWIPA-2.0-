@@ -1,10 +1,10 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-// import '../css/AccordionG.css'
+import '../css/AccordionG.css'
 
 function Accordions({product}) {
   return (
-    <div className="accordionG">
+    <div className="accordionG ">
         <h3>Product Details</h3>
         <Accordion defaultActiveKey="0" alwaysOpen className='border border-0'>
       <Accordion.Item eventKey="0" >

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-// import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player';
 // import Video from '../assets/images/production_id_4125001 (1080p).mp4';
 import '../css/YouTube.css';
-// const VIDEO_PATH = "https://www.youtube.com/watch?v=DVq2TfXJrwI&pp=ygUUc2hvcnQgcGVyZnVtZSByZXZpZXc%3D"
+const VIDEO_PATH = "https://www.youtube.com/watch?v=DVq2TfXJrwI&pp=ygUUc2hvcnQgcGVyZnVtZSByZXZpZXc%3D"
 const YouTube = () => {
     const playerRef = useRef(null);
     return (
@@ -11,7 +11,7 @@ const YouTube = () => {
             <div className="border border-dark" >
                 <div className="video-wrapper ">
 
-                    {/* <ReactPlayer ref={playerRef} url={VIDEO_PATH} controls={true} className='react-player' width={600}/> */}
+                    <ReactPlayer ref={playerRef} url={VIDEO_PATH} controls={true} className='react-player' width={600}/>
                 </div>
                 <p>Read Transcript</p>
             </div>

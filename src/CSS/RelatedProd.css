@@ -1,0 +1,56 @@
+.rpB{
+    width: 27.6rem !important;
+}
+.rpG{
+    width: 26rem !important;
+    height: 67rem !important;
+    border: 1px solid black !important;
+    }
+    .cardG{
+        width: 22rem !important;
+        height: 31rem !important;
+    }
+    .imgGa{
+        height: 250px;
+    }
+    .btnG{
+        width: 20.5rem !important;
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
+    }
+    
+    
+    @media (min-width: 370px) and (max-width: 767px) {
+       /* .rpB{
+        width: 3rem !important;
+       } */
+        .rpG{
+        width: 375px !important;
+        height: 370px !important;
+        /* direction: ltr; */
+        border: none !important;
+       }
+       .cardG{ 
+        width: 50% !important;
+        height: 350px !important;
+        /* margin-left:2rem !important; */
+       }
+       .imgGa{
+        height: 200px;
+    }
+       .hg{
+        font-size: 0.8rem !important; 
+       }
+       .pg{
+        font-size: 0.8rem !important; 
+       }
+       .ppg{
+        font-size: 1rem !important; ;
+       }
+       .btnG{
+        width: 200px !important;
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
+       }
+       
+    }   
