@@ -1,13 +1,13 @@
 
 import './App.css'
-import Testimonies from './Testimonies'
+import Testimonies from './components/Testimonies'
 
 function App() {
 
   return (
     <>
     <Testimonies/>
-    <h1>Final Project</h1>
+    {/* <h1>Final Project</h1> */}
       
     </>
   )
