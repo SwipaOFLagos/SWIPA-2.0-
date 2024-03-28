@@ -6,11 +6,15 @@
         display: flex;
         justify-content: space-between;
         background-color: #0098B8 !important;
+        padding: 0 5px;
     }
+   
 
     .left-nav {
+        width: 20%;
         display: flex;
-        gap: 6px;
+        align-items: center;
+        gap: 1rem;
     }
 
     .off-head img {
@@ -18,15 +22,27 @@
         height: 20px;
     }
 
-    .show-header {
-        display: flex;
-        justify-content: space-evenly;
-    
+    .off-head:hover{
+        color: black !important;
+    }
+
+    .offcanvas-body {
+        padding: 0 !important;
+    }
+
+
+    .off-main {
+        background-color: #0098B8 !important;
     }
 
     .logs {
         display: flex;
         align-items: center;
+    }
+
+    .left-nav img {
+        width: 50%;
+        height: 20px;
     }
 
     
@@ -40,12 +56,14 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        gap: 10px;
+        margin-right: 1rem;
+        
     }
 
     .right-icons img {
         width: 20px;
         height: 20px;
-        margin-right: 10px;
     }
 
     .show-header {
