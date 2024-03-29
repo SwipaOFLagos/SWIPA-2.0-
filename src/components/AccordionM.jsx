@@ -30,35 +30,16 @@ const Accord = ({handleCheckboxChange, handleAvailabilityChange}) => {
 
   console.log(genderList);
 
-  
-  const alphabelts = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-  ];
+  //Alphabet
+  const [inputValue, setInputValue] = useState('');
+
+  const handleButtonClick = (value) => {
+    setInputValue(value);
+  };
+
+  const alphabets = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+
 
   return (
     <>
@@ -86,30 +67,38 @@ const Accord = ({handleCheckboxChange, handleAvailabilityChange}) => {
           <span className="accord-text">Brand</span>
         </Accordion.Header>
         <Accordion.Body className="accord-brand">
-          {alphabelts.map((alphabelt, i) => {
-            return <span key={i}>{alphabelt.toUpperCase()}</span>
-          })}
+            <div className="brand-alpha">
+            {alphabets.map((letter, index) => (
+            <span key={index} onClick={() =>{ handleButtonClick(letter); setSearch(inputValue)}}>
+              {letter.toUpperCase()}
+            </span>
+          ))}
+          </div>
+
         </Accordion.Body>
         <Accordion.Body className="accord-input">
           <div className="input-body">
-          <input type="text" 
-                onChange={(e)=> setSearch(e.target.value.toLowerCase().trim()) }
-            placeholder='Search' />
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder='Search'
+            />
             <span><IoSearch /></span>
           </div>
           <div className="brand-list">
-            {brandList.filter((brand, index)=>{
-               return search.toLowerCase() === '' ? brand : brand.toLowerCase().includes(search)
-              }).map((brand, index) => (
-              <label key={index}>
-              <input
-                type="checkbox"
-                value={brand}
-                onChange={(e) => handleCheckboxChange(e, brand, "brandType")}
-                />
-              {brand}
-            </label>))}
-            
+            {brandList
+              .filter((brand) => search.toLowerCase() === '' ? true : brand.toLowerCase().includes(search))
+              .map((brand, index) => (
+                <label key={index}>
+                  <input
+                    type="checkbox"
+                    value={brand}
+                    onChange={(e) => handleCheckboxChange(e, brand, "brandType")}
+                  />
+                  {brand}
+                </label>
+              ))}
           </div>
         </Accordion.Body>
       </Accordion.Item>
