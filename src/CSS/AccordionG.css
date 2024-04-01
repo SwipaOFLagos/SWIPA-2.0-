@@ -19,10 +19,6 @@
     box-shadow: none !important;
     background: none !important; ;
   }
-  /* .ganiyat{
-    border-top: 2px solid black!important;
-    border-bottom: 2px solid black!important;
-  } */
  .accordionG{
   width: 39rem !important;
   height: 60rem !important;
@@ -30,15 +26,15 @@
   justify-content: center;
  } 
  .detailG{
-  font-size: 16px;
+  font-size: 1rem;
  }
 
  @media (min-width: 768px) and (max-width: 1024px){
   .accordionG{
-    width: 44rem !important;
+    width: 47rem !important;
    }
    .detailG{
-    font-size: 16px;
+    font-size: 1.1rem;
    }
   }
  @media (min-width: 370px) and (max-width: 767px) {
@@ -46,7 +42,7 @@
     width: 23rem !important;
    }
    .detailG{
-    font-size: 12px;
+    font-size: 0.75rem;
    }
  }   
   

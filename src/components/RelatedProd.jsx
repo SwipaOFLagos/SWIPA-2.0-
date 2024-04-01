@@ -11,7 +11,7 @@ const RelatedProd = ({productG}) => {
 
   let brand = productG.brand
   return (
-    <div className='rpB mt-lg-4 mb-4'>
+    <div className='rpB mt-lg-4 mb-4 p-2'>
       
           <div >
             {/* <h1>{productG.brand}</h1> */}
@@ -19,7 +19,7 @@ const RelatedProd = ({productG}) => {
             <div className='rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
         {data.filter((product, index)=>product.brand === `${productG.brand}`
         ).slice(0,2).map((item)=>{ 
-          return <Card className='cardG mb-lg-4 mx-2 p-2'  key={item._id} >
+          return <Card className='cardG mb-lg-4 mx-2 p-1'  key={item._id} >
       <Card.Img variant="top" src={item?.image}  className='imgGa'/>
       <Card.Body className='row d-flex justify-content-between align-items-center'>
        
@@ -38,20 +38,7 @@ const RelatedProd = ({productG}) => {
      })}
             </div>
         
-        {/* <Card style={{ width: '25rem' }} className='px-4'>
-      <Card.Img variant="top" src={Second} style={{ height:'20rem', width:'15rem', marginLeft:'3rem'}}/>
-      <Card.Body className='row d-flex justify-content-between align-items-center'>
-        <Card.Title>
-        <h3 className='fs-5'>Maison Francis Kurkdjian Paris</h3> 
-            <p>grand soir eau de parfum 2.3 oz</p>
-        </Card.Title>
-        <Card.Text className='fs-3'>
-        ₦46,000.00
-        </Card.Text>
-        <Button variant="dark">Add to Cart
-        </Button>
-      </Card.Body>
-    </Card> */}
+        
         </div>
       
     </div>

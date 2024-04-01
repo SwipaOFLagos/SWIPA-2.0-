@@ -1,4 +1,4 @@
-import React,  { useEffect, useState}from 'react'
+// import React,  { useEffect, useState}from 'react'
 import DetailCard from '../components/DetailCard'
 import { data } from '../Db/ProductDb'
 import Accordions from '../components/AccordionG';
@@ -14,13 +14,13 @@ const DetailPage = () => {
     const productG = data.find((p) => p._id )
     // === parseInt(productId)
 return(
-    <div className="all-details p-2">
-       <div>
+    <div className="all-details p-4">
+       <div className='mb-4'>
        <DetailCard product={productG}/>
        </div>
        
-<div className='gaccrel d-flex p-4 justify-content-evenly flex-column flex-lg-row '>
-<div className='row d-flex  justify-content-between' style={{width: ''}}>
+<div className='gaccrel d-flex  justify-content-evenly flex-column flex-lg-row '>
+<div className='row d-flex  justify-content-between'>
     <Accordions height='70%' className='' product={productG}/>
     
     <div className="d-lg-block d-none">
@@ -30,7 +30,7 @@ return(
 </div>
 
     
-<div className='d-flex  justify-content-center mt-4' style={{width:''}} >
+<div className='d-flex  justify-content-center mt-4'  >
     <RelatedProd productG={productG}/>
 </div>
 
