@@ -5,6 +5,7 @@ import Accordions from '../components/AccordionG';
 import RelatedProd from '../components/RelatedProd';
 import YouTube from '../components/YouTube'
 import { useParams } from 'react-router-dom'
+import '../css/DetailPage.css'
 
 const DetailPage = () => {
    
@@ -13,14 +14,14 @@ const DetailPage = () => {
     const productG = data.find((p) => p._id )
     // === parseInt(productId)
 return(
-    <div className="all-details">
+    <div className="all-details p-2">
        <div>
        <DetailCard product={productG}/>
        </div>
        
-<div className='d-flex p-4 justify-content-between flex-column flex-lg-row' style={{width:''}}>
+<div className='gaccrel d-flex p-4 justify-content-evenly flex-column flex-lg-row '>
 <div className='row d-flex  justify-content-between' style={{width: ''}}>
-    <Accordions height='70%' product={productG}/>
+    <Accordions height='70%' className='' product={productG}/>
     
     <div className="d-lg-block d-none">
     <YouTube height='30%'/>

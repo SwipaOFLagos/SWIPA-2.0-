@@ -19,7 +19,7 @@ const RelatedProd = ({productG}) => {
             <div className='rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between'>
         {data.filter((product, index)=>product.brand === `${productG.brand}`
         ).slice(0,2).map((item)=>{ 
-          return <Card className='cardG mb-lg-4 mx-2'  key={item._id} >
+          return <Card className='cardG mb-lg-4 mx-2 p-2'  key={item._id} >
       <Card.Img variant="top" src={item?.image}  className='imgGa'/>
       <Card.Body className='row d-flex justify-content-between align-items-center'>
        

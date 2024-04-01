@@ -24,7 +24,7 @@
     border-bottom: 2px solid black!important;
   } */
  .accordionG{
-  width: 43.45rem !important;
+  width: 39rem !important;
   height: 60rem !important;
   align-items: center;
   justify-content: center;
@@ -32,6 +32,15 @@
  .detailG{
   font-size: 16px;
  }
+
+ @media (min-width: 768px) and (max-width: 1024px){
+  .accordionG{
+    width: 44rem !important;
+   }
+   .detailG{
+    font-size: 16px;
+   }
+  }
  @media (min-width: 370px) and (max-width: 767px) {
    .accordionG{
     width: 23rem !important;

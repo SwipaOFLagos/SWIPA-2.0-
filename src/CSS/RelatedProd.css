@@ -19,6 +19,28 @@
         margin-left: 0 !important;
     }
     
+    @media (min-width: 768px) and (max-width: 1024px){
+        .rpB{
+            width: 45rem !important;
+        }
+        .rpG{
+            width: 44rem !important;
+            height: 35rem !important;
+            border: none !important;
+            }
+            .cardG{
+                width: 24rem !important;
+                height: 32rem !important;
+            }
+            .imgGa{
+                height: 300px;
+            }
+            .btnG{
+                width: 19.5rem !important;
+                margin-bottom: 0 !important;
+                margin-left: 0 !important;
+            }
+        }
     
     @media (min-width: 370px) and (max-width: 767px) {
        /* .rpB{

@@ -17,14 +17,33 @@
     border-radius: 4rem;
 } */
 .youtubeG{
-    width:37rem !important;
-    height:28rem !important;
+    width:38rem !important;
+    height:30rem !important;
     /* margin-top: 10rem !important; */
 }
+.gvideo{
+    width: 36rem !important;
+    height: 27rem !important;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .youtubeG{
+        width:45rem !important;
+        height:30rem !important;
+        /* margin-top: 10rem !important; */
+    }
+    .gvideo{
+        width: 43.5rem !important;
+        height: 27rem !important;
+    }
+    }
 @media (min-width: 370px) and (max-width: 767px) {
     .youtubeG{
         width:22rem !important;
-        height:28rem !important;
+        height:25rem !important;
         /* margin-top: 10rem !important; */
+    }
+    .gvideo{
+        width: 21rem !important;
+        height: 24rem !important;
     }
 }   
