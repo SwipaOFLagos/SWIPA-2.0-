@@ -1,6 +1,5 @@
-import React from "react";
 import "../css/CartItems.css";
-import img from "../assets/images/image 19.png";
+import img from "../assets/images/image 18.png";
 import { ImBin2 } from "react-icons/im";
 
 const CartItems = () => {

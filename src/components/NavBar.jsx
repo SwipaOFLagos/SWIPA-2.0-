@@ -2,27 +2,27 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-// import "../css/NavBar.css"
+import "../css/Nav.css"
 import Logo from "../assets/images/Frame 579.png"
-import Profileimg from "../assets/icons/Vector (1).png"
-import Cartimg from "../assets/icons/Vector (2).png"
-import Dropdown from 'react-bootstrap/Dropdown';
-import signupimg from "../assets/images/Frame 1171276271.png"
-import Dropimg from "../assets/icons/Vector (4).png"
+import Profileimg from "../assets/icons/person.png"
+import Cartimg from "../assets/icons/cart.png"
 import Seicon from "../assets/icons/Vector (5).png"
-// import "../css/SideNav.css"
+import { Link } from 'react-router-dom';
+
 
 
 function Menu() {
   return (
     <>
-    <div className='header sticky-top'>
+    <div className='sticky-top header'>
       <div className="top-nav">
         <div className="logo">
-           <img src={Logo} alt=""/>
+          <Link to="/">
+            <img src={Logo} alt=""/>
+          </Link>
         </div>
         <div className="search-sec">
-           <input type="text" placeholder="search" className='search md-d-nonek'/> 
+           <input type="text" placeholder="search" className='search d-md-none d-lg-block'/> 
            <div className='select-container'>
               <select className='select-box'>
                  <option value="">All Categories</option>
@@ -48,7 +48,7 @@ function Menu() {
              <div className='select-container'>
               <select className='select-box'>
                  <option value="">My Account</option>
-                 <option value="first"> Sign In</option>
+                 <option value="first">Sign Up</option>
               </select>
              </div>
         </div>
@@ -65,8 +65,8 @@ function Menu() {
         <Navbar.Collapse id="basic-navbar-nav">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Nav className="me-auto">
-            <Nav.Link href="#home" className='text-white'>Home</Nav.Link>
-            <Nav.Link href="#link" className='text-white'>All Fragrance</Nav.Link>
+            <Nav.Link href="/" className='text-white'>Home</Nav.Link>
+            <Nav.Link href="/all-fragrances" className='text-white'>All Fragrance</Nav.Link>
             <NavDropdown className='dropp text-white' id="basic-nav-dropdown" title="All Brands" >
               <NavDropdown.Item href="#action/3.1">Adidas</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Armaf</NavDropdown.Item>
@@ -85,9 +85,9 @@ function Menu() {
               <NavDropdown.Item href="#action/3.1">Yves Saint Laurent</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Zaien</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link" className='text-white'>New Arrival</Nav.Link>               
-            <Nav.Link href="#link" className='text-white'>Blog</Nav.Link>               
-            <Nav.Link href="#link" className='text-white'>Contact Us</Nav.Link>               
+            <Nav.Link href="/new-arrival" className='text-white'>New Arrival</Nav.Link>               
+            <Nav.Link href="/blog" className='text-white'>Blog</Nav.Link>               
+            <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>               
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -92,9 +92,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -138,9 +138,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -161,9 +161,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -184,9 +184,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -207,9 +207,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -230,9 +230,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -253,9 +253,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -276,9 +276,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -299,9 +299,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -322,9 +322,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -345,9 +345,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -368,9 +368,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -391,9 +391,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -414,9 +414,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -437,9 +437,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -460,9 +460,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -483,9 +483,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -506,9 +506,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img113,
+            // 1: img111,
+            // 2: img112,
+            // 3: img113,
           }
         },
         {
@@ -529,9 +529,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -552,9 +552,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -575,9 +575,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -598,9 +598,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -621,9 +621,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -644,9 +644,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -667,9 +667,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -690,9 +690,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -713,9 +713,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -736,9 +736,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -759,9 +759,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -782,9 +782,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -805,9 +805,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -828,9 +828,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -851,9 +851,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -874,9 +874,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -897,9 +897,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -920,9 +920,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
         {
@@ -943,9 +943,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img111,
-            2: img112,
-            3: img112,
+            // 1: img111,
+            // 2: img112,
+            // 3: img112,
           }
         },
         {
@@ -954,7 +954,7 @@ export const data=[
           description: 'Lorem ipsum dolor sit amet hfghgbdyddvh',
           gender: 'female',
           brand: 'Lataffa',
-          image: img40,
+          // image: img40,
           fragrance_type: 'Perfume',
           scent_type: 'fresh',
           priceCents: 1100000,
@@ -966,9 +966,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            1: img113,
-            2: img114,
-            3: img115,
+            // 1: img113,
+            // 2: img114,
+            // 3: img115,
           }
         },
 
