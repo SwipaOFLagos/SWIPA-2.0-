@@ -1,7 +1,7 @@
 import image1 from "../assets/images/image 13.png"
 import image2 from "../assets/images/image 2.png"
 import image3 from "../assets/images/image 14.png"
-import image4 from "../assets/images/image 19.png"
+import image4 from "../assets/images/image 18.png"
 import image5 from "../assets/images/image 18.png"
 import image6 from "../assets/images/image 17.png"
 import image7 from "../assets/images/image 25.png"
