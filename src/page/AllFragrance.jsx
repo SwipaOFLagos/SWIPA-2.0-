@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "../css/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
-// import { data } from "../Db/ProductDb";
+import { data } from "../Db/ProductDb";
 import Accord from "../components/AccordionM";
 import Pagination from "../components/PaginationM";
-// import { BiSort } from "react-icons/bi";
+import { BiSort } from "react-icons/bi";
 import OffCanvasButton from "../components/FilterbyM";
 
 
