@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCardM";
 import { data } from "../Db/ProductDb";
 import Accord from "../components/AccordionM";
 import Pagination from "../components/PaginationM";
-import { BiSort } from "react-icons/bi";
+// import { BiSort } from "react-icons/bi";
 import OffCanvasButton from "../components/FilterbyM";
 
 
@@ -173,7 +173,7 @@ const AllFragrance = () => {
             </div>
             <div className="m-controls-mobile">
               <OffCanvasButton handleCheckboxChange={handleCheckboxChange} handleAvailabilityChange={handleAvailabilityChange}/>
-              <h3><BiSort />Sort By</h3>
+              {/* <h3><BiSort />Sort By</h3> */}
             </div>
             <div className="m-products">
               {paginate.map((product, index) => (
