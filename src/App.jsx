@@ -12,6 +12,7 @@ import CartItems from './components/CartItems'
 import Order from './page/Order'
 import Newarrival from './page/Newarrival'
 import DetailPage from './page/DetailPage'
+import Login from './page/Login'
 
 
 
@@ -33,12 +34,14 @@ function App() {
         <Route path='/all-fragrances' element={<AllFragance/>}/>        
         <Route path='/cart-empty' element={<CartEmpty/>}/> 
         <Route path='/signup' element={<SignUp/>}/> 
+        <Route path='/login' element={<Login/>}/> 
         <Route path='/customer-details' element={<CustomerDetails/>}/>        
         <Route path='/cart' element={<CartItems/>}/>        
         <Route path='/order' element={<Order/>}/>        
         <Route path='/new-arrivals' element={<Newarrival/>}/>        
         <Route path='/detail' element={<DetailPage/>}/>        
       </Routes>
+      
     </Router>
     </>
   )

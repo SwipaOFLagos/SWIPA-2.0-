@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     const url = "https://blogg-api-v1.onrender.com/register";
 
-    if (!name || !email || !password) {
+    if (!email || !password) {
       console.log("enter all fields....")
       return toast.error("Enter all fields");
     }
@@ -47,7 +47,6 @@ const Login = () => {
       
       setLoading(true);
     const { data } = await axios.post( url,{
-      username: name,
       email,
       password,
     });
@@ -58,7 +57,7 @@ const Login = () => {
       setLoading(false);
       // redirect user to login
       setTimeout(()=>{
-          navigate("/login")
+          navigate("/")
       }, 5000)
     }else{
       toast.error("Registration failed")
@@ -69,8 +68,6 @@ const Login = () => {
     toast.error(error)
   }
   };
-
-
 
   return (
           <div>
