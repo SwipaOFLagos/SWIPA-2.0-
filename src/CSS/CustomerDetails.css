@@ -363,7 +363,7 @@ input[type="radio"]{
     .plus{
         padding-right: 10px;
     } 
-    .plus img{
+    .plus  {
         width: 2.5rem;
         height: 2rem;
     }

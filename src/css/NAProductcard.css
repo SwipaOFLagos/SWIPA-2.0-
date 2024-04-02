@@ -41,7 +41,8 @@
 }
 .pagination{
     --bs-pagination-focus-box-shadow:none !important;
-    margin-left: 8rem !important;
+    margin-top:1rem !important;
+    margin-left: 3rem !important;
     /* border: 1px solid red; */
 }
 
@@ -66,7 +67,7 @@
     }
     .pagination{
         --bs-pagination-focus-box-shadow:none !important;
-        margin-left: 20rem !important;
+        margin-left: 10rem !important;
     }
 }
 
