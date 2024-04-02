@@ -6,6 +6,7 @@ import Accord from "../components/AccordionM";
 import Pagination from "../components/PaginationM";
 import { BiSort } from "react-icons/bi";
 import OffCanvasButton from "../components/FilterbyM";
+import Breadcrumbs from "../components/NABreadcCumbs";
 
 
 
@@ -88,9 +89,9 @@ const AllFragrance = () => {
         // Filter by availability
         if (selectedAvailability !== null) {
         if (selectedAvailability === 'true') {
-            filteredProducts = filteredProducts.filter(product => product.availability === true);
+            filteredProducts = filteredProducts.filter(product => product.isavailability === true);
         } else {
-            filteredProducts = filteredProducts.filter(product => product.availability === false);
+            filteredProducts = filteredProducts.filter(product => product.isavailability === false);
         }
         }
 
@@ -148,7 +149,6 @@ const AllFragrance = () => {
         <div className="m-main">
           <div className="m-title">
             <div className="title-left">
-              <div className="breadscrumb-m">Home <span className="gt">&gt;</span> All Featured Perfumes</div>
               <h4>All Featured Fragrance</h4>
                 <p>Showing {indexOfFirstProduct+1} - {indexOfLastProduct} of {currentProducts.length} Products</p>
 

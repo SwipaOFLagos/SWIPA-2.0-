@@ -13,8 +13,8 @@ import img12 from '../assets/images/6.png'
 import img13 from '../assets/images/7.png'
 import img14 from '../assets/images/837b18453a99449eb28061f0cf884aa8.png'
 import img15 from '../assets/images/ab584ce252c38550bbe229728f3cae9f.png'
-import img16 from'../assets/images/Asad-Lattafa-Perfume-Skit-Store.webp'
-import img17 from '../assets/images/Asad-Lattafa-Perfume-Skit-Store.webp'
+import img16 from '../assets/images/Asad-Lattafa-Perfume-Skit-Store.webp'
+import img17 from '../assets/images/burberry-weekend-women-edp-100ml-perfume-philippines-best-price.jpg'
 import img18 from '../assets/images/c8145f2b7df9c2ec4c039cd5c4ac27c3.png'
 import img19 from '../assets/images/d196981c714866bdaabd4a0c60483e97.png'
 import img20 from '../assets/images/d252dcfaa6adea82c5762e035b318808.png'
@@ -36,7 +36,7 @@ import img32 from '../assets/images/image 15.png'
 import img33 from '../assets/images/image 16.png'
 import img34 from '../assets/images/image 17.png'
 import img35 from '../assets/images/image 18.png'
-// import img36 from '../assets/images/image 19.png'
+import img36 from '../assets/images/image 15.png'
 import img37 from '../assets/images/image 21.png'
 import img38 from '../assets/images/image 22.png'
 import img39 from '../assets/images/image 25.png'
@@ -187,7 +187,7 @@ export const data=[
           name: 'Vitton',
           description: 'Lorem ipsum dolor sit amet ',
           gender: 'female',
-          brand: 'Calvin Klein',
+          brand: 'Vitton',
           image: img6,
           fragrance_type: 'Eau De Parfum',
           scent_type: 'Lemon',
@@ -969,6 +969,7 @@ export const data=[
           gender: 'male',
           brand: 'Dior',
           // image: img36,
+          image: img36,
           fragrance_type: 'eau de cologne',
           scent_type: 'Citirus',
           priceCents: 890000,
