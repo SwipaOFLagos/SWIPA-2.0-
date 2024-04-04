@@ -7,7 +7,7 @@ import "../css/NAProductcard.css"
 import BreadCrumb from "../components/NABreadcCumbs"
 import NewAccordion from '../components/NAAccordion';
 import Mydropdown1, { Mydropdown2 } from '../components/NADropdown';
-import { data } from "../db/Perfumedb"
+import { data } from "../Db/Perfumedb"
 import ProductCard from '../components/NAProductCard';
 
 
@@ -248,7 +248,7 @@ const Newarrival = () => {
         </div>
 
         {/* Desktop and Tablet products div */}
-        <div className="arrival-products-div-desk d-flex justify-content-between flex-wrap gap-3">
+        <div className="arrival-products-div-desk d-flex flex-wrap gap-3">
           {paginate.map((product, index) => {
             return (
               <div className=" d-none d-md-none d-lg-block" key={index}>

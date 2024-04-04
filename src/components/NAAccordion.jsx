@@ -5,7 +5,7 @@ import "../css/NAAccordion.css"
 import searchEye from "../assets/images/Vector search.png"
 // import { Alphabets } from "../components/NAAlphabetsCard"
 import "../css/NACheckbox.css"
-import { data } from "../db/Perfumedb"
+import { data } from "../Db/Perfumedb"
 import "../css/NAAlphabets.css"
 
 
@@ -61,7 +61,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="1">
+      <Accordion.Item eventKey="1" alwaysOpen>
         <Accordion.Header>Brand</Accordion.Header>
         <Accordion.Body>
           <div className='b-div'>
@@ -107,7 +107,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="2">
+      <Accordion.Item eventKey="2" alwaysOpen>
         <Accordion.Header>Fragrance Type</Accordion.Header>
         <Accordion.Body className="checked-div2 ms-3">
           {fragrants.map((fragrance, index) => (
