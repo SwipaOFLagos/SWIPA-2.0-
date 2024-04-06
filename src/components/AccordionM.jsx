@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import "../css/AccordionM.css";
 // import "../csst/AccordionM.css";
 import { IoSearch } from "react-icons/io5";
-import {data} from '../db/ProductDb'
+import {data} from '../Db/ProductDb'
 
 
 const Accord = ({handleCheckboxChange, handleAvailabilityChange}) => {

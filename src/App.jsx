@@ -33,7 +33,7 @@ function App() {
     <Router>
     <Menu/>
     <SideNav/>
-    {/* <Breadcrumbs/>   */}
+    <Breadcrumbs/>  
     <ToastContainer/>
       <Routes >
         <Route path='/' element={<Home/>}/>
