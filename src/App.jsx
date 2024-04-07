@@ -5,7 +5,7 @@ import AllFragance from './page/AllFragrance'
 import Menu from './components/NavBar'
 import SideNav from './components/SideNav'
 import CartEmpty from './page/Chart'
-// import { ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import SignUp from './page/SignUp'
 import CustomerDetails from './components/CustomerDetails'
 import CartItems from './components/CartItems'
@@ -27,7 +27,7 @@ function App() {
     <Router>
     <Menu/>
     <SideNav/>
-    {/* <ToastContainer/> */}
+    <ToastContainer/>
       <Routes >
         <Route path='/' element={<Home/>}/>
         <Route path='/all-fragrances' element={<AllFragance/>}/>        
