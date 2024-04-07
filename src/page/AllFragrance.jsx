@@ -145,7 +145,6 @@ const AllFragrance = () => {
   return (
     <>
       <div className="m-section">
-        {/* <header className="m-header">BY PEACE</header> */}
         <div className="m-main">
           <div className="m-title">
             <div className="title-left">
