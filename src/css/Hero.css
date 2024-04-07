@@ -66,7 +66,7 @@
   background-color: rgb(33, 29, 29);
 }
 .btn-mobile {
-  display: none !important;
+  /* display: none !important; */
 }
 [data-bs-target] {
   border: 2px solid white !important;
@@ -128,15 +128,15 @@
     display: none !important;
   } */
   .btn-mobile {
-    display: block !important;
-    width: 140px !important;
-    height: 40px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    margin-left: -3rem !important;
+    /* display: block !important; */
+    /* width: 140px !important; */
+    /* height: 40px; */
+    /* background-color: black; */
+    /* color: white; */
+    /* border: none; */
+    /* border-radius: 10px; */
+    /* font-weight: 600; */
+    /* margin-left: -3rem !important; */
   }
   .btn-mobile:hover {
     background-color: rgb(74, 74, 74);

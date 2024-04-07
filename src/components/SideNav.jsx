@@ -8,9 +8,10 @@ import Searchi from "../assets/icons/Vector (5).png";
 import Humani from "../assets/icons/person.png";
 import Carti from "../assets/icons/cart.png";
 import SearchB from "../assets/icons/Vector (searchb).png";
-import HumanB from "../assets/icons/person.png";
-import CartB from "../assets/icons/cart.png";
+import HumanB from "../assets/icons/humprofile.png";
+import CartB from "../assets/icons/blackcart.png";
 import FragLogo from "../assets/images/Frame 579.png";
+import { Link } from "react-router-dom";
 
 function SideNav() {
   const [show, setShow] = useState(false);
@@ -20,12 +21,10 @@ function SideNav() {
 
   return (
     <>
-      <div className="off-body">
-        <div className="upNav" style={{ color: "white" }}>
+      <div className="off-body sticky-top">
+        <div className="upNav " style={{ color: "white" }}>
           <div className="left-nav">
-            {/* <Button variant="" onClick={handleShow} className='off-head1 d-flex d-lg-none'> */}
             <img src={hamburger} alt="" onClick={handleShow} />
-            {/* </Button> */}
 
             <div className="logs">
               <img src={Logo} alt="" className="logoimg" />
@@ -57,29 +56,29 @@ function SideNav() {
           <Offcanvas.Body className="off-main">
             <div className="">
               <ul className="first-li">
-                <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>Home</li>
-                </a>
+                </Link>
 
-                <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>All Fragrance</li>
-                </a>
+                </Link>
 
-                <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>All Brands</li>
-                </a>
+                </Link>
 
-                <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>New Arrival</li>
-                </a>
+                </Link>
 
-                <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>Blogs</li>
-                </a>
+                </Link>
 
-                <a href="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>Contact Us</li>
-                </a>
+                </Link>
               </ul>
             </div>
 
@@ -87,33 +86,33 @@ function SideNav() {
 
             <div>
               <ul className="last-li">
-                <a
-                  href="/crew"
+                <Link
+                  to="/"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   <li>My Account</li>
-                </a>
+                </Link>
 
-                <a
-                  href="/technology"
+                <Link
+                  to="/"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   <li>Help</li>
-                </a>
+                </Link>
 
-                <a
-                  href="/technology"
+                <Link
+                  to="/"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   <li>FAG</li>
-                </a>
+                </Link>
 
-                <a
-                  href="/technology"
+                <Link
+                  to="/technology"
                   style={{ textDecoration: "none", color: "white" }}
                 >
                   <li>Shipping Information</li>
-                </a>
+                </Link>
               </ul>
             </div>
           </Offcanvas.Body>
