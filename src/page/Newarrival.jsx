@@ -248,7 +248,7 @@ const Newarrival = () => {
         </div>
 
         {/* Desktop and Tablet products div */}
-        <div className="arrival-products-div-desk d-flex justify-content-between flex-wrap gap-3">
+        <div className="arrival-products-div-desk d-flex flex-wrap gap-3">
           {paginate.map((product, index) => {
             return (
               <div className=" d-none d-md-none d-lg-block" key={index}>

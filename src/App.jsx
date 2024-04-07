@@ -13,6 +13,7 @@ import Order from './page/Order'
 import Newarrival from './page/Newarrival'
 import DetailPage from './page/DetailPage'
 import Login from './page/Login'
+import Breadcrumbs from './components/NABreadcCumbs'
 
 
 
@@ -29,7 +30,7 @@ function App() {
     <Router>
     <Menu/>
     <SideNav/>
-    {/* <Breadcrumbs/>   */}
+    <Breadcrumbs/>  
     <ToastContainer/>
       <Routes >
         <Route path='/' element={<Home/>}/>

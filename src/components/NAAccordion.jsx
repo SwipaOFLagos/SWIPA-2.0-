@@ -61,7 +61,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="1">
+      <Accordion.Item eventKey="1" alwaysOpen>
         <Accordion.Header>Brand</Accordion.Header>
         <Accordion.Body>
           <div className='b-div'>
@@ -107,7 +107,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="2">
+      <Accordion.Item eventKey="2" alwaysOpen>
         <Accordion.Header>Fragrance Type</Accordion.Header>
         <Accordion.Body className="checked-div2 ms-3">
           {fragrants.map((fragrance, index) => (
