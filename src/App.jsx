@@ -16,12 +16,7 @@ import Login from './page/Login'
 import Breadcrumbs from './components/NABreadcCumbs'
 
 
-
-
 // WARNING: Do Not change anything in this page.
-
-
-    
 
 function App() {
 
@@ -43,8 +38,7 @@ function App() {
         <Route path='/order' element={<Order/>}/>        
         <Route path='/new-arrivals' element={<Newarrival/>}/>        
         <Route path='/detail/:productId' element={<DetailPage/>}/>        
-      </Routes>
-      
+      </Routes>  
     </Router>
     </>
   )
