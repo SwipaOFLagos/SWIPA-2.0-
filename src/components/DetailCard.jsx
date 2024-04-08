@@ -29,7 +29,7 @@ const DetailCard = ({product}) => {
     }
   return (
    <>
-    <div className='productDetail'>
+    <div className='productDetail border border-primary'>
         <div className="productCont">
         <div className="productImg">
             <div className='selectImg'>
@@ -44,7 +44,7 @@ const DetailCard = ({product}) => {
                 </div>
             </div>
             <div className='clickedImg'>
-                <img src={selectedImage}/>
+                <img src={selectedImage} className={selectedImage === product?.imageUrl.one ? 'selected' : ''}/>
             </div>
         </div>
         <div className="productInfo p-3">

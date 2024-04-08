@@ -1,4 +1,4 @@
-// import React,  { useEffect, useState}from 'react'
+import React from 'react'
 import DetailCard from '../components/DetailCard'
 import { data } from '../Db/ProductDb'
 import Accordions from '../components/AccordionG';
@@ -9,22 +9,21 @@ import '../css/DetailPage.css'
 
 const DetailPage = () => {
    
-    // const { productId } = useParams()
+    const { productId } = useParams()
 
-    const productG = data.find((p) => p._id )
-    // === parseInt(productId)
+    const productG = data.find((p) => p._id === parseInt(productId))
 return(
-    <div className="all-details p-4">
+    <div className="all-details p-4 d-flex flex-column justify-content-center">
        <div className='mb-4'>
        <DetailCard product={productG}/>
        </div>
        
 <div className='gaccrel d-flex  justify-content-evenly flex-column flex-lg-row '>
 <div className='row d-flex  justify-content-between'>
-    <Accordions height='70%' className='' product={productG}/>
+    <Accordions className='' product={productG}/>
     
     <div className="d-lg-block d-none">
-    <YouTube height='30%'/>
+    <YouTube/>
     </div>
   
 </div>

@@ -11,7 +11,7 @@ const RelatedProd = ({productG}) => {
 
   let brand = productG.brand
   return (
-    <div className='rpB mt-lg-4 mb-4 p-2'>
+    <div className='rpB mt-lg-4 mb-4 p-2 border border-success' >
       
           <div >
             {/* <h1>{productG.brand}</h1> */}

@@ -3,7 +3,7 @@ import '../css/YouTube.css';
 import { Container } from 'react-bootstrap';
 const YouTube = () => {
     return (
-        <div className='youtubeG' >
+        <div className='youtubeG border border-danger' >
             <Container className=''>
             <h3>Watch Our Reviews</h3>
             <div className="gvideo ratio ratio-16x9">

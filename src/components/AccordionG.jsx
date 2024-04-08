@@ -4,9 +4,10 @@ import '../css/AccordionG.css'
 
 function Accordions({product}) {
   return (
-    <div className="accordionG ">
+    <div className="accordionG border border-primary">
+        <div className='accG'>
         <h3>Product Details</h3>
-        <Accordion defaultActiveKey="0" alwaysOpen className='border border-0'>
+        <Accordion defaultActiveKey="0" alwaysOpen className='accG border border-0'>
       <Accordion.Item eventKey="0" >
         <div className="border-top border-2">
         <Accordion.Header ><span style={{fontSize:'24px', fontWeight:'500'}}>About The Product</span></Accordion.Header>
@@ -48,6 +49,7 @@ function Accordions({product}) {
         </div>
       </Accordion.Item>
     </Accordion>
+        </div>
     </div>
   );
 }
