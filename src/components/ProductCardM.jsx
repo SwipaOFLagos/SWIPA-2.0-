@@ -1,10 +1,12 @@
 import React from 'react'
 import '../css/ProductM.css'
+import { Link } from 'react-router-dom'
 
 const ProductCard = ({product, index}) => {
   const {name,description,priceCents, image, isavailability} = product
   let price = (priceCents/100).toLocaleString(undefined, {minimumFractionDigits: 2})
   return (
+    <Link to={`/detail/${product._id}`}>
     <div key={index}>
       <div className='m-card-Container' key={index}>
         <div className='m-image'>
@@ -22,6 +24,7 @@ const ProductCard = ({product, index}) => {
         </div>
       </div>
     </div>
+    </Link>
   )
 }
 

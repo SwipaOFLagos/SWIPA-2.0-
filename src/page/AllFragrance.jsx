@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCardM";
 import { data } from "../Db/ProductDb";
 import Accord from "../components/AccordionM";
 import Pagination from "../components/PaginationM";
-// import { BiSort } from "react-icons/bi";
+import { BiSort } from "react-icons/bi";
 import OffCanvasButton from "../components/FilterbyM";
 import Breadcrumbs from "../components/NABreadcCumbs";
 
@@ -169,7 +169,6 @@ const AllFragrance = () => {
 
   return (
     <>
-      <Breadcrumbs />
       <div className="m-section">
         <div className="m-main">
           <div className="m-title">

@@ -4,10 +4,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../css/Nav.css"
 import Logo from "../assets/images/Frame 579.png"
-import Profileimg from "../assets/icons/person.png"
-import Cartimg from "../assets/icons/cart.png"
+import Profileimg from "../assets/icons/humprofile.png"
+import Cartimg from "../assets/icons/blackcart.png"
 import Seicon from "../assets/icons/Vector (5).png"
 import { Link } from 'react-router-dom';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 
 
@@ -46,10 +48,15 @@ function Menu() {
                <img src={Profileimg} alt="" />
               </div>
              <div className='select-container'>
-              <select className='select-box'>
-                 <option value="">My Account</option>
-                 <option value="first">Sign Up</option>
-              </select>
+            <Dropdown>
+               <Dropdown.Toggle variant="light" id="dropdown-basic">
+                  My Account
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1" className='first-drop'>Sign Up</Dropdown.Item>
+              <Dropdown.Item href="#/action-1">My Account</Dropdown.Item>
+              </Dropdown.Menu>
+           </Dropdown>
              </div>
         </div>
 

@@ -25,7 +25,7 @@ import img21 from '../assets/images/Dolce_Gabbana_K_EDP_M_001.webp'
 import img22 from '../assets/images/e7b3e44bccb2292966b30f44327bbfc5.png'
 import img23 from '../assets/images/f9444b05ccf2615d377621e9554f78f3.png'
 import img24 from '../assets/images/fragrance_world_aventos_green_edp_100ml_1.jpeg'
-import img25 from '../assets/images/Frame 1171276207.png'
+import img25 from '../assets/images/Signindan.png'
 import img26 from '../assets/images/Frame 1171276214.png'
 import img27 from '../assets/images/Frame 1171276219.png'
 import img28 from '../assets/images/Frame 1171276220.png'
@@ -969,6 +969,7 @@ export const data=[
           gender: 'male',
           brand: 'Dior',
           // image: img36,
+          image: img36,
           fragrance_type: 'eau de cologne',
           scent_type: 'Citirus',
           priceCents: 890000,
