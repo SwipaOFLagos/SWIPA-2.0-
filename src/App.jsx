@@ -5,14 +5,13 @@ import AllFragance from './page/AllFragrance'
 import Menu from './components/NavBar'
 import SideNav from './components/SideNav'
 import CartEmpty from './page/Chart'
-import { ToastContainer } from 'react-toastify'
+// import { ToastContainer } from 'react-toastify'
 import SignUp from './page/SignUp'
 import CustomerDetails from './components/CustomerDetails'
 import CartItems from './components/CartItems'
 import Order from './page/Order'
 import Newarrival from './page/Newarrival'
-import Breadcrumbs from './components/NABreadcCumbs'
-// import DetailPage from './pages/DetailPage'
+import DetailPage from './page/DetailPage'
 
 
 
@@ -33,8 +32,7 @@ function App() {
     <Router>
     <Menu/>
     <SideNav/>
-    <Breadcrumbs/>  
-    <ToastContainer/>
+    {/* <ToastContainer/> */}
       <Routes >
         <Route path='/' element={<Home/>}/>
         <Route path='/all-fragrances' element={<AllFragance/>}/>        
@@ -44,8 +42,7 @@ function App() {
         <Route path='/cart' element={<CartItems/>}/>        
         <Route path='/order' element={<Order/>}/>        
         <Route path='/new-arrivals' element={<Newarrival/>}/>        
-
-        {/* <Route path='/detail' element={<DetailPage/>}/>         */}
+        <Route path='/detail' element={<DetailPage/>}/>        
       </Routes>
     </Router>
     </>

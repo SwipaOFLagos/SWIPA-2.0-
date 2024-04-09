@@ -18,6 +18,9 @@ import img17 from '../assets/images/burberry-weekend-women-edp-100ml-perfume-phi
 import img18 from '../assets/images/c8145f2b7df9c2ec4c039cd5c4ac27c3.png'
 import img19 from '../assets/images/d196981c714866bdaabd4a0c60483e97.png'
 import img20 from '../assets/images/d252dcfaa6adea82c5762e035b318808.png'
+// import img111 from  '../assets/images/image34.png'
+// import img112 from  '../assets/images/img111.png'
+// import img113 from '../assets/images/img112.png'
 import img21 from '../assets/images/Dolce_Gabbana_K_EDP_M_001.webp'
 import img22 from '../assets/images/e7b3e44bccb2292966b30f44327bbfc5.png'
 import img23 from '../assets/images/f9444b05ccf2615d377621e9554f78f3.png'
@@ -38,19 +41,12 @@ import img37 from '../assets/images/image 21.png'
 import img38 from '../assets/images/image 22.png'
 import img39 from '../assets/images/image 25.png'
 import img40 from '../assets/images/image 29.png'
-import img111 from '../assets/images/image 15.png'
-import img112 from '../assets/images/image 15.png'
-
-import img113 from '../assets/images/image 15.png'
-
-// import img112 from '../assets/images/img111.png'
-// import img113 from '../assets/images/img112.png'
+import img111 from '../assets/images/image111.png'
+import img112 from '../assets/images/img111.png'
+import img113 from '../assets/images/img112.png'
 import img114 from '../assets/images/image 38.png'
 import img115 from '../assets/images/image 38.png'
 import img116 from '../assets/images/image 38.png'
-
-
-
 
 
 export const data=[
@@ -101,9 +97,11 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
+
+           
           }
         },
         {
@@ -153,9 +151,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -179,9 +177,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -205,9 +203,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -231,9 +229,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -257,9 +255,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -283,9 +281,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -309,9 +307,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -335,9 +333,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -361,9 +359,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img112,
           }
         },
         {
@@ -387,9 +385,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -413,9 +411,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -439,9 +437,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -465,9 +463,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -491,9 +489,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: true,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -517,9 +515,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -543,9 +541,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -569,9 +567,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img113,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -595,9 +593,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -621,9 +619,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -647,9 +645,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -673,9 +671,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -699,9 +697,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -725,9 +723,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -751,9 +749,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -777,9 +775,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -803,9 +801,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -829,9 +827,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -855,9 +853,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -881,9 +879,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -907,9 +905,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -933,9 +931,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -959,9 +957,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -970,7 +968,7 @@ export const data=[
           description: 'Lorem ipsum dolor sit amet ',
           gender: 'male',
           brand: 'Dior',
-          image: img36,
+          // image: img36,
           fragrance_type: 'eau de cologne',
           scent_type: 'Citirus',
           priceCents: 890000,
@@ -985,9 +983,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -1011,9 +1009,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -1037,9 +1035,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
         {
@@ -1063,9 +1061,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img111,
-            // 2: img112,
-            // 3: img112,
+            one: img111,
+            two: img112,
+            three: img113,
           }
         },
         {
@@ -1073,10 +1071,10 @@ export const data=[
           name: 'Addidas',
           description: 'Lorem ipsum dolor sit amet ',
           gender: 'female',
-          brand: 'Lataffa',
-          // image: img40,
-          fragrance_type: 'Perfume',
-          scent_type: 'fresh',
+          brand: 'Addidas',
+          image: img40,
+          fragrance_type: 'deodorant',
+          scent_type: 'Lemon',
           priceCents: 1100000,
           size:  [
             2.3,
@@ -1089,9 +1087,9 @@ export const data=[
           refund_policy: 'NO REFUND',
           isnew: false,
           imageUrl: {
-            // 1: img113,
-            // 2: img114,
-            // 3: img115,
+            one: img114,
+            two: img115,
+            three: img116,
           }
         },
 
