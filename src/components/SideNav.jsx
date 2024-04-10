@@ -33,7 +33,7 @@ function SideNav() {
 
           <div className="right-icons">
             <img src={Searchi} alt="" />
-            <img src={Humani} alt="" />
+            {/* <img src={Humani} alt="" /> */}
             <Link to="/cart">
             <img src={Carti} alt="" />
             </Link>
