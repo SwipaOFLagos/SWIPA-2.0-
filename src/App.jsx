@@ -23,9 +23,9 @@ function App() {
   return (
     <>
     <Router>
-    <Menu/>
-    <SideNav/>
-    <Breadcrumbs/>  
+    {/* <Menu/> */}
+    {/* <SideNav/> */}
+    {/* <Breadcrumbs/>   */}
     <ToastContainer/>
       <Routes >
         <Route path='/' element={<Home/>}/>
