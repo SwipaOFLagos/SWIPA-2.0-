@@ -64,10 +64,6 @@ function SideNav() {
                   <li>All Fragrance</li>
                 </Link>
 
-                {/* <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                  <li>All Brands</li>
-                </Link> */}
-
                 <Link to="/new-arrivals" style={{ textDecoration: "none", color: "white" }}>
                   <li>New Arrival</li>
                 </Link>
