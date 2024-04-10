@@ -26,15 +26,17 @@ function SideNav() {
           <div className="left-nav">
             <img src={hamburger} alt="" onClick={handleShow} />
 
-            <div className="logs">
+            <Link to="/" className="logs">
               <img src={Logo} alt="" className="logoimg" />
-            </div>
+            </Link>
           </div>
 
           <div className="right-icons">
             <img src={Searchi} alt="" />
             <img src={Humani} alt="" />
+            <Link to="/cart">
             <img src={Carti} alt="" />
+            </Link>
           </div>
         </div>
 
