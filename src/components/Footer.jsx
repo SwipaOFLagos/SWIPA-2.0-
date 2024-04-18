@@ -17,8 +17,19 @@ const Footer = () => {
                 <h3>
                     <span>F</span>RAGRANCE<span>H</span>UB
                 </h3>
-                <p>FragranceHub is an e-commerce platform specializing in selling perfumes. FRAGRANCEHUB offer a wide range of fragrances from various brands, catering to different preferences and budgets.</p>
+                <p>FragranceHub is an e-commerce platform specializing in selling perfumes. FragranceHub offer a wide range of fragrances from various brands, catering to different preferences and budgets.</p>
             </div>
+            <div className="footer-news">
+            <div className="footer-nl">
+                <h5>Subscribe to our newsletter</h5>
+                <p>To get update on our latest offers</p>
+            </div>
+           
+            <div className="footer-forms">
+            <input class="form-control p-1" type="email" placeholder="Email Address" id="emailInput"></input>
+            </div>
+            
+        </div>
             <div className="q-links">
                 <ul className='q-link'> <h5>Quick Links</h5>
                     <li>
