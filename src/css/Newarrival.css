@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+.arrival-top-div-mob{
+    border: 1px solid rgb(236, 233, 233);
+    width: 100%;
+}
+.arrival-products-div-mob{
+    width: 100%;
+    /* border: 1px solid rgb(218, 40, 40) !important; */
+}
+
+.card {
+        width: 11.5rem !important;
+}
+.select-wrapper select{
+    width: 7rem;
+}
+.select-wrapper option{
+    font-size: 10px;
+}
+.arrival-filter-div{
+    width: 13rem;
+    height:calc(70vh - 100px);
+    border: 1px solid rgb(176, 172, 172) !important;
+    border-radius: 5px !important;
+   
+
+}
+.btn{
+    margin: 0 !important;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+.arrival-desk-div{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    /* border: 1px solid red!important; */
+}
+.select-wrapper option{
+    font-size: 8px;
+}
+.arrival-products-div-mob{
+    width: 100%;
+}
+.arrival-filter-div{
+    width: 18rem;
+    height:calc(70vh - 100px);
+    border: 1px solid rgb(228, 222, 222) !important;
+    border-radius: 10px !important;
+   
+
+}
+}
+@media (min-width: 900px) {
+    .home-div{
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid blue !important;
+    }
+.arrival-desk-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.arrival-main-div{
+    width:90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* border: 1px solid red!important; */
+
+    /* border: 1px solid red !important; */
+}
+.arrival-filter-div{
+    width: 20%;
+    height:calc(110vh - 100px);
+    border: 1px solid rgb(228, 222, 222) !important;
+    border-radius: 10px !important;
+   
+
+}
+.arrival-products-div-desk{
+    width: 72%;
+    /* border: 1px solid rgb(177, 24, 24) !important; */
+    /* height: 100vh; */
+}
+
+.card {
+    width: 16.5rem !important;
+}
+.arrival-top-div-desk{
+    width: 1,238px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* top right bottom left */
+    margin: auto;
+    margin: 0px 110px 50px 99px 
+}
+}
+/* .breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    padding: 0 5px;
+} */
+/* .breadcrumb-item {
+    + .breadcrumb-item {
+  
+      &::before {
+        float: left; 
+        
+        
+        content:"*>";
+      }
+    }
+  
+    &.active {
+      color: black;
+    }
+  } */

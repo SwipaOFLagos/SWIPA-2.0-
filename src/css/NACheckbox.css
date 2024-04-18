@@ -1,0 +1,209 @@
+.form-check-input:checked {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.form-check-input {
+    box-shadow: none !important;
+    border-color: rgba(207, 203, 203, 0.783) !important;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0 !important;
+}
+
+.checked-div {
+    width: 10rem;
+    height: 95px;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 5px;
+}
+
+.checked-div2 {
+    width: 10rem;
+    height: 180px;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 5px;
+}
+
+.checked-div3 {
+    width: 10rem;
+    height: 200px;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 5px;
+}
+
+.checked-div5 {
+    width: 10rem;
+    height: 70px;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 5px;
+}
+
+.checked-div6 {
+    width: 11rem;
+    height: 500px;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.arrival-search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    /* position: absolute; */
+}
+
+input {
+    border: 1px solid black !important;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.arrival-search-bar {
+    width: 7rem;
+    border-radius: none !important;
+}
+
+[type=search] {
+    --webkit-appearance: searchfield !important;
+    outline-offset: 0px !important;
+}
+
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+    /* Gender */
+    .checked-div {
+        width: 15rem;
+        height: 95px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    /* Fragrance Type */
+    .checked-div2 {
+        width: 15rem;
+        height: 180px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    /* Scent type */
+    .checked-div3 {
+        width: 15rem;
+        height: 200px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    /* Availability */
+    .checked-div5 {
+        width: 15rem;
+        height: 70px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    /* Brand */
+    .checked-div6 {
+        width: 14rem;
+        height: 490px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    .arrival-search {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+
+    input {
+        border: 1px solid black !important;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .arrival-search-bar {
+        width: 10rem;
+        border-radius: none !important;
+    }
+}
+
+@media (min-width: 900px) {
+    .form-check-input:checked {
+        background-color: black !important;
+        border-color: black !important;
+    }
+
+    .form-check-input {
+        box-shadow: none !important;
+        border-color: rgba(207, 203, 203, 0.783) !important;
+    }
+
+    .form-check-input[type=checkbox] {
+        border-radius: 0 !important;
+    }
+
+    .checked-div {
+        width: 13rem;
+        height: 95px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    .checked-div2 {
+        width: 13rem;
+        height: 180px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    .checked-div3 {
+        width: 13rem;
+        height: 200px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    .checked-div5 {
+        width: 13rem;
+        height: 70px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    .checked-div6 {
+        width: 14rem;
+        height: 350px;
+        border: 1px solid rgb(196, 192, 192);
+        border-radius: 5px;
+    }
+
+    /* .arrival-search {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    } */
+
+    input {
+        border: 1px solid black !important;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .arrival-search-bar {
+        width: 10rem;
+        border-radius: none !important;
+    }
+
+    [type=search] {
+        --webkit-appearance: searchfield !important;
+        outline-offset: 0px !important;
+    }
+}

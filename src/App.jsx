@@ -1,20 +1,45 @@
-import React from 'react';
-import './App.css';
-import Footer from './components/Footer';
-
 import './App.css'
-import AllFragance from './Pages/AllFragance'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home  from './page/Home'
+import AllFragance from './page/AllFragrance'
+import Menu from './components/NavBar'
+import SideNav from './components/SideNav'
+import CartEmpty from './page/Chart'
+import { ToastContainer } from 'react-toastify'
+import SignUp from './page/SignUp'
+import CustomerDetails from './components/CustomerDetails'
+import CartItems from './components/CartItems'
+import Order from './page/Order'
+import Newarrival from './page/Newarrival'
+import DetailPage from './page/DetailPage'
+import Login from './page/Login'
+import Breadcrumbs from './components/NABreadcCumbs'
+
+
+// WARNING: Do Not change anything in this page.
 
 function App() {
 
   return (
     <>
-
-    {/* <h1>Final Project</h1> */}
-    {/* <AllFragance/> */}
-    <Footer/>
-    {/* <h1 className='bg-primary'>Final Project</h1> */}
-      
+    <Router>
+    <Menu/>
+    <SideNav/>
+    {/* <Breadcrumbs/>   */}
+    <ToastContainer/>
+      <Routes >
+        <Route path='/' element={<Home/>}/>
+        <Route path='/all-fragrances' element={<AllFragance/>}/>        
+        <Route path='/cart-empty' element={<CartEmpty/>}/> 
+        <Route path='/signup' element={<SignUp/>}/> 
+        <Route path='/login' element={<Login/>}/> 
+        <Route path='/customer-details' element={<CustomerDetails/>}/>        
+        <Route path='/cart' element={<CartItems/>}/>        
+        <Route path='/order' element={<Order/>}/>        
+        <Route path='/new-arrivals' element={<Newarrival/>}/>        
+        <Route path='/detail/:productId' element={<DetailPage/>}/>        
+      </Routes>  
+    </Router>
     </>
     
   )
