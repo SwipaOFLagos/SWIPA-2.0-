@@ -4,12 +4,11 @@
     border-radius: 4rem;
 } */
 .youtubeG{
-    width:38.3rem !important;
+    width:100% !important;
     height:30rem !important;
-   
 }
 .gvideo{
-    width: 37rem !important;
+    width: 100% !important;
     height: 27rem !important;
 }
 @media (min-width: 768px) and (max-width: 1024px){
@@ -32,6 +31,5 @@
     .gvideo{
         width: 20rem !important;
         height: 24rem !important;
-        border: 1px solid red;
     }
 }   

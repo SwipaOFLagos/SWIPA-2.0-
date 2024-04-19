@@ -1,55 +1,67 @@
-.accordion{
-    --bs-accordion-border-width: none !important;
-    --bs-accordion-border-color: none !important;
-    --bs-accordion-active-color: none !important;
-} 
+.accordion {
+  --bs-accordion-border-width: none !important;
+  --bs-accordion-border-color: none !important;
+  --bs-accordion-active-color: none !important;
+}
 
-.accordion-button{
-    background: none !important;
+.accordion-button {
+  background: none !important;
 }
 .accordion-button::after {
-    background-image: url("../assets/images/ic_sharp-plus.jpg") !important;
-  }
-  
-  .accordion-button:not(.collapsed)::after {
-    background-image: url("../assets/images/ic_outline-minus.jpg") !important;
-  }
-  .accordion-button:focus{
-    outline: none !important;
-    box-shadow: none !important;
-    background: none !important; ;
-  }
- .accordionG{
-  width: 39rem !important;
+  background-image: url("../assets/images/ic_sharp-plus.jpg") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../assets/images/ic_outline-minus.jpg") !important;
+}
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+.accordionG {
+  width: 100% !important;
   max-height: 100% !important;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
- } 
- .detailG{
+}
+.detailG {
   font-size: 1rem;
- }
-
- @media (min-width: 768px) and (max-width: 1024px){
-  .accordionG{
+}
+.accord-header-g{
+  min-height: 80px;
+  display: flex;
+}
+.accordion-body{
+  padding-top:0 !important;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .accordionG {
     display: flex;
-        justify-content: center;
-        align-items: center;
-       width: 47.5rem !important;
-   }
-   .accG{
-    width: 44rem !important;
-   }
-   .detailG{
-    font-size: 1.1rem;
-   }
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
   }
- @media (min-width: 370px) and (max-width: 767px) {
-   .accordionG{
-    width: 23rem !important;
-   }
-   .detailG{
+  .accG {
+    width: 100% !important;
+  }
+  .detailG {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .accord-header-g{
+    min-height: 50px;
+    display: flex;
+  }
+  .accordionG {
+    width: 100% !important;
+  }
+  .accG {
+    width: 100% !important;
+  }
+  .detailG {
     font-size: 0.75rem;
-   }
- }   
-  
+  }
+}
