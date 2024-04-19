@@ -1,3 +1,30 @@
+// import React from 'react'
+// import {data} from "../Db/TestimoniesDB"
+// import TestimoniesCard from './TestimoniesCard'
+
+// const Testimonies = () => {
+//     return (
+//       <div>
+//           <h1>Product Page</h1>
+//           <div className="d-flex justify-content-between flex-wrap gap-4">
+  
+//           {data.map((product) => {
+//               return (
+//                   <div className="" key={product.id}>
+//                       <TestimoniesCard product={product}/>
+//                   </div>
+//               )
+//           })}
+//       </div>
+  
+//       </div>
+//     )
+//   }
+
+//   export default Testimonies
+
+
+
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../css/testimonies.css";

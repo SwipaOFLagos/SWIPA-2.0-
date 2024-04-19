@@ -1,6 +1,6 @@
 .main{
-  width: 100%;
-  height: 400px;
+  width: 100%; /* original is 400 */
+  height: 350px;   
   background-color:#00758E;
   display: flex;
   justify-content: center;
@@ -25,12 +25,13 @@
     display: flex;
     justify-content: space-around;
     padding-top: 40px;
+    gap: 15px;
 
 }
 
 .box {
     width: 360px;
-    height: 215px;
+    height: 182px; /* original is 215  */
     background-color: white;
     border: 1px solid white;
     border-radius: 5px;
@@ -46,6 +47,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
     flex-direction: column;
     padding-top: 15px;
   }
@@ -122,12 +126,14 @@
 .pics-celeb{
   width: 100%;
   height: 48px;
+  margin-top: 10px;
   /* border: 1px solid; */
   display: flex;
   
 }
 .pic-text{
   width: 60%;
+  padding-left: 7px;
 }
 
 .star{
@@ -177,7 +183,7 @@
   }
   .box-container-mobile{
      height: 40vh;
-     width: 90%;
+     width: 100%;
      display: flex;
      justify-content: space-around;
      gap: 10px;
@@ -192,7 +198,7 @@
   }
   
   .box {
-   height: 20vh;
+   height: 50%;
    display: flex;
    /* justify-content: space-between; */
    flex-direction: column;
@@ -209,20 +215,24 @@
   
   
     .para{
-      height: 60px;
+      height: 20px;
       font-size: 0.5rem;
-      font-weight: 700;
+      font-weight: 500;
       width: 100%;
       padding-left: 20px;
+      margin-top: 30px;
       display: flex;
-      margin-top: 10px;
+      justify-content: center;
+      text-align: center;
+      
       /* text-align: center; */
     }
     
   
     .icon{
       /* border: 1px solid red; */
-      height: 10px;
+      height: 5px;
+      padding-top: 5px;
      /* padding-top: 15px; */
     }
    
@@ -253,7 +263,7 @@
    /* height: 100%; */
    /* width: 100%; */
    /* padding-bottom: 7px; */
-   border-radius: 100%;
+   border-radius: 50%;
   }
   
   .pic-story{

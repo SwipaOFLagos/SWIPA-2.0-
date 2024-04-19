@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { data } from "../db/Perfumedb"
+import { data } from "../Db/ProductDb"
 import ProductCard from "./NAProductCard";
 import ForwardArrowImg from "../assets/images/Vector.png"
 import BackwardArrowImg from "../assets/images/Vector back.png"
