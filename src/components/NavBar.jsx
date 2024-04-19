@@ -53,7 +53,16 @@ function Menu() {
                   My Account
               </Dropdown.Toggle>
               <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1" className='first-drop'>Sign Up</Dropdown.Item>
+              <Dropdown.Item href="#/action-1" className='first-drop'>
+                <Link to="/login">
+                Login
+                </Link>
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-1" className='first-drop'>
+                <Link to="/signup">
+                Sign Up
+                </Link>
+              </Dropdown.Item>
               <Dropdown.Item href="#/action-1">My Account</Dropdown.Item>
               </Dropdown.Menu>
            </Dropdown>
@@ -61,8 +70,12 @@ function Menu() {
         </div>
 
         <div className="cart-sec">
+          <Link to="/cart">
           <img src={Cartimg} alt="" />
+          </Link>
+          <Link to="/cart">
           <p>Cart</p>
+          </Link>
         </div>
         </div>
         </div>
@@ -92,7 +105,7 @@ function Menu() {
               <NavDropdown.Item href="#action/3.1">Yves Saint Laurent</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Zaien</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/new-arrival" className='text-white'>New Arrival</Nav.Link>               
+            <Nav.Link href="/new-arrivals" className='text-white'>New Arrival</Nav.Link>               
             <Nav.Link href="/blog" className='text-white'>Blog</Nav.Link>               
             <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>               
           </Nav>

@@ -26,20 +26,22 @@ function SideNav() {
           <div className="left-nav">
             <img src={hamburger} alt="" onClick={handleShow} />
 
-            <div className="logs">
+            <Link to="/" className="logs">
               <img src={Logo} alt="" className="logoimg" />
-            </div>
+            </Link>
           </div>
 
           <div className="right-icons">
             <img src={Searchi} alt="" />
-            <img src={Humani} alt="" />
+            {/* <img src={Humani} alt="" /> */}
+            <Link to="/cart">
             <img src={Carti} alt="" />
+            </Link>
           </div>
         </div>
 
-        <Offcanvas show={show} onHide={handleClose}>
-          <div className="show-header">
+        <Offcanvas className="w-75" show={show} onHide={handleClose}>
+          <div className="show-header ">
             <div className="left-logo">
               <Offcanvas.Header
                 closeButton
@@ -47,11 +49,11 @@ function SideNav() {
               ></Offcanvas.Header>
               <img src={FragLogo} alt="" />
             </div>
-            <div className="li-img">
+            {/* <div className="li-img">
               <img src={SearchB} alt="" />
               <img src={HumanB} alt="" />
               <img src={CartB} alt="" />
-            </div>
+            </div> */}
           </div>
           <Offcanvas.Body className="off-main">
             <div className="">
@@ -60,15 +62,11 @@ function SideNav() {
                   <li>Home</li>
                 </Link>
 
-                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/all-fragrances" style={{ textDecoration: "none", color: "white" }}>
                   <li>All Fragrance</li>
                 </Link>
 
-                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-                  <li>All Brands</li>
-                </Link>
-
-                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                <Link to="/new-arrivals" style={{ textDecoration: "none", color: "white" }}>
                   <li>New Arrival</li>
                 </Link>
 
