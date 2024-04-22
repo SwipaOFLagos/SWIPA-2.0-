@@ -2,7 +2,7 @@ import React,{useEffect, useState} from "react";
 import Accordion from "react-bootstrap/Accordion";
 import "../css/AccordionM.css";
 import { IoSearch } from "react-icons/io5";
-import {data} from '../Db/ProductDb'
+import {data} from '../DB/ProductDb'
 
 
 const Accord = ({handleCheckboxChange, handleAvailabilityChange}) => {
