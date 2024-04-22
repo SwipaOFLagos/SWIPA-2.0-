@@ -39,8 +39,8 @@ function App() {
         <Route path='/new-arrivals' element={<Newarrival/>}/>        
         <Route path='/detail/:productId' element={<DetailPage/>}/>        
       </Routes>  
+      <Footer/>
     </Router>
-    <Footer/>
 
     </>
     
