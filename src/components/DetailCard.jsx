@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../css/DetailCards.css";
 import Star from "../assets/images/Vector star.png";
+import StarHalf from "../assets/icons/icons8-star-half-48.png"
 import Plus from "../assets/images/ic_sharp-plus.png";
 import Minus from "../assets/images/ic_sharp-minus.png";
+import { Link } from "react-router-dom";
 
 const DetailCard = ({ product }) => {
   let price = (product.priceCents / 100).toLocaleString(undefined, {
@@ -27,6 +29,24 @@ const DetailCard = ({ product }) => {
       setCount(count - 1);
     }
   };
+
+  // Calculate star rating
+  // const starRating = Array.from({ length: product.rating }, (_, index) => (
+  //   <img key={index} src={Star} alt="Star" />
+  // ));
+
+   // Calculate star rating
+   const fullStars = Math.floor(product.rating);
+   let halfStar = false;
+              if (product.rating >= 0.1 || product.rating <= 0.9) {
+                halfStar = true;
+              }
+  //  const halfStar = product.rating - fullStars >= 0.5;
+   const starRating = Array.from({ length: fullStars }, (_, index) => (
+     <img key={index} src={Star} alt="Star" />
+   ));
+   if (halfStar) starRating.push(<img key="half" src={StarHalf} alt="Half Star" />);
+
   return (
     <>
       <div className="productDetail ">
@@ -75,14 +95,16 @@ const DetailCard = ({ product }) => {
 
             <div style={{ display: "flex", alignItems: "center" }} className="">
               <div
-                className="imgG d-flex"
-                style={{ width: "5.63rem", justifyContent: "space-between " }}
+                className="imgG d-flex gap-1"
+                style={{ width: "5rem" }}
               >
+                {/* <img src={Star} />
                 <img src={Star} />
                 <img src={Star} />
                 <img src={Star} />
-                <img src={Star} />
-                <img src={Star} />
+                <img src={Star} /> */}
+
+                {starRating}
               </div>
 
               <span
@@ -92,7 +114,7 @@ const DetailCard = ({ product }) => {
                   marginLeft: "1.25rem",
                 }}
               >
-                4.7 (<span style={{ fontSize: "1.13rem" }}>40 Reviews</span>)
+                {product?.rating} (<span style={{ fontSize: "1.13rem" }}>40 Reviews</span>)
               </span>
             </div>
             <p className="my-2" style={{ fontSize: "1.25rem" }}>
@@ -156,7 +178,7 @@ const DetailCard = ({ product }) => {
               </button>
             </div>
 
-            <div className="d-flex">
+            <div className="d-flex gap-2">
               <p style={{ fontSize: "1.25rem" }}>Availability:</p>
               <ul
                 className="d-flex"
@@ -187,12 +209,13 @@ const DetailCard = ({ product }) => {
             </div>
 
             <div className="d-flex flex-column">
-              <Button variant="dark" className="buttonG mb-3">
-                Buy Now
+              {product.isavailability ? <Button variant="dark" className="buttonG mb-3" style={{backgroundColor:"black", fontSize: "20px"}}>Buy Now</Button> : <Button variant="dark" className="buttonG mb-3" style={{backgroundColor: "gray", fontSize: "20px"}} disabled>Sold Out</Button>}
+              
+              <Link to={`/cart/${product._id}`} style={{textDecoration: "none"}} className="">
+              <Button variant="light" className="buttonG  border border-dark" >
+               Add to Cart
               </Button>
-              <Button variant="light" className="buttonG  border border-dark">
-                Add to Cart
-              </Button>
+              </Link>
             </div>
           </div>
         </div>
