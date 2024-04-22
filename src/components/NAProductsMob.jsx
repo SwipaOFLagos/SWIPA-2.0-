@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react';
 import { data } from "../Db/Perfumedb"
 import ProductCard from "./NAProductCard";
 import ForwardArrowImg from "../assets/images/Vector.png"

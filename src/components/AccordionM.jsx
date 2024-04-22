@@ -8,7 +8,7 @@ import {data} from '../Db/ProductDb'
 const Accord = ({handleCheckboxChange, handleAvailabilityChange}) => {
   
   const [search, setSearch] = useState('')
-  console.log(search)
+  // console.log(search)
   //All Gender
   const genderList = Array.from(new Set(data.map((product)=>{
     return product.gender
@@ -27,7 +27,7 @@ const Accord = ({handleCheckboxChange, handleAvailabilityChange}) => {
     return product.scent_type
     }))).sort()
 
-  console.log(genderList);
+  // console.log(genderList);
 
   //Alphabet
   const [inputValue, setInputValue] = useState('');
@@ -173,7 +173,6 @@ const Accord = ({handleCheckboxChange, handleAvailabilityChange}) => {
           </ul>
         </Accordion.Body>
       </Accordion.Item>
-        {/* Other filter options go here */}
       </Accordion>
     </>
   );
