@@ -211,20 +211,21 @@ const Newarrival = () => {
             <span>Showing 1-15 of 500 products</span>
           </div>
 
-          <div className="d-none d-md-none d-lg-block">
+          <div className="d-none d-md-block d-lg-block">
             <span><Mydropdown1 /></span>
           </div>
         </div>
 
       </div>
 
-      <div className="d-flex justify-content-between d-md-flex justify-md--content-between arrival-top-div-mob d-block d-md-block d-lg-none my-3">
+      <div className="d-flex justify-content-between d-md-flex justify-md-content-between arrival-top-div-mob d-block d-md-none d-lg-none my-3">
         <div className="" ><span className='' onClick={handleShow}><span><CiFilter /></span> <b>Filter By </b></span>
           {showFilter && <div className='arrival-filter-div'><NewAccordion handleCheckboxChange={handleCheckboxChange} handleAvailabilityChange={handleAvailabilityChange} /></div>}
         </div>
 
-        <div className=''><span className='me-3' onClick={handleClick} ><span><BiSort /></span> <b>Sort By</b> </span>
-          {showSort && <Mydropdown2 />}</div>
+        <div className='me-3'><span className='' onClick={handleClick} ><span><BiSort /></span> <b>Sort By</b> </span>
+          {showSort && <Mydropdown2 />}
+        </div>
 
       </div>
 
@@ -241,7 +242,7 @@ const Newarrival = () => {
       </div>
 
       <div className='arrival-main-div'>
-        <div className="arrival-filter-div d-none d-md-none d-lg-block me-3">
+        <div className="arrival-filter-div d-none d-md-block d-lg-block me-3">
           <h6 className="ms-3 mt-3 mb-2"><b>Filter By</b></h6>
           <NewAccordion handleCheckboxChange={handleCheckboxChange} handleAvailabilityChange={handleAvailabilityChange} handleFilter={handleFilter}
           />
@@ -251,7 +252,7 @@ const Newarrival = () => {
         <div className="arrival-products-div-desk d-flex flex-wrap gap-3">
           {paginate.map((product, index) => {
             return (
-              <div className=" d-none d-md-none d-lg-block" key={index}>
+              <div className=" d-none d-md-block d-lg-block" key={index}>
                 <ProductCard products={product} />
               </div>
             )
