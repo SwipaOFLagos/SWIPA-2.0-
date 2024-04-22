@@ -192,7 +192,7 @@ const Newarrival = () => {
   const handleAvailabilityChange = (availability) => {
     setSelectedAvailability(availability);
   };
-
+ 
   return (
     <div className="arrival-desk-div">
       <div className='arrival-top-div-desk'>

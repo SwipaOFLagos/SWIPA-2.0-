@@ -1,9 +1,5 @@
-import React, { useState } from 'react'
-<<<<<<< HEAD
+import  { useState } from 'react';
 import { data } from "../Db/Perfumedb"
-=======
-// import { data } from "../db/Perfumedb"
->>>>>>> 40ab1f0d3e2553f16475a1d4da942d2f360cb83e
 import ProductCard from "./NAProductCard";
 import ForwardArrowImg from "../assets/images/Vector.png"
 import BackwardArrowImg from "../assets/images/Vector back.png"
