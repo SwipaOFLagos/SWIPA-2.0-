@@ -14,7 +14,7 @@ import Newarrival from './page/Newarrival'
 import DetailPage from './page/DetailPage'
 import Login from './page/Login'
 import Breadcrumbs from './components/NABreadcCumbs'
-
+import Footer from './components/Footer'
 
 // WARNING: Do Not change anything in this page.
 
@@ -40,7 +40,10 @@ function App() {
         <Route path='/detail/:productId' element={<DetailPage/>}/>        
       </Routes>  
     </Router>
+    <Footer/>
+
     </>
+    
   )
 }
 
