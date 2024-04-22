@@ -205,7 +205,7 @@ const AllFragrance = () => {
                 handleCheckboxChange={handleCheckboxChange}
                 handleAvailabilityChange={handleAvailabilityChange}
               />
-              {/* <h3><BiSort />Sort By</h3> */}
+              <h3><BiSort />Sort By</h3>
             </div>
             <div className="m-products">
               {paginate.map((product, index) => (
