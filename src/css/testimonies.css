@@ -108,7 +108,7 @@
   /* border-radius: 50%; */
 }
 .pic-story img{
-  height: 100%;
+  height: 95%;
   width: 100%;
   border-radius: 50%;
 }
@@ -126,7 +126,6 @@
 .pics-celeb{
   width: 100%;
   height: 48px;
-  margin-top: 10px;
   /* border: 1px solid; */
   display: flex;
   
@@ -136,12 +135,163 @@
   padding-left: 7px;
 }
 
+
 .star{
   align-items: end;
 }
 .box-container-mobile{
   display: none;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main{
+    width: 100%; /* original is 400 */
+    height: 330px;   
+    background-color:#00758E;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  
+  .main-body{
+      height: 40%;
+      width: 90%;
+     
+      /* background-color: dodgerblue; */
+      /* background-size: cover; */
+  }
+  
+  .heading{
+    padding-top: 20px;
+    color: white;
+    /* width: 8; */
+  }
+  .box-container{
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid red;
+      padding-top: 20px;
+      gap: 15px;
+  
+  }
+  
+  .box {
+      width: 360px;
+      height: 172px; /* original is 215  */
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin-bottom: 40px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      /* padding-bottom: 50px; */
+    }
+  
+  
+    .para{
+      /* padding: 30px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 0.6rem;
+      font-weight: 400;
+      flex-direction: column;
+      padding-top: 15px;
+    }
+    /* .para-one{
+      padding: 20px;
+    }
+    .para-two{
+      padding: 20px;
+    }
+    .para-three{
+      padding: 30px;
+    }
+    .para-four{
+      padding: 30px;
+    }
+    .para-five{
+      padding: 30px;
+    } */
+  
+    .icon{
+      padding-left: 15px;
+    }
+    .arrow-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      /* border: 1px solid #555; */
+  }
+  
+  
+  /* .arrow-icons {
+    font-size: 200px;
+  } */
+  .head-icon{
+    font-size: 50px;
+  }
+  
+  .arrow-icons svg {
+      /* Add custom styles to your arrow icons here */
+      /* For example: */
+      margin: 0 5px; /* Add some spacing between icons */
+      color: #555; /* Change the color */
+      font-size: 24px; /* Adjust the size */
+  }
+  
+  
+  
+  .pic-story{
+    height: 100%;
+    width: 12%;
+    display: flex;
+    padding-left: 5px;
+    /* background-color: #555; */
+    /* border: 1px solid red; */
+    /* border-radius: 50%; */
+  }
+  .pic-story img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .pic-story h3{
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+  
+  .pic-story p{
+    padding-left: 10px;
+  }
+  
+  .pics-celeb{
+    width: 100%;
+    height: 48px;
+    margin-top: 10px;
+    /* border: 1px solid; */
+    display: flex;
+    
+  }
+  .pic-text{
+    width: 60%;
+    padding-left: 7px;
+  }
+  
+  .star{
+    align-items: end;
+  }
+  .box-container-mobile{
+    display: none;
+  }
+}
+
 
 @media (min-width: 370px) and (max-width: 767px) {
   .main{
