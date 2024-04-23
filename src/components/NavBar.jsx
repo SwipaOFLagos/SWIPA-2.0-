@@ -14,7 +14,7 @@ import Search from "../components/forms/Search";
 import { useNavigate } from "react-router-dom";
 
 function Menu() {
-  const { auth, setAuth, logout } = useAuth();
+  const { auth,  logout } = useAuth();
 
   const navigate = useNavigate()
 
@@ -60,7 +60,7 @@ function Menu() {
                     ) : (
                       <div className="text-center">
                         <Dropdown.Item className="first-drop" href={auth?.user.role === 1 ? "/dashboard/admin" : "/dashboard/user"}>
-                          My Account
+                          Dashboard
                         </Dropdown.Item>
                         <Dropdown.Item className="first-drop" onClick={handleLogout}>Logout</Dropdown.Item>
                       </div>
@@ -79,11 +79,11 @@ function Menu() {
               </Link>
             </div>
           </div>
-          {auth?.user && (
+          {/* {auth?.user && (
             <button className="btn btn-danger" onClick={handleLogout}>
               Logout
             </button>
-          )}
+          )} */}
         </div>
 
         <Navbar expand="lg" className="bg-body-primary fs-5" id="bottom">
