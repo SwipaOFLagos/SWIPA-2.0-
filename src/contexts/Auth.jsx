@@ -1,5 +1,8 @@
 import { useState, createContext, useContext, useEffect } from "react";
 import axios from "axios";
+import { Outlet, Navigate } from "react-router-dom";
+// import { useAuth } from "../../contexts/Auth";
+
 
 const AuthContext = createContext();
 
@@ -76,7 +79,12 @@ const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       console.error("Signup Error:", error.message);
-      return { error: "Failed to register" };
+      if (error?.response && error?.response?.data && error?.response?.data?.error) {
+        throw new Error(error?.response?.data?.error); 
+      } else {
+        throw new Error("Failed to register");
+      }
+      // return { error: "Failed to register" };
     }
   };
 
@@ -85,6 +93,11 @@ const AuthProvider = ({ children }) => {
     localStorage.removeItem("auth");
     setAuth({ user: null, token: "" });
   };
+
+const PrivateRouter = () => {
+   return auth?.token ? <Outlet/> : <Navigate to="/"/>
+}
+
 
   // console.log(auth.user);
 
@@ -99,3 +112,17 @@ const AuthProvider = ({ children }) => {
 const useAuth = () => useContext(AuthContext);
 
 export { useAuth, AuthProvider };
+
+
+
+// import React from 'react'
+
+// const PrivateRoute = () => {
+// const {auth} = useAuth();
+
+
+
+//   return auth.token ? <Outlet/> : <Navigate to="/"/>;
+// }
+
+// export default PrivateRoute
