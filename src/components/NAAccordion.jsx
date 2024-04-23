@@ -80,7 +80,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
             <div className='' >
               <div className=' d-flex'>
                 <input type='search' placeholder="Search" className='arrival-search-bar' onChange={(e) => setSearch(e.target.value.toLowerCase().trim())} />
-                <div style={{ backgroundColor: "black", width: "2rem", height: "35px", borderTopRightRadius: "3px", borderBottomRightRadius: "3px" }} className=''><img src={searchEye} alt="" className="" /></div>
+                <button type="submit" style={{ backgroundColor: "black", width: "2.5rem", height: "35px", borderTopRightRadius: "3px", borderBottomRightRadius: "3px" }} className=''><img src={searchEye} alt="" className="" /></button>
               </div>
             </div>
             <div className='mt-3 search-brand'>
