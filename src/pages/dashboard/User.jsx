@@ -1,10 +1,13 @@
+// one for regular user and one for admin user.
+
+
 import { useAuth } from "../../contexts/Auth";
 import Jumbotron from "../../components/cards/Jumbotron";
 import UserMenu from "../../components/nav/UserMenu";
 
 export default function UserDashboard() {
   // context
-  const [auth, setAuth] = useAuth();
+  const {auth, setAuth} = useAuth();
 
   return (
     <>

@@ -66,7 +66,7 @@ function Menu() {
                     ) : (
                       <div className="text-center">
                         <Dropdown.Item className="first-drop" href={auth?.user.role === 1 ? "/dashboard/admin" : "/dashboard/user"}>
-                          My Account
+                          Dashboard
                         </Dropdown.Item>
                         <Dropdown.Item className="first-drop" onClick={handleLogout}>Logout</Dropdown.Item>
                       </div>
