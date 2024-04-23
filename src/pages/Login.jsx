@@ -29,10 +29,6 @@ const Login = () => {
   }
   const handleSubmit = async (e) => {
     e.preventDefault();
-<<<<<<< HEAD:src/page/Login.jsx
-    // const url = "https://fragrancehubbe.onrender.com/api/v1/auth/login"
-=======
->>>>>>> 67844eebe0c55040019555630050f64ac44db47c:src/pages/Login.jsx
 
     if (!email || !password) {
       return toast.error("Enter all fields");
@@ -46,8 +42,6 @@ const Login = () => {
       return toast.error("Enter a valid password");
     }
     try {
-      
-<<<<<<< HEAD:src/page/Login.jsx
       setLoading(true);
     const { data } = await axios.post('/auth/login',{
       email,
@@ -71,7 +65,6 @@ const Login = () => {
     }else{
       toast.error("Login failed")
     }
-=======
     //   setLoading(true);
     // const { data } = await axios.post( "/auth/login",{
     //   email,
@@ -95,6 +88,7 @@ const Login = () => {
     // }else{
     //   toast.error("Login failed")
     // }
+
     setLoading(true);
       const success = await login(email, password);
       setLoading(false);
@@ -103,13 +97,12 @@ const Login = () => {
         toast.success("Login successful");
         navigate("/");
       } else {
-        toast.error("Login failed. Please check your credentials.");
+        toast.error("Login failed. try again..");
       }
->>>>>>> 67844eebe0c55040019555630050f64ac44db47c:src/pages/Login.jsx
   } catch (err) {
-    console.log(err);
-    const { error } = err?.response?.data
-    toast.error(error)
+    // console.log(err?.message);
+    const  msg = err?.message
+    toast.error(msg)
     setLoading(false)
   }
   };
