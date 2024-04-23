@@ -1,5 +1,7 @@
 import { useState, createContext, useContext, useEffect } from "react";
 import axios from "axios";
+import { Outlet, Navigate } from "react-router-dom";
+// import { useAuth } from "../../contexts/Auth";
 
 const AuthContext = createContext();
 
@@ -47,7 +49,7 @@ const AuthProvider = ({ children }) => {
     } catch (error) {
       console.error("Login error:", error.message);
       if (error?.response && error?.response?.data && error?.response?.data?.error) {
-        throw new Error(error?.response?.data?.error); 
+        throw new Error(error?.response?.data?.error);
       } else {
         throw new Error("An error occurred while logging in");
       }
@@ -76,7 +78,12 @@ const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       console.error("Signup Error:", error.message);
-      return { error: "Failed to register" };
+      if (error?.response && error?.response?.data && error?.response?.data?.error) {
+        throw new Error(error?.response?.data?.error); 
+      } else {
+        throw new Error("An error occurred while signing up");
+      }
+      // return { error: "Failed to register" };
     }
   };
 
@@ -86,10 +93,18 @@ const AuthProvider = ({ children }) => {
     setAuth({ user: null, token: "" });
   };
 
-  // console.log(auth.user);
+  // This will be used when the user is logged in
+
+
+  const PrivateRoutes = () => {
+ return auth?.user ? <Outlet/> : <Navigate to="/login"/>
+}
+
+
+  // console.log(auth?.user);
 
   return (
-    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout }}>
+    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout, PrivateRoutes }}>
       {children}
     </AuthContext.Provider>
   );

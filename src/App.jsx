@@ -19,11 +19,11 @@ import Search from './pages/Search'
 import UserDashboard from './pages/dashboard/User'
 import AdminDashboard from './pages/dashboard/Admin'
 import { ScrollToTop } from './components/utils/SmoothScrollToTop'
-
+import { useAuth} from './contexts/Auth'
 // WARNING: Do Not change anything in this pages.
 
 function App() {
-
+  const { PrivateRoutes } = useAuth();
   return (
     <>
     <Router>
@@ -44,8 +44,14 @@ function App() {
         <Route path='/new-arrivals' element={<Newarrival/>}/>        
         <Route path='/detail/:productId' element={<DetailPages/>}/>        
         <Route path='/search' element={<Search/>}/>        
-        <Route path='/dashboard/user' element={<UserDashboard/>}/>        
-        <Route path='/dashboard/admin' element={<AdminDashboard/>}/>        
+         
+        
+        {/* Private Routes */}
+        <Route path='/' element={<PrivateRoutes/>}>
+          <Route path='/dashboard/user' element={<UserDashboard/>}/>        
+          <Route path='/dashboard/admin' element={<AdminDashboard/>}/> 
+        </Route>
+        
       </Routes>  
       {/* <Footer/> */}
     </Router>
