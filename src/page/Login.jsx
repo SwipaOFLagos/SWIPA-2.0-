@@ -13,8 +13,8 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   // hooks/
   
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("gidi@email.com");
+  const [password, setPassword] = useState("password");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false)
 
@@ -29,7 +29,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     console.log("Button clicked");
     e.preventDefault();
-    const url = "https://blogg-api-v1.onrender.com/register";
+    // const url = "https://fragrancehubbe.onrender.com/api/v1/auth/login";
 
     if (!email || !password) {
       console.log("enter all fields....")
@@ -46,26 +46,32 @@ const Login = () => {
     try {
       
       setLoading(true);
-    const { data } = await axios.post( url,{
+    const { data } = await axios.post("/auth/login",{
       email,
       password,
     });
 
-    // check for successful registration
+    // check for successful login
     if(!data?.error){
-      toast.success("Registration successful")
-      setLoading(false);
-      // redirect user to login
+      toast.success("login successful")
+      //save login data to local storage
+        localStorage.setItem("auth", JSON.stringify(data));
+
+        //clear the form input
+        setEmail("");
+        setPassword("");
+
       setTimeout(()=>{
           navigate("/")
       }, 5000)
     }else{
-      toast.error("Registration failed")
+      toast.error("login failed")
     }
   } catch (err) {
     console.log(err);
     const { error } = err?.response?.data
     toast.error(error)
+    setLoading(false)
   }
   };
 

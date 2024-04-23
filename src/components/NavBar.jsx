@@ -9,11 +9,23 @@ import Cartimg from "../assets/icons/blackcart.png"
 import Seicon from "../assets/icons/Vector (5).png"
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useAuth } from '../contexts/Auth';
 
 
 
 
 function Menu() {
+  const { auth, setAuth } = useAuth();
+
+  const logout = ()=>{
+    setAuth({...auth, auth: null, token: ""})
+
+    //remove user data from local storage
+    localStorage.removeItem("auth");
+    console.log("Logout Successfully");
+  }
+  console.log(auth);
+
   return (
     <>
     <div className='sticky-top header'>
@@ -26,14 +38,6 @@ function Menu() {
         <div className="search-sec">
            <input type="text" placeholder="search" className='search d-md-none d-lg-block'/> 
            <div className='select-container'>
-              <select className='select-box'>
-                 <option value="">All Categories</option>
-                 <option value="one">category 1</option>
-                 <option value="two">category 2</option>
-                 <option value="three">category 3</option>
-                 <option value="four">category 4</option>
-                 <option value="five">category 5</option>
-              </select>
               <span>
                 <button>
                   <img src={Seicon} alt="" />
@@ -50,10 +54,12 @@ function Menu() {
              <div className='select-container'>
             <Dropdown>
                <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  My Account
+               {auth?.user? auth.user.name : "My Account"}
               </Dropdown.Toggle>
               <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1" className='first-drop'>
+                 {!auth.user ? (
+                 <>
+                <Dropdown.Item href="#/action-1" className='first-drop'>
                 <Link to="/login">
                 Login
                 </Link>
@@ -63,18 +69,21 @@ function Menu() {
                 Sign Up
                 </Link>
               </Dropdown.Item>
+                 </>
+                 ) : (
+                  <>
               <Dropdown.Item href="#/action-1">My Account</Dropdown.Item>
+              <Dropdown.Item onClick={logout}>Logout</Dropdown.Item>
+                  </>
+                 )}
               </Dropdown.Menu>
-           </Dropdown>
+              </Dropdown>
              </div>
         </div>
 
         <div className="cart-sec">
           <Link to="/cart">
           <img src={Cartimg} alt="" />
-          </Link>
-          <Link to="/cart">
-          <p>Cart</p>
           </Link>
         </div>
         </div>
