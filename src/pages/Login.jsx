@@ -7,6 +7,7 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/Auth';
 
 
 
@@ -18,6 +19,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false)
 
   const navigate = useNavigate()
+  const { login } = useAuth();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -27,7 +29,10 @@ const Login = () => {
   }
   const handleSubmit = async (e) => {
     e.preventDefault();
+<<<<<<< HEAD:src/page/Login.jsx
     // const url = "https://fragrancehubbe.onrender.com/api/v1/auth/login"
+=======
+>>>>>>> 67844eebe0c55040019555630050f64ac44db47c:src/pages/Login.jsx
 
     if (!email || !password) {
       return toast.error("Enter all fields");
@@ -42,6 +47,7 @@ const Login = () => {
     }
     try {
       
+<<<<<<< HEAD:src/page/Login.jsx
       setLoading(true);
     const { data } = await axios.post('/auth/login',{
       email,
@@ -65,6 +71,41 @@ const Login = () => {
     }else{
       toast.error("Login failed")
     }
+=======
+    //   setLoading(true);
+    // const { data } = await axios.post( "/auth/login",{
+    //   email,
+    //   password,
+    // });
+
+    // // check for successful login
+    // if(!data?.error){
+    //   toast.success("Login successful")
+    //   setLoading(false);
+    //   // save login data to local storage
+    //   localStorage.setItem("auth", JSON.stringify(data));
+
+    //   // clear the form input
+    //   setEmail("");
+    //   setPassword("");
+
+    //   setTimeout(()=>{
+    //       navigate("/")
+    //   }, 5000)
+    // }else{
+    //   toast.error("Login failed")
+    // }
+    setLoading(true);
+      const success = await login(email, password);
+      setLoading(false);
+
+      if (success) {
+        toast.success("Login successful");
+        navigate("/");
+      } else {
+        toast.error("Login failed. Please check your credentials.");
+      }
+>>>>>>> 67844eebe0c55040019555630050f64ac44db47c:src/pages/Login.jsx
   } catch (err) {
     console.log(err);
     const { error } = err?.response?.data

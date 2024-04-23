@@ -1,21 +1,13 @@
 import React from 'react'
-import '../css/ProductM.css'
-import { Link } from 'react-router-dom'
+import '../../css/ProductM.css'
 
-const ProductCard = ({product}) => {
-  const {name,description, priceCent, image, isavailability, _id} = product
-  let price = (priceCent/100).toLocaleString(undefined, {minimumFractionDigits: 2})
+const SearchProductCard = ({product}) => {
+  const {name,description, price, images, isavailability, _id} = product
   return (
-<<<<<<< HEAD
-    <Link to={`/detail/${product._id}`}>
-    <div key={index}>
-      <div className='m-card-Container' key={index}>
-=======
     <div key={_id}>
       <div className='m-card-Container' key={_id}>
->>>>>>> 67844eebe0c55040019555630050f64ac44db47c
         <div className='m-image'>
-            <img src={image} />
+            <img src={images ? images[0]?.url : null}/>
         </div>
         <div className='m-card-info'>
             <div className="m-card-text">
@@ -29,8 +21,7 @@ const ProductCard = ({product}) => {
         </div>
       </div>
     </div>
-    </Link>
   )
 }
 
-export default ProductCard
+export default SearchProductCard
