@@ -19,10 +19,14 @@ import Search from './pages/Search'
 import UserDashboard from './pages/dashboard/User'
 import AdminDashboard from './pages/dashboard/Admin'
 import { ScrollToTop } from './components/utils/SmoothScrollToTop'
+import PrivateRoutes from './pages/routes/PrivateRoutes'
+import { useAuth } from './contexts/Auth'
 
 // WARNING: Do Not change anything in this pages.
 
 function App() {
+
+  const { PrivateRoute } = useAuth()
 
   return (
     <>
@@ -40,12 +44,18 @@ function App() {
         <Route path='/login' element={<Login/>}/> 
         <Route path='/customer-details' element={<CustomerDetails/>}/>        
         <Route path='/cart' element={<CartItems/>}/>        
-        <Route path='/order' element={<Order/>}/>        
         <Route path='/new-arrivals' element={<Newarrival/>}/>        
         <Route path='/detail/:productId' element={<DetailPages/>}/>        
         <Route path='/search' element={<Search/>}/>        
-        <Route path='/dashboard/user' element={<UserDashboard/>}/>        
-        <Route path='/dashboard/admin' element={<AdminDashboard/>}/>        
+         
+
+              {/* Private Routes */}
+              <Route path="/" element={<PrivateRoutes/>}>
+                <Route path='/dashboard/user' element={<UserDashboard/>}/>
+                <Route path='/dashboard/admin' element={<AdminDashboard/>}/> 
+                <Route path='/order' element={<Order/>}/>
+
+              </Route>
       </Routes>  
       {/* <Footer/> */}
     </Router>
