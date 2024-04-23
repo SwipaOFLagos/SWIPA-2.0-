@@ -42,53 +42,6 @@ const Login = () => {
       return toast.error("Enter a valid password");
     }
     try {
-      setLoading(true);
-    const { data } = await axios.post('/auth/login',{
-      email,
-      password,
-    });
-
-    // check for successful login
-    if(!data?.error){
-      toast.success("Login successful")
-      setLoading(false);
-      // save login data to local storage
-      localStorage.setItem("auth", JSON.stringify(data));
-
-      // clear the form input
-      setEmail("");
-      setPassword("");
-
-      setTimeout(()=>{
-          navigate("/")
-      }, 5000)
-    }else{
-      toast.error("Login failed")
-    }
-    //   setLoading(true);
-    // const { data } = await axios.post( "/auth/login",{
-    //   email,
-    //   password,
-    // });
-
-    // // check for successful login
-    // if(!data?.error){
-    //   toast.success("Login successful")
-    //   setLoading(false);
-    //   // save login data to local storage
-    //   localStorage.setItem("auth", JSON.stringify(data));
-
-    //   // clear the form input
-    //   setEmail("");
-    //   setPassword("");
-
-    //   setTimeout(()=>{
-    //       navigate("/")
-    //   }, 5000)
-    // }else{
-    //   toast.error("Login failed")
-    // }
-
     setLoading(true);
       const success = await login(email, password);
       setLoading(false);

@@ -1,5 +1,7 @@
+import { Outlet, Navigate } from "react-router-dom";
 import { useState, createContext, useContext, useEffect } from "react";
 import axios from "axios";
+
 
 const AuthContext = createContext();
 
@@ -76,7 +78,11 @@ const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       console.error("Signup Error:", error.message);
-      return { error: "Failed to register" };
+      if (error?.response && error?.response?.data && error?.response?.data?.error) {
+        throw new Error(error?.response?.data?.error); 
+      } else {
+        throw new Error("An error occurred while signing in");
+      }
     }
   };
 
@@ -88,11 +94,16 @@ const AuthProvider = ({ children }) => {
 
   // console.log(auth.user);
 
+const PrivateRoutes = () => {
+  return auth?.token ? <Outlet /> : <Navigate to="/login" />;
+};
+
   return (
-    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout }}>
+    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout,PrivateRoutes }}>
       {children}
     </AuthContext.Provider>
   );
+
 };
 
 // hook
