@@ -1,4 +1,4 @@
- import { useState, createContext, useContext, useEffect } from "react";
+import { useState, createContext, useContext, useEffect } from "react";
 import axios from "axios";
 
 const AuthContext = createContext();
@@ -45,8 +45,12 @@ const AuthProvider = ({ children }) => {
         return false;
       }
     } catch (error) {
-      console.error("Login error:", error);
-      return false;
+      console.error("Login error:", error.message);
+      if (error?.response && error?.response?.data && error?.response?.data?.error) {
+        throw new Error(error?.response?.data?.error); 
+      } else {
+        throw new Error("An error occurred while logging in");
+      }
     }
   };
 
@@ -76,7 +80,6 @@ const AuthProvider = ({ children }) => {
     }
   };
 
-
   const logout = () => {
     // Clear auth data
     localStorage.removeItem("auth");
@@ -86,7 +89,7 @@ const AuthProvider = ({ children }) => {
   // console.log(auth.user);
 
   return (
-    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout}}>
+    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout }}>
       {children}
     </AuthContext.Provider>
   );
