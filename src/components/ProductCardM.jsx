@@ -2,8 +2,8 @@ import React from 'react'
 import '../css/ProductM.css'
 
 const ProductCard = ({product}) => {
-  const {name,description, priceCent, image, isavailability, _id} = product
-  let price = (priceCent/100).toLocaleString(undefined, {minimumFractionDigits: 2})
+  const {name,description, priceCents, image, isavailability, _id} = product
+  let price = (priceCents/100).toLocaleString(undefined, {minimumFractionDigits: 2})
   return (
     <div key={_id}>
       <div className='m-card-Container' key={_id}>
