@@ -9,11 +9,19 @@ import Cartimg from "../assets/icons/blackcart.png"
 import Seicon from "../assets/icons/Vector (5).png"
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
+import {useAuth} from "../contexts/Auth.jsx"
 
 
 
 
 function Menu() {
+  const { auth, setAuth } = useAuth();
+  
+  const logOut = ()=>{
+    setAuth({...auth, auth: null, token: ""})
+    //Remove user data from local storage
+    localStorage.removeItem("auth");
+  }
   return (
     <>
     <div className='sticky-top header'>
@@ -50,20 +58,28 @@ function Menu() {
              <div className='select-container'>
             <Dropdown>
                <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  My Account
+               {auth?.user ? auth.user.name : "My Account"}
+
               </Dropdown.Toggle>
               <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1" className='first-drop'>
-                <Link to="/login">
-                Login
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-1" className='first-drop'>
-                <Link to="/signup">
-                Sign Up
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-1">My Account</Dropdown.Item>
+              {!auth?.user ? (
+                      <>
+                        <Dropdown.Item href="#/action-1" className="first-drop">
+                          <Link to="/login">Login</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-1" className="first-drop">
+                          <Link to="/signup">Sign Up</Link>
+                        </Dropdown.Item>
+                      </>
+                    ) : (
+                      <>
+                        <Dropdown.Item href="#/action-1">
+                          My Account
+                        </Dropdown.Item>
+                        <Dropdown.Item onClick={logOut}>Logout</Dropdown.Item>
+                      </>
+                    )}
+
               </Dropdown.Menu>
            </Dropdown>
              </div>
@@ -78,6 +94,12 @@ function Menu() {
           </Link>
         </div>
         </div>
+        {auth?.user && (
+            <button className="btn btn-danger" onClick={logOut}>
+              Logout
+            </button>
+          )}
+
         </div>
 
     <Navbar expand="lg" className="bg-body-primary fs-5" id='bottom'>

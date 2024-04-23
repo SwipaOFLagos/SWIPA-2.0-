@@ -37,11 +37,11 @@ const DetailCard = ({ product }) => {
 
    // Calculate star rating
    const fullStars = Math.floor(product.rating);
-   let halfStar = false;
-              if (product.rating >= 0.1 || product.rating <= 0.9) {
-                halfStar = true;
-              }
-  //  const halfStar = product.rating - fullStars >= 0.5;
+  //  let halfStar = false;
+  //             if (product.rating >= 0.1 && product.rating <= 0.9) {
+  //               halfStar = true;
+  //             }
+    const halfStar = product.rating - fullStars >= 0.1;
    const starRating = Array.from({ length: fullStars }, (_, index) => (
      <img key={index} src={Star} alt="Star" />
    ));

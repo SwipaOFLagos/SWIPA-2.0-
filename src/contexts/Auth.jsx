@@ -1,0 +1,41 @@
+import { useState, createContext, useContext, useEffect } from "react";
+import axios from 'axios';
+
+
+const AuthContext = createContext();
+
+// Provider function
+const AuthProvider = ({children})=>{
+    const [auth, setAuth] = useState({
+        user: null,
+        token: "",
+    })
+
+    // axios config
+    axios.defaults.baseURL = import.meta.env.VITE_REACT_APP_API_URL;
+  axios.defaults.headers.common["Authorization"] = `Bearer ${auth?.token}`;
+
+
+    // retrieve the user from local storage
+    // useEffect helps run it once or immediately log the person in once the page loads
+    useEffect(()=>{
+    const data = localStorage.getItem("auth");
+    if(data){
+        const parsedData = JSON.parse(data);
+        setAuth({...auth, user: parsedData?.user, token: parsedData?.user.token})
+
+    }
+    }, [])
+
+    return (
+        <AuthContext.Provider value={{auth, useAuth}}>
+            {children}
+        </AuthContext.Provider>
+    )
+}
+
+// hook
+const useAuth = () =>(AuthContext)
+
+export { useAuth, AuthProvider}
+

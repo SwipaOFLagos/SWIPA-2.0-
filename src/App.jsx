@@ -14,7 +14,8 @@ import Newarrival from './page/Newarrival'
 import DetailPage from './page/DetailPage'
 import Login from './page/Login'
 import Breadcrumbs from './components/NABreadcCumbs'
-
+import Footer from './components/Footer'
+import BlogCard from './components/Blog'
 
 // WARNING: Do Not change anything in this page.
 
@@ -38,9 +39,13 @@ function App() {
         <Route path='/order' element={<Order/>}/>        
         <Route path='/new-arrivals' element={<Newarrival/>}/>        
         <Route path='/detail/:productId' element={<DetailPage/>}/>        
+        <Route path='/blog/' element={<BlogCard/>}/>        
       </Routes>  
     </Router>
+    <Footer/>
+
     </>
+    
   )
 }
 
