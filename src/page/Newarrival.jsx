@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { CiFilter } from "react-icons/ci";
 import { BiSort } from "react-icons/bi";
-import ForwardArrowImg from "../assets/images/Vector forward.png"
+import ForwardArrowImg from "../assets/images/NA Vector Forward.png"
 import "../css/Newarrival.css"
 import "../css/NAProductcard.css"
 import BreadCrumb from "../components/NABreadcCumbs"
@@ -154,8 +154,7 @@ const Newarrival = () => {
         break;
       case 'brandType':
         setSelectedBrand(prevState => isChecked ? [...prevState, value] : prevState.filter(item => item !== value));
-
-        break
+        break;
       case 'fragranceType':
         setSelectedFragranceTypes(prevState => isChecked ? [...prevState, value] : prevState.filter(item => item !== value));
         break;
@@ -192,7 +191,7 @@ const Newarrival = () => {
   const handleAvailabilityChange = (availability) => {
     setSelectedAvailability(availability);
   };
-
+ 
   return (
     <div className="arrival-desk-div">
       <div className='arrival-top-div-desk'>
@@ -233,7 +232,7 @@ const Newarrival = () => {
         {paginate.map((product, index) => {
           return (
             <div className="d-block d-md-none d-lg-none" key={index}>
-              <ProductCard products={product} />
+              <ProductCard products={product}/>
             </div>
 
           )

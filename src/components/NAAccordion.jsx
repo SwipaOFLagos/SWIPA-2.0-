@@ -112,7 +112,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
         <Accordion.Body className="checked-div2 ms-3">
           {fragrants.map((fragrance, index) => (
             <div key={index}>
-              <Form.Check // prettier-ignore
+              <Form.Check 
               
                 type="checkbox"
                 label={fragrance}
@@ -129,7 +129,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
         <Accordion.Body className="checked-div3 ms-3">
           {scents.map((scent, index) => (
             <div key={index}>
-              <Form.Check // prettier-ignore
+              <Form.Check 
                 type="checkbox"
                 label={scent}
                 value={scent}
@@ -144,7 +144,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
         <Accordion.Header>Price</Accordion.Header>
         <Accordion.Body className="checked-div ms-3">
           <div>
-            <Form.Check // prettier-ignore
+            <Form.Check 
               type="checkbox"
               label="Under &#x20A6;10,000"
               value='Under10K'
@@ -152,7 +152,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
             />
           </div>
           <div>
-            <Form.Check // prettier-ignore
+            <Form.Check 
               type="checkbox"
               label="&#x20A6;10,000 - &#x20A6;50,000"
               value='10kTo50K'
@@ -160,7 +160,7 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
             />
           </div>
           <div>
-            <Form.Check // prettier-ignore
+            <Form.Check
               type="checkbox"
               label=" &#x20A6;50,000+"
               value='Over50k'

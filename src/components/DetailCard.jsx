@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import '../css/DetailCards.css'
-// import Star from '../assets/images/Vector.png'
+import Star from '../assets/images/Vector star.png'
 import Plus from '../assets/images/ic_sharp-plus.png'
 import Minus from '../assets/images/ic_sharp-minus.png'
 
