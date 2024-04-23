@@ -7,18 +7,19 @@ import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/Auth';
 
 
 
 const Login = () => {
   // hooks/
-  
   const [email, setEmail] = useState("gidi@email.com");
   const [password, setPassword] = useState("password");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false)
 
   const navigate = useNavigate()
+  const { login } = useAuth();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -27,12 +28,9 @@ const Login = () => {
     setPassword(e.target.value);
   }
   const handleSubmit = async (e) => {
-    console.log("Button clicked");
     e.preventDefault();
-    // const url = "https://fragrancehubbe.onrender.com/api/v1/auth/login";
 
     if (!email || !password) {
-      console.log("enter all fields....")
       return toast.error("Enter all fields");
     }
     const emailRegex = /\S+@\S+\.\S+/;
@@ -45,28 +43,39 @@ const Login = () => {
     }
     try {
       
-      setLoading(true);
-    const { data } = await axios.post("/auth/login",{
-      email,
-      password,
-    });
+    //   setLoading(true);
+    // const { data } = await axios.post( "/auth/login",{
+    //   email,
+    //   password,
+    // });
 
-    // check for successful login
-    if(!data?.error){
-      toast.success("login successful")
-      //save login data to local storage
-        localStorage.setItem("auth", JSON.stringify(data));
+    // // check for successful login
+    // if(!data?.error){
+    //   toast.success("Login successful")
+    //   setLoading(false);
+    //   // save login data to local storage
+    //   localStorage.setItem("auth", JSON.stringify(data));
 
-        //clear the form input
-        setEmail("");
-        setPassword("");
+    //   // clear the form input
+    //   setEmail("");
+    //   setPassword("");
 
-      setTimeout(()=>{
-          navigate("/")
-      }, 5000)
-    }else{
-      toast.error("login failed")
-    }
+    //   setTimeout(()=>{
+    //       navigate("/")
+    //   }, 5000)
+    // }else{
+    //   toast.error("Login failed")
+    // }
+    setLoading(true);
+      const success = await login(email, password);
+      setLoading(false);
+
+      if (success) {
+        toast.success("Login successful");
+        navigate("/");
+      } else {
+        toast.error("Login failed. Please check your credentials.");
+      }
   } catch (err) {
     console.log(err);
     const { error } = err?.response?.data
