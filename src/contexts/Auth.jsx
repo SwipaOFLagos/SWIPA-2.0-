@@ -102,8 +102,11 @@ const AuthProvider = ({ children }) => {
   
 
 const PrivateRoutes = () => {
+const data = localStorage.getItem("auth");
+const parsedData = JSON.parse(data);
+const token = parsedData;
 
-  return auth?.user ? <Outlet/> : <Navigate to="/login"/>
+  return token ? <Outlet/> : <Navigate to="/login"/>
 }
 
 

@@ -20,6 +20,7 @@ import UserDashboard from "./pages/dashboard/User";
 import AdminDashboard from "./pages/dashboard/Admin";
 import { ScrollToTop } from "./components/utils/SmoothScrollToTop";
 // import PrivateRoutes from "./pages/routes/PrivateRoutes";
+import { useAuth } from "./contexts/Auth";
 
 // WARNING: Do Not change anything in this pages.
 
