@@ -5,8 +5,8 @@ import Jumbotron from "../components/cards/Jumbotron";
 
 export default function Search() {
   const [values, setValues] = useSearch();
-
-  console.log(values);
+// values. results gives us all the products searched for
+  // console.log(values);
 
   return (
     <>
@@ -15,7 +15,7 @@ export default function Search() {
         subTitle={
           values?.results?.length < 1
             ? "No products found"
-            : `Found ${values?.results?.length} products`
+            : `Found ${values?.results?.length} ${values?.results?.length > 1 ? "products" : "product"}`
         }
       />
 

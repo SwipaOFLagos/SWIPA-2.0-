@@ -9,6 +9,7 @@ import NewAccordion from '../components/NAAccordion';
 import Mydropdown1, { Mydropdown2 } from '../components/NADropdown';
 import { data } from "../Db/Perfumedb"
 import ProductCard from '../components/NAProductCard';
+import DetailPage from "../pages/DetailPage"
 
 
 const Newarrival = () => {

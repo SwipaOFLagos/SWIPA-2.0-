@@ -1,7 +1,6 @@
 import { useState, createContext, useContext, useEffect } from "react";
 import axios from "axios";
 import { Outlet, Navigate } from "react-router-dom";
-import React from 'react'
 
 const AuthContext = createContext();
 
@@ -48,8 +47,12 @@ const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.error("Login error:", error.message);
-      if (error?.response && error?.response?.data && error?.response?.data?.error) {
-        throw new Error(error?.response?.data?.error); 
+      if (
+        error?.response &&
+        error?.response?.data &&
+        error?.response?.data?.error
+      ) {
+        throw new Error(error?.response?.data?.error);
       } else {
         throw new Error("An error occurred while logging in");
       }
@@ -78,8 +81,12 @@ const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       console.error("Signup Error:", error.message);
-      if (error?.response && error?.response?.data && error?.response?.data?.error) {
-        throw new Error(error?.response?.data?.error); 
+      if (
+        error?.response &&
+        error?.response?.data &&
+        error?.response?.data?.error
+      ) {
+        throw new Error(error?.response?.data?.error);
       } else {
         throw new Error("An error occurred while signing up");
       }
@@ -92,14 +99,28 @@ const AuthProvider = ({ children }) => {
     setAuth({ user: null, token: "" });
   };
 
-  // Private Route will be used when the user is logged in, it will force the user to log in
+  
+
 const PrivateRoutes = () => {
-return auth?.user ? <Outlet/> : <Navigate to="/login"/>
+const data = localStorage.getItem("auth");
+const parsedData = JSON.parse(data);
+const isLoggedIn = parsedData;
+
+  return isLoggedIn ? <Outlet/> : <Navigate to="/"/>
 }
+
+const AdminRoutes = () => {
+const data = localStorage.getItem("auth");
+const parsedData = JSON.parse(data);
+const isAdmin = parsedData.user.role === 1;
+  
+    return isAdmin ? <Outlet/> : <Navigate to="/"/>
+}
+
   // console.log(auth.user);
 
   return (
-    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout, PrivateRoutes }}>
+    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout, PrivateRoutes, AdminRoutes }}>
       {children}
     </AuthContext.Provider>
   );

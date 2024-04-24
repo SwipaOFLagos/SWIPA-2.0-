@@ -13,8 +13,8 @@ const Search = ()=> {
     e.preventDefault();
     try {
       const { data } = await axios.get(`/product/search/${values?.keyword}`);
-      console.log(data);
-      setValues({ ...values, results: data?.products });
+      // console.log(data);
+      // setValues({ ...values, results: data?.products }); the search result is stored as results
       navigate("/search");
     } catch (err) {
       console.log(err);
