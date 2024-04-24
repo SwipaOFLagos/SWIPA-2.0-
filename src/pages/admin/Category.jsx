@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -49,6 +48,25 @@ const AdminCategory = () => {
     }
   };
 
+ 
+
+  const handleCategoryUpdate = async (e) => {
+    e.preventDefault();
+    try {
+      const { data } = await axios.post(`/category/${selected._id}`, { name: updateName });
+
+      if (data?.error) {
+        fetchCategories();
+        setUpdateName("");
+        toast.success("Category updated successfully");
+        setShow(false);
+      }
+    } catch (err) {
+      console.log(err);
+      const msg = err?.response?.data;
+      toast.error(msg);
+    }
+  };
   // console.log(selected);
 
   return (
@@ -95,17 +113,11 @@ const AdminCategory = () => {
 
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>{selected?.name}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
+          <Modal.Body>
+          <CategoryForm placeholder="update category name" handleSubmit={handleCategoryUpdate} value={updateName} setValue={(e)=>e.target.value}/>
+            </Modal.Body>
         </Modal>
       </>
     </>

@@ -4,6 +4,7 @@ const  CategoryForm = ({
     handleSubmit,
     buttonText = "Submit",
     handleDelete,
+    placeholder
   }) => {
     return (
       <div className="p-3">
