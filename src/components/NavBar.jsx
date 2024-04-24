@@ -20,7 +20,7 @@ import Search from "./forms/Search.jsx";
 
 
 function Menu() {
-  const { auth, setAuth, logout } = useAuth();
+  const { auth,  logout } = useAuth();
 
   const navigate = useNavigate()
 
@@ -85,11 +85,11 @@ function Menu() {
               </Link>
             </div>
           </div>
-          {auth?.user && (
+          {/* {auth?.user && (
             <button className="btn btn-danger" onClick={handleLogout}>
               Logout
             </button>
-          )}
+          )} */}
         </div>
 
         <Navbar expand="lg" className="bg-body-primary fs-5" id="bottom">
