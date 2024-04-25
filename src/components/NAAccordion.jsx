@@ -5,7 +5,7 @@ import "../css/NAAccordion.css"
 import searchEye from "../assets/images/Vector search.png"
 // import { Alphabets } from "../components/NAAlphabetsCard"
 import "../css/NACheckbox.css"
-import { data } from "../Db/Perfumedb"
+import { data } from "../DB/Perfumedb"
 import "../css/NAAlphabets.css"
 
 

@@ -14,7 +14,7 @@ import Search from "../components/forms/Search";
 import { useNavigate } from "react-router-dom";
 
 function Menu() {
-  const { auth,  logout } = useAuth();
+  const { auth, logout } = useAuth();
 
   const navigate = useNavigate()
 
@@ -74,16 +74,8 @@ function Menu() {
               <Link to="/cart">
                 <img src={Cartimg} alt="" />
               </Link>
-              <Link to="/cart">
-                <p>Cart</p>
-              </Link>
             </div>
           </div>
-          {/* {auth?.user && (
-            <button className="btn btn-danger" onClick={handleLogout}>
-              Logout
-            </button>
-          )} */}
         </div>
 
         <Navbar expand="lg" className="bg-body-primary fs-5" id="bottom">

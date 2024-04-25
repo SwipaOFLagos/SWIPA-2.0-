@@ -15,7 +15,11 @@ export default function Search() {
         subTitle={
           values?.results?.length < 1
             ? "No products found"
+<<<<<<< HEAD
             : `Found ${values?.results?.length} ${values?.results?.length  > 1 ? "products" : "product"}`
+=======
+            : `Found ${values?.results?.length} ${values?.results?.length > 1 ? "products" : "product"}`
+>>>>>>> 619648dc1708497d2154148eec97228f5fa33cfb
         }
       />
 
