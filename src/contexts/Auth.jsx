@@ -1,7 +1,6 @@
 import { useState, createContext, useContext, useEffect } from "react";
 import axios from "axios";
 import { Outlet, Navigate } from "react-router-dom";
-// import { useAuth } from "../../contexts/Auth";
 
 const AuthContext = createContext();
 
@@ -39,7 +38,7 @@ const AuthProvider = ({ children }) => {
 
       if (!data?.error) {
         // Login successful
-        setAuth({ user: data.user, token: data.user.token });
+        setAuth({ user: data?.user, token: data?.user?.token });
         localStorage.setItem("auth", JSON.stringify(data));
         return true;
       } else {
@@ -48,7 +47,11 @@ const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.error("Login error:", error.message);
-      if (error?.response && error?.response?.data && error?.response?.data?.error) {
+      if (
+        error?.response &&
+        error?.response?.data &&
+        error?.response?.data?.error
+      ) {
         throw new Error(error?.response?.data?.error);
       } else {
         throw new Error("An error occurred while logging in");
@@ -78,12 +81,15 @@ const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       console.error("Signup Error:", error.message);
-      if (error?.response && error?.response?.data && error?.response?.data?.error) {
-        throw new Error(error?.response?.data?.error); 
+      if (
+        error?.response &&
+        error?.response?.data &&
+        error?.response?.data?.error
+      ) {
+        throw new Error(error?.response?.data?.error);
       } else {
         throw new Error("An error occurred while signing up");
       }
-      // return { error: "Failed to register" };
     }
   };
 
@@ -93,18 +99,29 @@ const AuthProvider = ({ children }) => {
     setAuth({ user: null, token: "" });
   };
 
-  // This will be used when the user is logged in
+  
 
+const PrivateRoutes = () => {
+const data = localStorage.getItem("auth");
+const parsedData = JSON.parse(data);
+const token = parsedData;
 
-  const PrivateRoutes = () => {
- return auth?.user ? <Outlet/> : <Navigate to="/login"/>
+  return token ? <Outlet/> : <Navigate to="/login"/>
+}
+
+const Admin = () => {
+  const data = localStorage.getItem("auth");
+  const parsedData = JSON.parse(data)
+  const isAdmin = parsedData.user.role === 1 
+
+  return isAdmin ? <Outlet/> : <Navigate to="/"/>
 }
 
 
-  // console.log(auth?.user);
+  // console.log(auth.user);
 
   return (
-    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout, PrivateRoutes }}>
+    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout, PrivateRoutes, Admin }}>
       {children}
     </AuthContext.Provider>
   );

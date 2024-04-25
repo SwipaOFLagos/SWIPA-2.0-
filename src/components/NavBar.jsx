@@ -14,7 +14,7 @@ import Search from "../components/forms/Search";
 import { useNavigate } from "react-router-dom";
 
 function Menu() {
-  const { auth, setAuth, logout } = useAuth();
+  const { auth,  logout } = useAuth();
 
   const navigate = useNavigate()
 
