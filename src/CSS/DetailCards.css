@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: center;
     /* min-height: 100vh; */
+    height: 480px;
  } 
 .productCont{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 33rem;
+    height: 100%;
 }
 .productImg{
     width: 55%;
@@ -31,7 +32,7 @@
 }
 .simg{
     width: 5.18rem;
-    height: 6.48rem;
+    height: 6rem;
     border: 2px solid #D7D7D7;
 }
 .selectImg img {

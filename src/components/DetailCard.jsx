@@ -219,9 +219,9 @@ import Minus from "../assets/images/ic_sharp-minus.png";
 import { Link } from "react-router-dom";
 
 const DetailCard = ({ product }) => {
-  const { name, description, images, price, quantity, isavailable, avgRating } = product;
+  const { name, description, images, price, quantity, isAvailable, avgRating } = product;
 
-  const [selectedImage, setSelectedImage] = useState(images[0].url);
+  const [selectedImage, setSelectedImage] = useState(images[1]?.url);
   const [count, setCount] = useState(1);
 
   const handleImageClick = (imageUrl) => {
@@ -233,19 +233,31 @@ const DetailCard = ({ product }) => {
   };
 
   const handleDecrease = () => {
-    if (count > 0) {
+    if (count > 1) {
       setCount(count - 1);
     }
   };
 
   // Calculate star rating
-  const fullStars = Math.floor(avgRating);
-  const halfStar = avgRating - fullStars >= 0.1;
-  const starRating = Array.from({ length: fullStars }, (_, index) => (
-    <img key={index} src={Star} alt="Star" />
-  ));
-  if (halfStar) starRating.push(<img key="half" src={StarHalf} alt="Half Star" />);
-  console.log(selectedImage);
+  // const fullStars = Math.floor(avgRating);
+  // const halfStar = avgRating - fullStars >= 0.1;
+  // const starRating = Array.from({ length: fullStars }, (_, index) => (
+  //   <img key={index} src={Star} alt="Star" />
+  // ));
+  // if (halfStar) starRating.push(<img key="half" src={StarHalf} alt="Half Star" />);
+  // console.log(selectedImage);
+
+  let starRating;
+  if (avgRating ) {
+    const fullStars = Math.floor(avgRating);
+    const halfStar = avgRating - fullStars >= 0.1;
+    starRating = Array.from({ length: fullStars }, (_, index) => (
+      <img key={index} src={Star} alt="Star" />
+    ));
+    if (halfStar) starRating.push(<img key="half" src={StarHalf} alt="Half Star" />);
+  } else {
+    starRating = <span style={{fontSize: "1rem"}}>No rating</span>;
+  }
 
   return (
     <>
@@ -255,13 +267,15 @@ const DetailCard = ({ product }) => {
             <div className="selectImg">
               {/* Loop through images and show the selected image */}
               {images.length > 0 && images.map((image) => (
-                <img
+                <div className={`simg ${selectedImage === image?.url ? 'selected' : ''}`}>
+                  <img
                   key={image?._id}
                   src={image?.url}
                   alt={image?.imagePubilicId}
-                  className={`simg ${selectedImage === image?.url ? 'selected' : ''}`}
+                  className=""
                   onClick={() => handleImageClick(image?.url)}
                 />
+                </div>
               ))}
             </div>
             <div className="clickedImg">
@@ -293,7 +307,13 @@ const DetailCard = ({ product }) => {
                   marginLeft: "1.25rem",
                 }}
               >
-                {avgRating} (<span style={{ fontSize: "1.13rem" }}>40 Reviews</span>)
+                {avgRating !== 0 ? (
+                  <>
+                    {avgRating} (<span style={{ fontSize: "1.13rem" }}>40 Reviews</span>)
+                  </>
+                ) : (
+                  ""
+                )}
               </span>
             </div>
             <p className="my-2" style={{ fontSize: "1.25rem" }}>
@@ -358,21 +378,21 @@ const DetailCard = ({ product }) => {
             </div>
 
             <div className="d-flex gap-2">
-              <p style={{ fontSize: "1.25rem" }}>Availability:</p>
+              <p style={{ fontSize: "1.25rem" }}>Availability({quantity}) :</p>
               <ul
                 className="d-flex"
                 style={{ listStyle: "none", paddingLeft: "1rem" }}
               >
                 <li
                   style={{
-                    color: isavailable ? "#009320" : "#E70000",
+                    color: isAvailable ? "#009320" : "#E70000",
                     fontWeight: "500",
                     fontSize: "1.13rem",
                   }}
                 >
                   <span
                     style={{
-                      backgroundColor: isavailable
+                      backgroundColor: isAvailable
                         ? "#009320"
                         : "#E70000",
                       width: "10px",
@@ -382,13 +402,13 @@ const DetailCard = ({ product }) => {
                       marginRight: "5px",
                     }}
                   ></span>
-                  {isavailable ? "In Stock" : "Out of Stock"}
+                  {isAvailable ? "In Stock" : "Out of Stock"}
                 </li>
               </ul>
             </div>
 
             <div className="d-flex flex-column">
-              {isavailable ? <Button variant="dark" className="buttonG mb-3" style={{ backgroundColor: "black", fontSize: "20px" }}>Buy Now</Button> : <Button variant="dark" className="buttonG mb-3" style={{ backgroundColor: "gray", fontSize: "20px" }} disabled>Sold Out</Button>}
+              {isAvailable ? <Button variant="dark" className="buttonG mb-3" style={{ backgroundColor: "black", fontSize: "20px" }}>Buy Now</Button> : <Button variant="dark" className="buttonG mb-3" style={{ backgroundColor: "gray", fontSize: "20px" }} disabled>Sold Out</Button>}
 
               <Link to={`/cart/${product._id}`} style={{ textDecoration: "none" }} className="">
                 <Button variant="light" className="buttonG  border border-dark" >

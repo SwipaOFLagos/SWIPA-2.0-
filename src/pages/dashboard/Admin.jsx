@@ -1,6 +1,6 @@
 import { useAuth } from "../../contexts/Auth.jsx";
-import Jumbotron from "../../components/cards/Jumbotron";
-import AdminMenu from "../../components/nav/AdminMenu";
+import Jumbotron from "../../components/cards/Jumbotron.jsx";
+import AdminMenu from "../../components/nav/AdminMenu.jsx";
 
 
 const AdminDashboard = () => {

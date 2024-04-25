@@ -19,15 +19,16 @@ import Search from "./pages/Search";
 import UserDashboard from "./pages/dashboard/User";
 import AdminDashboard from "./pages/dashboard/Admin";
 import { ScrollToTop } from "./components/utils/SmoothScrollToTop";
-// import PrivateRoutes from "./pages/routes/PrivateRoutes";
 import { useAuth } from "./contexts/Auth";
 import AdminCategory from "./pages/admin/Category";
 
 // WARNING: Do Not change anything in this pages.
 
+
+
 function App() {
 
-  const { PrivateRoutes, Admin } = useAuth()
+  const { PrivateRoutes, AdminRoutes } = useAuth()
 
   return (
     <>
@@ -45,25 +46,34 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/customer-details" element={<CustomerDetails />} />
           <Route path="/cart" element={<CartItems />} />
-
           <Route path="/new-arrivals" element={<Newarrival />} />
           <Route path="/detail/:productId" element={<DetailPages />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/admin-category" element={<AdminCategory/>} />
+          <Route path="/admin-category" element={<AdminCategory />} />
 
 
           {/* Private Routes */}
           <Route path="/" element={<PrivateRoutes />}>
             <Route path="/dashboard/user" element={<UserDashboard />} />
             <Route path="/order" element={<Order />} />
-
-              {/* AdminRoutes */}
-            <Route path='/' element={<Admin/>}>
-          <Route path="/dashboard/admin" element={<AdminDashboard />} />
+            {/* Admin Routes */}
+          <Route path="/" element={<AdminRoutes />}>
+            <Route path="/dashboard/admin" element={<AdminDashboard />} />
           </Route>
           </Route>
+          <Route path="/admin-category" element={<AdminCategory/>} />
 
-          
+          {/* Private Routes */}
+          <Route path="/dashboard" element={<PrivateRoutes />}>
+            <Route path="user" element={<UserDashboard />} />
+            <Route path="order" element={<Order />} />
+
+            {/* Admin Routes */}
+          <Route path="" element={<AdminRoutes/>}>
+            <Route path="admin" element={<AdminDashboard />} />     
+          </Route>
+
+          </Route>
 
         </Routes>
         {/* <Footer/> */}
