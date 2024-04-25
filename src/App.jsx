@@ -19,8 +19,8 @@ import Search from "./pages/Search";
 import UserDashboard from "./pages/dashboard/User";
 import AdminDashboard from "./pages/dashboard/Admin";
 import { ScrollToTop } from "./components/utils/SmoothScrollToTop";
-// import PrivateRoutes from "./pages/routes/PrivateRoutes";
 import { useAuth } from "./contexts/Auth";
+import AdminCategory from "./pages/dashboard/admin/Category";
 
 // WARNING: Do Not change anything in this pages.
 
@@ -46,6 +46,7 @@ function App() {
           <Route path="/new-arrivals" element={<Newarrival />} />
           <Route path="/detail/:productId" element={<DetailPages />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/admin-category" element={<AdminCategory />} />
 
 
           {/* Private Routes */}
@@ -57,15 +58,7 @@ function App() {
             <Route path="admin" element={<AdminDashboard />} />
           </Route> 
           </Route>
-
-            {/* admin routes
-            <Route path="/" element={<AdminRoutes/>}>
-            <Route path="/dashboard/admin" element={<AdminDashboard />} />
-            <Route path="/order" element={<Order />} />
-          </Route> */}
-
-
-        </Routes>
+    </Routes>
         {/* <Footer/> */}
       </Router>
     </>
