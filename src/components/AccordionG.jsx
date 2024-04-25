@@ -1,6 +1,6 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-import '../css/AccordionG.css'
+import '../css/AccordionG.module.css'
 
 function Accordions({product}) {
   return (
