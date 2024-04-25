@@ -4,6 +4,7 @@ const  CategoryForm = ({
     handleSubmit,
     buttonText = "Submit",
     handleDelete,
+    placeholder,
   }) => {
     return (
       <div className="p-3">
@@ -11,7 +12,7 @@ const  CategoryForm = ({
           <input
             type="text"
             className="form-control p-3"
-            placeholder="Write category name"
+            placeholder={placeholder}
             value={value}
             onChange={(e) => setValue(e.target.value)}
           />
