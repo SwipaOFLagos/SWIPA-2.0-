@@ -6,7 +6,7 @@ import '../css/Blog.css'
 const BlogCard = ({ product }) => {
     return(
         <div className="blogs p-4">
-            <h1 className='blog-head'>Blog Card</h1>
+            <h1 className='blog-head'>Blogs</h1>
             <div className="blog-display">
             <div className="blog-card">
                 <div className="blog-img">
