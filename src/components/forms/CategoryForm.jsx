@@ -4,7 +4,8 @@ const  CategoryForm = ({
     handleSubmit,
     buttonText = "Submit",
     handleDelete,
-    
+    placeholder,
+    loading,
   }) => {
     return (
       <div className="p-3">
@@ -12,12 +13,23 @@ const  CategoryForm = ({
           <input
             type="text"
             className="form-control p-3"
-            placeholder="Write category name"
+            placeholder={placeholder}
             value={value}
             onChange={(e) => setValue(e.target.value)}
           />
-          <div className="d-flex justify-content-between">
-            <button className="btn btn-primary mt-3">{buttonText}</button>
+          <div className="d-flex mx-2">
+          {loading ? (
+                <>
+                  <span
+                    className="spinner-border spinner-border-sm"
+                    aria-hidden="true"
+                  ></span>
+                  <span role="status">Loading...</span>
+                </>
+              ) : (
+                <button className="btn btn-primary mt-3">{buttonText}</button>
+
+              )}
             {handleDelete && (
               <button onClick={handleDelete} className="btn btn-danger mt-3">
                 Delete
