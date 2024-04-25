@@ -10,6 +10,7 @@ import Mydropdown1, { Mydropdown2 } from '../components/NADropdown';
 import { data } from "../Db/Perfumedb"
 import ProductCard from '../components/NAProductCard';
 import DetailPage from "../pages/DetailPage"
+import { Link } from 'react-router-dom'
 
 
 const Newarrival = () => {
@@ -194,7 +195,7 @@ const Newarrival = () => {
   };
  
   return (
-    <div className="arrival-desk-div">
+    <div className="arrival-desk-div ">
       <div className='arrival-top-div-desk'>
 
         <div className='d-none d-md-none d-lg-block'>
@@ -202,13 +203,13 @@ const Newarrival = () => {
         </div>
 
         <div className='d-flex justify-content-between'>
-          <div className='d-block d-md-none d-lg-none'>
-            <h3>All Featured Fragrance</h3>
+          <div className='d-block d-md-none d-lg-none ms-3 me-3'>
+            <h3>New Arrivals</h3>
             <span>Showing 1-20 of 500 products</span>
           </div>
           <div className='d-none d-md-block d-lg-block'>
-            <h3>All Featured Fragrance</h3>
-            <span>Showing 1-15 of 500 products</span>
+            <h3 style={{fontFamily: "satoshi"}}>New Arrivals</h3>
+            <span style={{fontFamily:"Satoshi"}}>Showing 1-15 of 500 products</span>
           </div>
 
           <div className="d-none d-md-block d-lg-block">
@@ -218,21 +219,21 @@ const Newarrival = () => {
 
       </div>
 
-      <div className="d-flex justify-content-between d-md-flex justify-md-content-between arrival-top-div-mob d-block d-md-none d-lg-none my-3">
+      <div className="d-flex justify-content-between d-md-flex justify-md-content-between arrival-top-div-mob d-block d-md-none d-lg-none my-3 mx-3">
         <div className="" ><span className='' onClick={handleShow}><span><CiFilter /></span> <b>Filter By </b></span>
           {showFilter && <div className='arrival-filter-div'><NewAccordion handleCheckboxChange={handleCheckboxChange} handleAvailabilityChange={handleAvailabilityChange} /></div>}
         </div>
 
-        <div className='me-3'><span className='' onClick={handleClick} ><span><BiSort /></span> <b>Sort By</b> </span>
+        <div className=''><span className='' onClick={handleClick} ><span><BiSort /></span> <b>Sort By</b> </span>
           {showSort && <Mydropdown2 />}
         </div>
 
       </div>
 
-      <div className="arrival-products-div-mob d-flex justify-content-between flex-wrap gap-3 ">
+      <div className="arrival-products-div-mob d-flex flex-wrap gap-3">
         {paginate.map((product, index) => {
           return (
-            <div className="d-block d-md-none d-lg-none" key={index}>
+            <div className="d-block d-md-none d-lg-none mx-3" key={index}>
               <ProductCard products={product}/>
             </div>
 
@@ -253,7 +254,7 @@ const Newarrival = () => {
           {paginate.map((product, index) => {
             return (
               <div className=" d-none d-md-block d-lg-block" key={index}>
-                <ProductCard products={product} />
+                  <ProductCard products={product} />
               </div>
             )
           }

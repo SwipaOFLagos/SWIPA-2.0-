@@ -44,10 +44,9 @@ const Login = () => {
       setLoading(false);
 
       if (success) {
-        setTimeout(() => {
+
         toast.success("Login successful");
         navigate("/");
-        }, 5000)
         
       } else {
         toast.error("Login failed. try again..");

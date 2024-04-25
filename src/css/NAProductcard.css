@@ -1,17 +1,27 @@
 /* bootstrap card class */
 .card {
-    width: 10.75rem;
-    height: 400px !important;
+    width: 11rem;
+    height: 270px !important;
     text-align: left;
 }
 
 .NA-card-image {
     width: 100%;
-    height: 200px;
+    height: 150px;
 }
 
 .NA-card-title {
-    font-size: 1rem;
+    font-size: 0.7rem !important;
+}
+.NA-card-text{
+    font-size: 1rem !important;
+    font-family: Satoshi;
+    font-weight: 300;
+}
+.NA-card-price{
+    font-size: 1rem !important;
+    font-family: Satoshi;
+    font-weight: 500;
 }
 
 .NA-card-btn {
@@ -55,11 +65,23 @@
 
     .NA-card-image {
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
 
     .NA-card-title {
-        font-size: 1.15rem;
+        font-size: 0.9rem !important;
+        font-family: Satoshi;
+        font-weight: 400;
+    }
+    .NA-card-text{
+        font-size: 0.9rem !important;
+        font-family: Satoshi;
+        font-weight: 300;
+    }
+    .NA-card-price{
+        font-size: 1.1rem !important;
+        font-family: Satoshi;
+        font-weight: 500;
     }
 
     .NA-card-btn {
@@ -74,17 +96,29 @@
 @media (min-width: 900px) {
     .card {
         width: 16.35rem !important;
-        height: 450px !important;
+        height: 470px !important;
         text-align: left;
     }
 
     .NA-card-image {
         width: 100%;
-        height: 300px;
+        height: 252px;
     }
 
     .NA-card-title {
-        font-size: 0.95rem !important;
+        font-size: 1rem !important;
+        font-family: Satoshi;
+        font-weight: 400;
+    }
+    .NA-card-text{
+        font-size: 0.9rem !important;
+        font-family: Satoshi;
+        font-weight: 300;
+    }
+    .NA-card-price{
+        font-size: 1.2rem !important;
+        font-family: Satoshi;
+        font-weight: 500;
     }
 
     .NA-card-btn {

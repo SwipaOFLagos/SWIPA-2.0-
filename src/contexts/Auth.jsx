@@ -107,16 +107,6 @@ const parsedData = JSON.parse(data);
 const isLoggedIn = parsedData;
 
   return isLoggedIn ? <Outlet/> : <Navigate to="/"/>
-<<<<<<< HEAD
-=======
-}
-const AdminRoutes = () => {
-const data = localStorage.getItem("auth");
-const parsedData = JSON.parse(data);
-const isAdmin = parsedData.user.role === 1;
-
-  return isAdmin ? <Outlet/> : <Navigate to="/"/>
->>>>>>> b5c2c2f81a2daf9619cab77e03445bb0fca58d81
 }
 
 const AdminRoutes = () => {

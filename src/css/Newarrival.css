@@ -44,16 +44,17 @@
    
     .arrival-top-div-mob{
         border: 1px solid rgb(236, 233, 233);
-        width: 24.3rem;
+        /* width: 24.3rem; */
+        margin-left: 10px;
         /* border: 1px solid blue; */
     }
     .arrival-products-div-mob{
         width: 100%;
         /* border: 1px solid rgb(218, 40, 40) !important; */
     }
-    .card {
-            width: 11.5rem !important;
-    }
+    /* .card {
+            width: 11rem !important;
+    } */
     .select-wrapper select{
         width: 7rem;
     }
