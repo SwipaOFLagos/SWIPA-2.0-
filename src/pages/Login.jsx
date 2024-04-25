@@ -62,7 +62,6 @@ const Login = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="dan">
         <div className="top-section">
           <img className="ww" src={signinIcon} alt="" />
@@ -97,9 +96,9 @@ const Login = () => {
                 />
                 <span onClick={() => setShowPassword(!showPassword)}>
                   {showPassword ? (
-                    <FaRegEye className="icon" />
+                    <FaRegEye className="icon-d" />
                   ) : (
-                    <FaRegEyeSlash className="icon" />
+                    <FaRegEyeSlash className="icon-d" />
                   )}
                 </span>
               </div>
