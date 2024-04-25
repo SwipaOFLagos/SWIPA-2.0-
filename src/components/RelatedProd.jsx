@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../css/RelatedProd.css'
-import { data } from '../DB/ProductDb';
+import { data } from "../Db/ProductDb";
 
 
 

@@ -7,7 +7,7 @@ import "../css/NAProductcard.css"
 import BreadCrumb from "../components/NABreadcCumbs"
 import NewAccordion from '../components/NAAccordion';
 import Mydropdown1, { Mydropdown2 } from '../components/NADropdown';
-import { data } from "../DB/Perfumedb";
+import { data } from "../Db/ProductDb";
 import ProductCard from '../components/NAProductCard';
 
 
