@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "../css/Login.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import signinIcon from "../assets/icons/signinIcon.png";
 import signin from "../assets/images/Signindan.png";
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/Auth";
+import Footer from "../components/Footer";
 
 const Login = () => {
   // hooks/
@@ -44,8 +45,11 @@ const Login = () => {
       setLoading(false);
 
       if (success) {
+        setTimeout(() => {
         toast.success("Login successful");
         navigate("/");
+        }, 5000)
+        
       } else {
         toast.error("Login failed. try again..");
       }
@@ -59,7 +63,6 @@ const Login = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="dan">
         <div className="top-section">
           <img className="ww" src={signinIcon} alt="" />
@@ -155,6 +158,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

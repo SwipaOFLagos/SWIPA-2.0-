@@ -1,11 +1,14 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Menu from "../components/NavBar";
+import Footer from "../components/Footer";
 
 
 const Order = () => {
   return (
     <div>
+      <Menu/>
       <div className=" d-flex justify-content-center mx-3 align-items-center top-10 z-2 w-100 pt-5 ">
         <FaCheckCircle size="10%" className="text-success  text-center text-md-start" />
       </div>
@@ -25,6 +28,7 @@ const Order = () => {
           </Link>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

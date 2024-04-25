@@ -1,11 +1,15 @@
 import React from 'react'
 import order from '../assets/images/order.png' 
 import '../css/Chart.css'
+import Menu from '../components/NavBar'
+import Footer from '../components/Footer'
 
 const CartEmpty = () => {
   return (
+    <>
+        <Menu/>
     <div className='cart-container'>
-      <>
+      <>  
       <div className='cart'>
         <img src ={order}/>
       </div>
@@ -18,6 +22,8 @@ const CartEmpty = () => {
       </div>
       </>
     </div>
+    <Footer/>
+    </>
   )
 }
 

@@ -14,8 +14,7 @@ const SearchProvider = ({ children }) => {
     </SearchContext.Provider>
   );
 };
-
-//hook
+// hook
 const useSearch = () => useContext(SearchContext);
 
 export { useSearch, SearchProvider };

@@ -1,10 +1,15 @@
 import "../css/CartItems.css";
 import img from "../assets/images/image 18.png";
 import { ImBin2 } from "react-icons/im";
+import Menu from "./NavBar";
+import Footer from "./Footer";
+
 
 const CartItems = () => {
   return (
-    <div className="main-cont">
+    <>
+    <Menu/>
+        <div className="main-cont">
       <div className="container-kc">
         <div className="left-cont">
           <div className="card-kc">
@@ -58,6 +63,8 @@ const CartItems = () => {
         </div>
       </div>
     </div>
+     <Footer/>
+    </>
   );
 };
 

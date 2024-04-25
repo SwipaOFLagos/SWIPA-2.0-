@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { CiFilter } from "react-icons/ci";
 import { BiSort } from "react-icons/bi";
-import ForwardArrowImg from "../assets/images/Vector back.png"
+import ForwardArrowImg from "../assets/images/NA Vector Forward.png"
 import "../css/Newarrival.css"
 import "../css/NAProductcard.css"
 import BreadCrumb from "../components/NABreadcCumbs"
 import NewAccordion from '../components/NAAccordion';
 import Mydropdown1, { Mydropdown2 } from '../components/NADropdown';
-import { data } from "../DB/Perfumedb";
+import { data } from "../DB/ProductDb";
 import ProductCard from '../components/NAProductCard';
+import DetailPage from "../pages/DetailPage"
+import Menu from '../components/NavBar';
+import Footer from '../components/Footer';
 
 
 const Newarrival = () => {
@@ -154,8 +157,7 @@ const Newarrival = () => {
         break;
       case 'brandType':
         setSelectedBrand(prevState => isChecked ? [...prevState, value] : prevState.filter(item => item !== value));
-
-        break
+        break;
       case 'fragranceType':
         setSelectedFragranceTypes(prevState => isChecked ? [...prevState, value] : prevState.filter(item => item !== value));
         break;
@@ -195,6 +197,8 @@ const Newarrival = () => {
  
   return (
     <div className="arrival-desk-div">
+    <Menu/>
+
       <div className='arrival-top-div-desk'>
 
         <div className='d-none d-md-none d-lg-block'>
@@ -211,20 +215,21 @@ const Newarrival = () => {
             <span>Showing 1-15 of 500 products</span>
           </div>
 
-          <div className="d-none d-md-none d-lg-block">
+          <div className="d-none d-md-block d-lg-block">
             <span><Mydropdown1 /></span>
           </div>
         </div>
 
       </div>
 
-      <div className="d-flex justify-content-between d-md-flex justify-md--content-between arrival-top-div-mob d-block d-md-block d-lg-none my-3">
+      <div className="d-flex justify-content-between d-md-flex justify-md-content-between arrival-top-div-mob d-block d-md-none d-lg-none my-3">
         <div className="" ><span className='' onClick={handleShow}><span><CiFilter /></span> <b>Filter By </b></span>
           {showFilter && <div className='arrival-filter-div'><NewAccordion handleCheckboxChange={handleCheckboxChange} handleAvailabilityChange={handleAvailabilityChange} /></div>}
         </div>
 
-        <div className=''><span className='me-3' onClick={handleClick} ><span><BiSort /></span> <b>Sort By</b> </span>
-          {showSort && <Mydropdown2 />}</div>
+        <div className='me-3'><span className='' onClick={handleClick} ><span><BiSort /></span> <b>Sort By</b> </span>
+          {showSort && <Mydropdown2 />}
+        </div>
 
       </div>
 
@@ -232,7 +237,7 @@ const Newarrival = () => {
         {paginate.map((product, index) => {
           return (
             <div className="d-block d-md-none d-lg-none" key={index}>
-              <ProductCard products={product} />
+              <ProductCard products={product}/>
             </div>
 
           )
@@ -241,7 +246,7 @@ const Newarrival = () => {
       </div>
 
       <div className='arrival-main-div'>
-        <div className="arrival-filter-div d-none d-md-none d-lg-block me-3">
+        <div className="arrival-filter-div d-none d-md-block d-lg-block me-3">
           <h6 className="ms-3 mt-3 mb-2"><b>Filter By</b></h6>
           <NewAccordion handleCheckboxChange={handleCheckboxChange} handleAvailabilityChange={handleAvailabilityChange} handleFilter={handleFilter}
           />
@@ -251,7 +256,7 @@ const Newarrival = () => {
         <div className="arrival-products-div-desk d-flex flex-wrap gap-3">
           {paginate.map((product, index) => {
             return (
-              <div className=" d-none d-md-none d-lg-block" key={index}>
+              <div className=" d-none d-md-block d-lg-block" key={index}>
                 <ProductCard products={product} />
               </div>
             )
@@ -264,7 +269,7 @@ const Newarrival = () => {
           {/* Sort by for desktop drop down is in a dropdown component */}
         </div>
       </div>
-
+        <Footer/>
     </div>
   )
 }
