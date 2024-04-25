@@ -19,15 +19,16 @@ import Search from "./pages/Search";
 import UserDashboard from "./pages/dashboard/User";
 import AdminDashboard from "./pages/dashboard/Admin";
 import { ScrollToTop } from "./components/utils/SmoothScrollToTop";
-// import PrivateRoutes from "./pages/routes/PrivateRoutes";
 import { useAuth } from "./contexts/Auth";
 import AdminCategory from "./pages/admin/Category";
 
+
 // WARNING: Do Not change anything in this pages.
 
-function App() {
 
-  const { PrivateRoutes, AdminRoutes } = useAuth()
+
+function App() {
+  const { PrivateRoutes, AdminRoutes } = useAuth();
 
   return (
     <>
@@ -61,7 +62,18 @@ function App() {
             <Route path="/dashboard/admin" element={<AdminDashboard />} />
           </Route>
           </Route>
+          <Route path="/admin-category" element={<AdminCategory/>} />
 
+          {/* Private Routes */}
+          <Route path="/dashboard" element={<PrivateRoutes />}>
+            <Route path="user" element={<UserDashboard />} />
+            <Route path="order" element={<Order />} />
+
+            {/* AdminRoutes */}
+            <Route path="" element={<AdminRoutes />}>
+              <Route path="admin" element={<AdminDashboard />} />
+            </Route>
+          </Route>
         </Routes>
         {/* <Footer/> */}
       </Router>
