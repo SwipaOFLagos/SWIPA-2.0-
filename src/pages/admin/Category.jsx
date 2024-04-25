@@ -3,7 +3,6 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import CategoryForm from "../../components/forms/CategoryForm";
 import { useAuth } from "../../contexts/Auth";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const AdminCategory = () => {
@@ -12,6 +11,7 @@ const AdminCategory = () => {
   const [updateName, setUpdateName] = useState("");
   const [selected, setSelected] = useState(null);
   const [show, setShow] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -126,5 +126,6 @@ const AdminCategory = () => {
     </>
   );
 };
+
 
 export default AdminCategory;
