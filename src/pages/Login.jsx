@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../css/Login.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import signinIcon from "../assets/icons/signinIcon.png";
 import signin from "../assets/images/Signindan.png";
 import { FaRegEye } from "react-icons/fa";
@@ -61,7 +61,6 @@ const Login = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="dan">
         <div className="top-section">
           <img className="ww" src={signinIcon} alt="" />

@@ -7,10 +7,13 @@ import "../css/NAProductcard.css"
 import BreadCrumb from "../components/NABreadcCumbs"
 import NewAccordion from '../components/NAAccordion';
 import Mydropdown1, { Mydropdown2 } from '../components/NADropdown';
-import { data } from "../Db/Perfumedb"
+import { data } from "../Db/ProductDb";
+// import { data } from "../Db/Perfumedb";
 import ProductCard from '../components/NAProductCard';
 import DetailPage from "../pages/DetailPage"
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer';
+import Menu from '../components/NavBar';
 
 
 const Newarrival = () => {
@@ -196,6 +199,7 @@ const Newarrival = () => {
  
   return (
     <div className="arrival-desk-div ">
+      <Menu/>
       <div className='arrival-top-div-desk'>
 
         <div className='d-none d-md-none d-lg-block'>
@@ -256,6 +260,7 @@ const Newarrival = () => {
               <div className=" d-none d-md-block d-lg-block" key={index}>
                   <ProductCard products={product} />
               </div>
+              
             )
           }
           )}
@@ -263,8 +268,11 @@ const Newarrival = () => {
           <div className='pagination'>
             {renderPaginationButtons()}
           </div>
+          <Footer/>
+         
           {/* Sort by for desktop drop down is in a dropdown component */}
         </div>
+        
       </div>
 
     </div>

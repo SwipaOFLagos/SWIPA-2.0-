@@ -6,15 +6,15 @@ import Seicon from "../../assets/icons/Vector (5).png";
 
 const Search = ()=> {
   // hooks
-  const [values, setValues] = useSearch();
+  const [values, setValues] = useSearch();  //coming from useSearch(context/search)
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {   //always prevent default when working with forms
     e.preventDefault();
     try {
       const { data } = await axios.get(`/product/search/${values?.keyword}`);
       // console.log(data);
-      // setValues({ ...values, results: data?.products }); the search result is stored as results
+      setValues({ ...values, results: data?.products });
       navigate("/search");
     } catch (err) {
       console.log(err);
@@ -24,7 +24,7 @@ const Search = ()=> {
   return (
     <form className="d-flex" onSubmit={handleSubmit}>
       <input
-        type="search"
+        type="text"
         style={{ borderRadius: "0px" }}
         className="form-control"
         placeholder="Search"
