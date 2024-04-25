@@ -14,14 +14,13 @@ import Search from "../components/forms/Search";
 import { useNavigate } from "react-router-dom";
 
 function Menu() {
-  const { auth,  logout } = useAuth();
+  const { auth, logout } = useAuth();
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
     navigate("/");
-
   };
 
   return (
@@ -34,7 +33,7 @@ function Menu() {
             </Link>
           </div>
           <div className="search-sec">
-            <Search/>
+            <Search />
           </div>
 
           <div className="profile-con">
@@ -50,19 +49,31 @@ function Menu() {
                   <Dropdown.Menu>
                     {!auth.user ? (
                       <div className="text-center">
-                        <Dropdown.Item  href="/login" className="first-drop">
+                        <Dropdown.Item href="/login" className="first-drop">
                           Login
                         </Dropdown.Item>
-                        <Dropdown.Item  href="/signup" className="first-drop">
+                        <Dropdown.Item href="/signup" className="first-drop">
                           Sign Up
                         </Dropdown.Item>
                       </div>
                     ) : (
                       <div className="text-center">
-                        <Dropdown.Item className="first-drop" href={auth?.user.role === 1 ? "/dashboard/admin" : "/dashboard/user"}>
+                        <Dropdown.Item
+                          className="first-drop"
+                          href={
+                            auth?.user.role === 1
+                              ? "/dashboard/admin"
+                              : "/dashboard/user"
+                          }
+                        >
                           Dashboard
                         </Dropdown.Item>
-                        <Dropdown.Item className="first-drop" onClick={handleLogout}>Logout</Dropdown.Item>
+                        <Dropdown.Item
+                          className="first-drop text-danger"
+                          onClick={handleLogout}
+                        >
+                          Logout
+                        </Dropdown.Item>
                       </div>
                     )}
                   </Dropdown.Menu>
@@ -74,16 +85,8 @@ function Menu() {
               <Link to="/cart">
                 <img src={Cartimg} alt="" />
               </Link>
-              <Link to="/cart">
-                <p>Cart</p>
-              </Link>
             </div>
           </div>
-          {/* {auth?.user && (
-            <button className="btn btn-danger" onClick={handleLogout}>
-              Logout
-            </button>
-          )} */}
         </div>
 
         <Navbar expand="lg" className="bg-body-primary fs-5" id="bottom">

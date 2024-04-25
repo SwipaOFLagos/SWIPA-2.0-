@@ -1,12 +1,10 @@
 // import { Outlet, Navigate } from "react-router-dom";
 // import { useAuth } from "../../contexts/Auth";
 
-// import React from "react";
-
-// const AdminRoutes = () => {
+// const PrivateRoutes = () => {
 //   const { auth } = useAuth();
 
-//   return auth?.token !== 1 ? <Outlet /> : <Navigate to="/" />;
-// };
+//     return auth?.user.role === 1 ? <Outlet/> : <Navigate to ="/"/>
+// }
 
-// export default AdminRoutes;
+// export default PrivateRoutes

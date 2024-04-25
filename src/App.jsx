@@ -19,50 +19,52 @@ import Search from "./pages/Search";
 import UserDashboard from "./pages/dashboard/User";
 import AdminDashboard from "./pages/dashboard/Admin";
 import { ScrollToTop } from "./components/utils/SmoothScrollToTop";
-// import PrivateRoutes from "./pages/routes/PrivateRoutes";
 import { useAuth } from "./contexts/Auth";
 import AdminCategory from "./pages/admin/Category";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 // WARNING: Do Not change anything in this pages.
 
 function App() {
-  const { PrivateRoutes, AdminRoute} = useAuth()
+  const { PrivateRoutes, AdminRoutes } = useAuth();
 
   return (
     <>
       <Router>
-        <Menu />
         <SideNav />
         {/* <Breadcrumbs/>   */}
         <ScrollToTop />
         <ToastContainer />
         <Routes>
+          <Route element={<Menu/>}>
           <Route path="/" element={<Home />} />
           <Route path="/all-fragrances" element={<AllFragance />} />
           <Route path="/cart-empty" element={<CartEmpty />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/customer-details" element={<CustomerDetails />} />
           <Route path="/cart" element={<CartItems />} />
-
           <Route path="/new-arrivals" element={<Newarrival />} />
           <Route path="/detail/:productId" element={<DetailPages />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/admin-catergory" element={<AdminCategory />} />
-
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/admin-category" element={<AdminCategory />} />
 
           {/* Private Routes */}
-          <Route path="/" element={<PrivateRoutes />}>
-            <Route path="/dashboard/user" element={<UserDashboard />} />
-            {/* <Route path="/dashboard/admin" element={<AdminDashboard />} /> */}
-            <Route path="/order" element={<Order />} />
-            {/* Admin routes */}
-          <Route path="/" element={<AdminRoute />}>
-            <Route path="/dashboard/admin" element={<AdminDashboard />} />
+          <Route path="/dashboard" element={<PrivateRoutes />}>
+            <Route path="user" element={<UserDashboard />} />
+            <Route path="order" element={<Order />} />
+
+            {/* Admin Routes */}
+            <Route path="" element={<AdminRoutes />}>
+              <Route path="admin" element={<AdminDashboard />} />         
+               <Route path="admin-category" element={<AdminCategory/>} />
+
+            </Route>
           </Route>
           </Route>
-
-
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         {/* <Footer/> */}
       </Router>
