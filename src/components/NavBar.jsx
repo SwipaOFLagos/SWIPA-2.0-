@@ -62,7 +62,7 @@ function Menu() {
                         <Dropdown.Item className="first-drop" href={auth?.user.role === 1 ? "/dashboard/admin" : "/dashboard/user"}>
                           Dashboard
                         </Dropdown.Item>
-                        <Dropdown.Item className="first-drop" onClick={handleLogout}>Logout</Dropdown.Item>
+                        <Dropdown.Item className="first-drop text-danger" onClick={handleLogout}>Logout</Dropdown.Item>
                       </div>
                     )}
                   </Dropdown.Menu>

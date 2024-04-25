@@ -28,7 +28,8 @@ import AdminCategory from "./pages/admin/Category";
 
 
 function App() {
-  const { PrivateRoutes, AdminRoutes } = useAuth();
+
+  const { PrivateRoutes, AdminRoutes } = useAuth()
 
   return (
     <>
@@ -68,11 +69,13 @@ function App() {
             <Route path="user" element={<UserDashboard />} />
             <Route path="order" element={<Order />} />
 
-            {/* AdminRoutes */}
-            <Route path="" element={<AdminRoutes />}>
-              <Route path="admin" element={<AdminDashboard />} />
-            </Route>
+            {/* Admin Routes */}
+          <Route path="" element={<AdminRoutes/>}>
+            <Route path="admin" element={<AdminDashboard />} />     
           </Route>
+
+          </Route>
+
         </Routes>
         {/* <Footer/> */}
       </Router>

@@ -107,6 +107,7 @@ const parsedData = JSON.parse(data);
 const isLoggedIn = parsedData;
 
   return isLoggedIn ? <Outlet/> : <Navigate to="/login"/>
+
 }
 
 const AdminRoutes = () => {
