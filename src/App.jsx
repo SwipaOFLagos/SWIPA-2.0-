@@ -22,14 +22,10 @@ import { ScrollToTop } from "./components/utils/SmoothScrollToTop";
 import { useAuth } from "./contexts/Auth";
 import AdminCategory from "./pages/admin/Category";
 
-
 // WARNING: Do Not change anything in this pages.
 
-
-
 function App() {
-
-  const { PrivateRoutes, AdminRoutes } = useAuth()
+  const { PrivateRoutes, AdminRoutes } = useAuth();
 
   return (
     <>
@@ -52,30 +48,18 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/admin-category" element={<AdminCategory />} />
 
-
-          {/* Private Routes */}
-          <Route path="/" element={<PrivateRoutes />}>
-            <Route path="/dashboard/user" element={<UserDashboard />} />
-            <Route path="/order" element={<Order />} />
-            {/* Admin Routes */}
-          <Route path="/" element={<AdminRoutes />}>
-            <Route path="/dashboard/admin" element={<AdminDashboard />} />
-          </Route>
-          </Route>
-          <Route path="/admin-category" element={<AdminCategory/>} />
-
           {/* Private Routes */}
           <Route path="/dashboard" element={<PrivateRoutes />}>
             <Route path="user" element={<UserDashboard />} />
             <Route path="order" element={<Order />} />
 
             {/* Admin Routes */}
-          <Route path="" element={<AdminRoutes/>}>
-            <Route path="admin" element={<AdminDashboard />} />     
-          </Route>
+            <Route path="" element={<AdminRoutes />}>
+              <Route path="admin" element={<AdminDashboard />} />         
+               <Route path="admin-category" element={<AdminCategory/>} />
 
+            </Route>
           </Route>
-
         </Routes>
         {/* <Footer/> */}
       </Router>

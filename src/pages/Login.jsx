@@ -62,7 +62,6 @@ const Login = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="dan">
         <div className="top-section">
           <img className="ww" src={signinIcon} alt="" />
