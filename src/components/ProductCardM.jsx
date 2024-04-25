@@ -6,8 +6,9 @@ const ProductCard = ({product}) => {
   const {name,description, priceCents, image, isavailability, _id} = product
   let price = (priceCents/100).toLocaleString(undefined, {minimumFractionDigits: 2})
   return (
+    <Link to={`/detail/${product._id}`}>
     <div key={_id}>
-      <div className='m-card-Container' key={_id}>
+      <div className='m-card-Container' key={index}>
         <div className='m-image'>
             <img src={image} />
         </div>
@@ -23,6 +24,7 @@ const ProductCard = ({product}) => {
         </div>
       </div>
     </div>
+    </Link>
   )
 }
 

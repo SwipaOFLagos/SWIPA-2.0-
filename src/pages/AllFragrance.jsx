@@ -9,6 +9,9 @@ import OffCanvasButton from "../components/FilterbyM";
 import Breadcrumbs from "../components/NABreadcCumbs";
 
 const AllFragrance = () => {
+
+  
+
   //general data
   const [currentProducts, setCurrentProducts] = useState(data);
   //pagination

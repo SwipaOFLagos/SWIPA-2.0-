@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
 
       if (!data?.error) {
         // Login successful
-        setAuth({ user: data.user, token: data.user.token });
+        setAuth({ user: data?.user, token: data?.user?.token });
         localStorage.setItem("auth", JSON.stringify(data));
         return true;
       } else {
@@ -48,8 +48,12 @@ const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.error("Login error:", error.message);
-      if (error?.response && error?.response?.data && error?.response?.data?.error) {
-        throw new Error(error?.response?.data?.error); 
+      if (
+        error?.response &&
+        error?.response?.data &&
+        error?.response?.data?.error
+      ) {
+        throw new Error(error?.response?.data?.error);
       } else {
         throw new Error("An error occurred while logging in");
       }
@@ -78,10 +82,14 @@ const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       console.error("Signup Error:", error.message);
-      if (error?.response && error?.response?.data && error?.response?.data?.error) {
-        throw new Error(error?.response?.data?.error); 
+      if (
+        error?.response &&
+        error?.response?.data &&
+        error?.response?.data?.error
+      ) {
+        throw new Error(error?.response?.data?.error);
       } else {
-        throw new Error("An error occurred while signing in");
+        throw new Error("An error occurred while signing up");
       }
     }
   };
@@ -92,14 +100,31 @@ const AuthProvider = ({ children }) => {
     setAuth({ user: null, token: "" });
   };
 
-  // console.log(auth.user);
+  
 
 const PrivateRoutes = () => {
-  return auth?.token ? <Outlet /> : <Navigate to="/login" />;
-};
+const data = localStorage.getItem("auth");
+const parsedData = JSON.parse(data);
+const IsLoggedIn = parsedData;
+
+  return IsLoggedIn ? <Outlet/> : <Navigate to="/"/>
+}
+
+const AdminRoute = () => {
+    const data = localStorage.getItem("auth");
+    const parsedData = JSON.parse(data);
+    const isAdmin = parsedData.user.role === 1;
+
+    return isAdmin ? <Outlet/> : <Navigate to="/"/> 
+    // console.log(role);
+
+}
+
+
+  // console.log(auth.user);
 
   return (
-    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout,PrivateRoutes }}>
+    <AuthContext.Provider value={{ auth, setAuth, login, signup, logout, PrivateRoutes, AdminRoute}}>
       {children}
     </AuthContext.Provider>
   );
