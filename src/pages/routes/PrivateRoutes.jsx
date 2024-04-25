@@ -2,9 +2,9 @@
 // import { useAuth } from "../../contexts/Auth";
 
 // const PrivateRoutes = () => {
-//   const { auth } = useAuth();
+// const { auth } = useAuth();
 
-//     return auth?.token ? <Outlet/> : <Navigate to ="/"/>
+//   return auth ? <Outlet/> : <Navigate to="/"/>
 // }
 
 // export default PrivateRoutes
