@@ -256,13 +256,13 @@ const DetailCard = ({ product }) => {
     ));
     if (halfStar) starRating.push(<img key="half" src={StarHalf} alt="Half Star" />);
   } else {
-    starRating = <span style={{fontSize: "1rem"}}>No rating</span>;
+    starRating = <span style={{fontSize: "1.1rem"}}>No rating</span>;
   }
 
   return (
     <>
       <div className="productDetail ">
-        <div className="productCont">
+        <div className="productCont"> 
           <div className="productImg">
             <div className="selectImg">
               {/* Loop through images and show the selected image */}
@@ -312,7 +312,9 @@ const DetailCard = ({ product }) => {
                     {avgRating} (<span style={{ fontSize: "1.13rem" }}>40 Reviews</span>)
                   </>
                 ) : (
-                  ""
+                  <>
+                  {avgRating} (<span style={{ fontSize: "1.13rem" }}>No Review</span>)
+                </>
                 )}
               </span>
             </div>

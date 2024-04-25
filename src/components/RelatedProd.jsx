@@ -7,7 +7,7 @@ import { data } from "../Db/ProductDb";
 import { Link } from "react-router-dom";
 
 const RelatedProd = ({ productG }) => {
-  
+  const { name, description, images, price, isAvailable  } = productG;
   // let brand = productG.brand;
   // console.log(typeof productG._id);
 
@@ -26,7 +26,7 @@ const RelatedProd = ({ productG }) => {
 
         <div className="rpG  rounded px-lg-4 pt-lg-4 d-flex flex-row flex-lg-column justify-content-md-between gap-2">
           {data
-            .filter((product) => product.brand === `${productG.brand}`)
+            .filter((product) => product.category === `${productG?.category}`)
             .slice(0, 2)
             .map((item) => {
               let price = (item?.priceCents / 100).toLocaleString(undefined, {

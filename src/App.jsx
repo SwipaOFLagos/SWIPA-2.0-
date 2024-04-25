@@ -21,6 +21,8 @@ import AdminDashboard from "./pages/dashboard/Admin";
 import { ScrollToTop } from "./components/utils/SmoothScrollToTop";
 import { useAuth } from "./contexts/Auth";
 import AdminCategory from "./pages/admin/Category";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
 
 // WARNING: Do Not change anything in this pages.
 
@@ -36,16 +38,17 @@ function App() {
         <ScrollToTop />
         <ToastContainer />
         <Routes>
+          {/* <Route element={<Menu/>}> */}
           <Route path="/" element={<Home />} />
           <Route path="/all-fragrances" element={<AllFragance />} />
           <Route path="/cart-empty" element={<CartEmpty />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/customer-details" element={<CustomerDetails />} />
           <Route path="/cart" element={<CartItems />} />
           <Route path="/new-arrivals" element={<Newarrival />} />
           <Route path="/detail/:productId" element={<DetailPages />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/blog" element={<Blogs/>} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="/admin-category" element={<AdminCategory />} />
 
           {/* Private Routes */}
@@ -60,6 +63,10 @@ function App() {
 
             </Route>
           </Route>
+          {/* </Route> */}
+
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         {/* <Footer/> */}
       </Router>
