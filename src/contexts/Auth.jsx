@@ -3,6 +3,7 @@ import { useState, createContext, useContext, useEffect } from "react";
 import axios from "axios";
 
 
+
 const AuthContext = createContext();
 
 // Provider functions
@@ -14,7 +15,7 @@ const AuthProvider = ({ children }) => {
 
   // axios config
   axios.defaults.baseURL = import.meta.env.VITE_REACT_APP_API_URL;
-  // axios.defaults.headers.common["Authorization"] = `Bearer ${auth?.token}`;
+  // axios.defaults.headers.common["Authorization"] = Bearer ${auth?.token};
 
   // Update axios headers when auth changes
   useEffect(() => {
@@ -39,7 +40,7 @@ const AuthProvider = ({ children }) => {
 
       if (!data?.error) {
         // Login successful
-        setAuth({ user: data?.user, token: data?.user?.token });
+        setAuth({ user: data.user, token: data.user.token });
         localStorage.setItem("auth", JSON.stringify(data));
         return true;
       } else {
@@ -48,12 +49,8 @@ const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.error("Login error:", error.message);
-      if (
-        error?.response &&
-        error?.response?.data &&
-        error?.response?.data?.error
-      ) {
-        throw new Error(error?.response?.data?.error);
+      if (error?.response && error?.response?.data && error?.response?.data?.error) {
+        throw new Error(error?.response?.data?.error); 
       } else {
         throw new Error("An error occurred while logging in");
       }
@@ -82,14 +79,10 @@ const AuthProvider = ({ children }) => {
       return data;
     } catch (error) {
       console.error("Signup Error:", error.message);
-      if (
-        error?.response &&
-        error?.response?.data &&
-        error?.response?.data?.error
-      ) {
-        throw new Error(error?.response?.data?.error);
+      if (error?.response && error?.response?.data && error?.response?.data?.error) {
+        throw new Error(error?.response?.data?.error); 
       } else {
-        throw new Error("An error occurred while signing up");
+        throw new Error("An error occurred while signing in");
       }
     }
   };
@@ -121,7 +114,6 @@ const AdminRoutes = () => {
 }
 
 
-
   // console.log(auth.user);
 
   return (
@@ -136,3 +128,6 @@ const AdminRoutes = () => {
 const useAuth = () => useContext(AuthContext);
 
 export { useAuth, AuthProvider };
+
+
+
