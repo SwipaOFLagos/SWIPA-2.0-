@@ -41,8 +41,12 @@ const AdminProductDetail = () => {
         <div className="row">
           <div className="col-md-9">
             <div className="p-3 mt-2 mb-2 h4 bg-light">Product</div>
+            {/* AdminProductDetail card here */}
+            {/* Features in this AdminProductDetail page include delete, link to update, etc */}
 
             {product?.name}
+
+            <Link to={`/dashboard/admin-product/update/${slug}`}>Update</Link>
           </div>
         </div>
       </div>

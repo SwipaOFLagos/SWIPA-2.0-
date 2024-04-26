@@ -26,6 +26,7 @@ import Contact from "./pages/Contact";
 import AdminProduct from "./pages/admin/AdminProduct";
 import AdminProducts from "./pages/admin/AdminProducts";
 import AdminProductDetail from "./pages/admin/AdminProductDetail";
+import AdminProductUpdate from "./pages/admin/AdminProductUpdate";
 
 // WARNING: Do Not change anything in this pages.
 
@@ -66,8 +67,7 @@ function App() {
                <Route path="admin-product" element={<AdminProduct/>} />
                <Route path="admin-product/detail/:slug" element={<AdminProductDetail/>} />
                <Route path="admin-products" element={<AdminProducts/>} />
-
-
+               <Route path="admin-product/update/:slug" element={<AdminProductUpdate/>} />
             </Route>
           </Route>
         </Routes>
