@@ -6,7 +6,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Menu from "../../components/NavBar";
 import Footer from "../../components/Footer";
-import "../../css/AdminProductDetail.css";
 import AdminProductCard from "../../components/cards/AdminProductCard";
 import { toast } from "react-toastify";
 
@@ -18,7 +17,7 @@ const AdminProductDetail = () => {
 
   // state
   const [product, setProduct] = useState(null);
-  
+
   const navigate = useNavigate();
 
 
@@ -66,7 +65,7 @@ const AdminProductDetail = () => {
         subTitle="Admin Dashboard"
       />
 
-      <div className="container">
+      <div className="container py-3">
         <AdminProductCard product={product} slug={slug} handleDelete={handleDelete} loading={loading} />
         {/* Features in this AdminProductDetail page include delete, link to update, etc */}
       </div>

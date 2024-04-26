@@ -24,7 +24,8 @@ const AdminProductCard = ({ product, slug, handleDelete, loading }) => {
 
   return (
     <>
-      <div className="productDetail py-5" style={{ height: "auto" }}>
+    <h2 className="bg-light">Product Details</h2>
+      <div className="productDetail" style={{ height: "auto" }}>
         <div className="productCont">
           <div className="productImg">
             <div className="selectImg">
