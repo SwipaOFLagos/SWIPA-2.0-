@@ -43,7 +43,6 @@ const AdminProduct = () => {
       console.log(err);
     }
   };
-
   useEffect(() => {
     fetchCategories();
   }, []);
