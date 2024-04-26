@@ -14,7 +14,6 @@ import Newarrival from "./pages/Newarrival";
 import DetailPages from "./pages/DetailPage";
 import Login from "./pages/Login";
 import Breadcrumbs from "./components/NABreadcCumbs";
-import Footer from "./components/Footer";
 import Search from "./pages/Search";
 import UserDashboard from "./pages/dashboard/User";
 import AdminDashboard from "./pages/dashboard/Admin";
@@ -40,11 +39,13 @@ function App() {
         <ScrollToTop />
         <ToastContainer />
         <Routes>
+          <Route element={<Menu />}> 
+          
+          
+          </Route>
           <Route path="/" element={<Home />} />
           <Route path="/all-fragrances" element={<AllFragance />} />
           <Route path="/cart-empty" element={<CartEmpty />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/customer-details" element={<CustomerDetails />} />
           <Route path="/cart" element={<CartItems />} />
           <Route path="/new-arrivals" element={<Newarrival />} />
@@ -53,6 +54,9 @@ function App() {
           <Route path="/blog" element={<Blog/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/admin-category" element={<AdminCategory />} />
+
+
+
 
           {/* Private Routes */}
           <Route path="/dashboard" element={<PrivateRoutes />}>
@@ -69,6 +73,9 @@ function App() {
                <Route path="admin-product/update/:slug" element={<AdminProductUpdate/>} />
             </Route>
           </Route>
+
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         {/* <Footer/> */}
       </Router>
