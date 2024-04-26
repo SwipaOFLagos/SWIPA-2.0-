@@ -1,16 +1,18 @@
-import React from 'react'
-import Jumbotron from "../components/cards/Jumbotron"
-import Menu from '../components/NavBar'
-import Footer from '../components/Footer'
+import React from "react";
+import Jumbotron from "../components/cards/Jumbotron";
+import Footer from "../components/Footer";
+import SideNav from "../components/SideNav";
+import Menu from "../components/NavBar";
 
 const Contact = () => {
   return (
     <>
-    <Menu/>
-     <Jumbotron title="COMING SOON..." subTitle="Contact Page"/>
-     <Footer/>
+      <Menu />
+      <SideNav />F
+      <Jumbotron title="COMING SOON..." subTitle="Contact Page" />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

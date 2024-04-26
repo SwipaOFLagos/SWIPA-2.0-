@@ -1,3 +1,5 @@
+
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,9 +11,13 @@ import Cartimg from "../assets/icons/blackcart.png";
 import Seicon from "../assets/icons/Vector (5).png";
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
-import { useAuth } from "../contexts/Auth";
-import Search from "../components/forms/Search";
+import { useAuth } from "../contexts/Auth.jsx";
 import { useNavigate } from "react-router-dom";
+import Search from "./forms/Search.jsx";
+
+
+
+
 
 function Menu() {
   const { auth, logout } = useAuth();
@@ -70,11 +76,16 @@ function Menu() {
               </div>
             </div>
 
-            <div className="cart-sec">
+          <div className="everything-cart">
+          <div className="cart-sec">
               <Link to="/cart">
                 <img src={Cartimg} alt="" />
               </Link>
             </div>
+            <div className="cartcount">
+              0
+            </div>
+          </div>
           </div>
         </div>
 

@@ -23,6 +23,7 @@ import { useAuth } from "./contexts/Auth";
 import AdminCategory from "./pages/admin/Category";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import AdminProduct from "./pages/admin/AdminProduct";
 
 // WARNING: Do Not change anything in this pages.
 
@@ -32,8 +33,6 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Menu /> */}
-        <SideNav />
         {/* <Breadcrumbs/>   */}
         <ScrollToTop />
         <ToastContainer />
@@ -48,8 +47,8 @@ function App() {
           <Route path="/new-arrivals" element={<Newarrival />} />
           <Route path="/detail/:productId" element={<DetailPages />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog/>} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="/admin-category" element={<AdminCategory />} />
 
           {/* Private Routes */}
@@ -61,6 +60,7 @@ function App() {
             <Route path="" element={<AdminRoutes />}>
               <Route path="admin" element={<AdminDashboard />} />         
                <Route path="admin-category" element={<AdminCategory/>} />
+               <Route path="admin-product" element={<AdminProduct/>} />
 
             </Route>
           </Route>

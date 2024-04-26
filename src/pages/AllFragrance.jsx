@@ -7,8 +7,9 @@ import Pagination from "../components/PaginationM";
 import { BiSort } from "react-icons/bi";
 import OffCanvasButton from "../components/FilterbyM";
 import Breadcrumbs from "../components/NABreadcCumbs";
-import Menu from "../components/NavBar";
 import Footer from "../components/Footer";
+import Menu from "../components/NavBar";
+import SideNav from "../components/SideNav";
 
 const AllFragrance = () => {
   //general data
@@ -171,7 +172,8 @@ const AllFragrance = () => {
 
   return (
     <>
-    <Menu/>
+      <Menu />
+      <SideNav />
       <div className="m-section">
         <div className="m-main">
           <div className="m-title">
@@ -208,7 +210,10 @@ const AllFragrance = () => {
                 handleCheckboxChange={handleCheckboxChange}
                 handleAvailabilityChange={handleAvailabilityChange}
               />
-              <h3><BiSort />Sort By</h3>
+              <h3>
+                <BiSort />
+                Sort By
+              </h3>
             </div>
             <div className="m-products">
               {paginate.map((product, index) => (
@@ -225,7 +230,7 @@ const AllFragrance = () => {
           />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

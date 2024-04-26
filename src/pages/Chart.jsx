@@ -2,12 +2,14 @@ import React from 'react'
 import order from '../assets/images/order.png' 
 import '../css/Chart.css'
 import Menu from '../components/NavBar'
+import SideNav from '../components/SideNav'
 import Footer from '../components/Footer'
 
 const CartEmpty = () => {
   return (
     <>
-        <Menu/>
+    <Menu/>
+    <SideNav/>
     <div className='cart-container'>
       <>  
       <div className='cart'>
