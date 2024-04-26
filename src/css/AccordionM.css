@@ -145,7 +145,7 @@
 }
 .accord-availability ul li{
     cursor: pointer;
-    list-style: '~';
+    
 }
 
 .accord-price{
@@ -165,3 +165,14 @@
     --bs-accordion-border-color: none !important;
     --bs-accordion-active-color: none !important;
 }
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (max-width: 1024px) {
+
+    .accord-brand, .accord-gender, .accord-availability{
+        border: none;
+    }
+   
+   }
+   
+ 

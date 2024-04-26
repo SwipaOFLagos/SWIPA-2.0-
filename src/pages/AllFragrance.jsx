@@ -12,6 +12,9 @@ import Menu from "../components/NavBar";
 import SideNav from "../components/SideNav";
 
 const AllFragrance = () => {
+
+  
+
   //general data
   const [currentProducts, setCurrentProducts] = useState(data);
   //pagination
