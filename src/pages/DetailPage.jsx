@@ -65,6 +65,9 @@ import YouTube from "../components/YouTube";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "../css/DetailPage.css";
+import Footer from "../components/Footer";
+import Menu from "../components/NavBar";
+import SideNav from "../components/SideNav";
 
 const DetailPage = () => {
   const { productId } = useParams();
@@ -104,6 +107,9 @@ const DetailPage = () => {
   // }, [productId]);
 
   return (
+    <>
+    <Menu />
+    <SideNav />
     <div className="all-details d-flex flex-column justify-content-center ">
       {productG && (
         <>
@@ -132,8 +138,10 @@ const DetailPage = () => {
             </div>
           </div>
         </>
-      )} 
+      )}
     </div>
+    <Footer />
+    </>
   );
 };
 export default DetailPage;

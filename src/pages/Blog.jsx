@@ -1,18 +1,18 @@
 import React from "react";
 import Jumbotron from "../components/cards/Jumbotron";
 import Footer from "../components/Footer";
-import SideNav from "../components/SideNav";
 import Menu from "../components/NavBar";
+import SideNav from "../components/SideNav";
 
-const Contact = () => {
+const Blog = () => {
   return (
     <>
       <Menu />
-      <SideNav />F
-      <Jumbotron title="COMING SOON..." subTitle="Contact Page" />
+      <SideNav />
+      <Jumbotron title="COMING SOON..." subTitle="Blog Page" />
       <Footer />
     </>
   );
 };
 
-export default Contact;
+export default Blog;

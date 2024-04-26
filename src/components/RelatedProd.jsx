@@ -7,7 +7,7 @@ import { data } from "../Db/ProductDb";
 import { Link } from "react-router-dom";
 
 const RelatedProd = ({ productG }) => {
-  const { name, description, images, price, isAvailable  } = productG;
+  // const { name, description, images, price, isAvailable  } = productG;
   // let brand = productG.brand;
   // console.log(typeof productG._id);
 
