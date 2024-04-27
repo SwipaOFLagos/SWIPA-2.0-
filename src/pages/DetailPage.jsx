@@ -130,7 +130,7 @@ const DetailPage = () => {
             </div>
 
             <div className="d-flex justify-content-center relate-p">
-              <RelatedProd productG={productG} />
+              <RelatedProd />
             </div>
 
             <div className="d-lg-none youtube-g">

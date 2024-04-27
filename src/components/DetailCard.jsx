@@ -209,7 +209,7 @@
 
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import "../css/DetailCards.css";
 import Star from "../assets/images/Vector star.png";
@@ -222,6 +222,13 @@ const DetailCard = ({ product }) => {
   const { name, description, images, price, quantity, isAvailable, avgRating } = product;
 
   const [selectedImage, setSelectedImage] = useState(images[1]?.url);
+
+  useEffect(() => {
+    // Set the selected image to the first image in the array when component mounts
+  
+      setSelectedImage(images[1]?.url);
+ 
+  }, [images]);
   const [count, setCount] = useState(1);
 
   const handleImageClick = (imageUrl) => {

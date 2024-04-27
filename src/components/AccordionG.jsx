@@ -28,7 +28,7 @@ function Accordions({product}) {
        <div className="border-top border-2">
        <Accordion.Header className={AccordionStyles['accord-header-g']}><span style={{fontSize:'24px', fontWeight:'500'}}>Scent Type</span></Accordion.Header>
         <Accordion.Body>
-          <p className='detailG'>{product?.scent_type}</p>
+          <p className='detailG'>{product?.scentType}</p>
         </Accordion.Body>
        </div>
       </Accordion.Item>
@@ -44,7 +44,7 @@ function Accordions({product}) {
         <div className="border-top border-2 border-bottom">
         <Accordion.Header className={AccordionStyles['accord-header-g']}><span style={{fontSize:'24px', fontWeight:'500'}}>Refund Policy</span></Accordion.Header>
         <Accordion.Body>
-          <p className='detailG'>{product?.refund_policy}</p>
+          <p className='detailG'>{product?.returnPolicy}</p>
         </Accordion.Body>
         </div>
       </Accordion.Item>

@@ -18,6 +18,7 @@
   --bs-accordion-btn-active-icon: url("../assets/images/ic_outline-minus.jpg")!important;
   --bs-accordion-border-color: none !important;
   --bs-accordion-active-color: none !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
 } 
 
 
