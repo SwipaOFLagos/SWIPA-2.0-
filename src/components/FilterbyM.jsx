@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import "../css/FilterbyM.css"; // Create a CSS file for styling
 import { LuFilter } from "react-icons/lu";
 import Accord from "./AccordionM";
+import { GoDotFill } from "react-icons/go";
 
 const OffCanvasButton = ({
   handleCheckboxChange,
   handleAvailabilityChange,
+  handleSelectedFilter,
+  selectedFilters,
+  clearFilters
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,9 +24,10 @@ const OffCanvasButton = ({
   return (
     <div className="offcanvas-container">
       <h3 onClick={toggleMenu}>
-        <span>
+        <span className="filter-iconM">
           <LuFilter />
         </span>
+      {selectedFilters.length > 0 && (<span className="red-dotM"><GoDotFill /></span>)}
         Filter By
       </h3>
       {isMenuOpen && <div className="backdrop" onClick={closeMenu}></div>}
@@ -33,16 +38,28 @@ const OffCanvasButton = ({
               X
             </span>
             <span className="filter-text">
-              Filters <span>(1)</span>
+              Filters {selectedFilters.length > 0 && (<span>({selectedFilters.length})</span>)}
             </span>
           </div>
-          <button>Clear</button>
+          <button onClick={clearFilters}>Clear</button>
         </div>
-        <p className="p-2 border px-3">FILTERS</p>
+        <p className="p-2 border px-3">FILTERS
+        {selectedFilters.length > 0 && (
+          <div className="selected-filters">
+            {selectedFilters.map((filter, index) => (
+              <span key={index} className="selected-filter">
+                {filter}
+              </span>
+            ))}
+          </div>
+        )}
+        </p>
         <div className="accord-offcanvas">
           <Accord
             handleCheckboxChange={handleCheckboxChange}
             handleAvailabilityChange={handleAvailabilityChange}
+            selectedFilters={selectedFilters}
+            handleSelectedFilter={handleSelectedFilter}
           />
         </div>
       </div>
