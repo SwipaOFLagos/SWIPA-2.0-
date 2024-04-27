@@ -44,9 +44,11 @@ const Login = () => {
       setLoading(false);
 
       if (success) {
-
-        toast.success("Login successful");
-        navigate("/");
+        setTimeout(() => {
+          toast.success("Login successful");
+          navigate("/");
+        }, 5000)
+        
         
       } else {
         toast.error("Login failed. try again..");
@@ -95,9 +97,9 @@ const Login = () => {
                 />
                 <span onClick={() => setShowPassword(!showPassword)}>
                   {showPassword ? (
-                    <FaRegEye className="icon" />
+                    <FaRegEye className="icon-d" />
                   ) : (
-                    <FaRegEyeSlash className="icon" />
+                    <FaRegEyeSlash className="icon-d" />
                   )}
                 </span>
               </div>
