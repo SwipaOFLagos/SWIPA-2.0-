@@ -55,7 +55,7 @@ const AdminProductDetail = () => {
     }
   };
 
-  console.log(product);
+  // console.log(product);
 
   return (
     <>
