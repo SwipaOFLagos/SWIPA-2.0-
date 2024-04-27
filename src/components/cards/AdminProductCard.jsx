@@ -226,13 +226,13 @@ const AdminProductCard = ({ product, slug, handleDelete, loading }) => {
                 <Button
                   variant="dark"
                   className="buttonG mb-3"
-                  style={{ backgroundColor: "blue", fontSize: "20px" }}
+                  style={{ backgroundColor: "#0098B8", fontSize: "20px",}}
                 >
                   Update
                 </Button>
               </Link>
 
-              <Button variant="dark" className="buttonG" onClick={handleShow}>
+              <Button variant="dark" className="buttonG bg-danger" onClick={handleShow}>
                 Delete
               </Button>
             </div>
