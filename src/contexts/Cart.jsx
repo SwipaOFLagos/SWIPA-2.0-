@@ -7,7 +7,7 @@ const CartProvider = ({ children }) => {
 
   useEffect(() => {
     let existingCart = localStorage.getItem("cart");
-    if (existingCart) setCart(JSON.parse(existingCart));
+    if (existingCart) setCart(JSON.parse(existingCart));  //update the cart
   }, []);
 // Anything in the provider is what we want to ship out
   return (

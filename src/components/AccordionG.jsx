@@ -20,7 +20,7 @@ function Accordions({product}) {
         <div className="border-top border-2">
         <Accordion.Header className={AccordionStyles['accord-header-g']}><span style={{fontSize:'24px', fontWeight:'500'}}>Scent Profile</span></Accordion.Header>
         <Accordion.Body>
-        <p className='detailG'>{product?.scent_profile}</p>
+        <p className='detailG'>{product?.scentProfile}</p>
         </Accordion.Body>
         </div>
       </Accordion.Item>
