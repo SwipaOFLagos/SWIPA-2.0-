@@ -215,6 +215,7 @@ const AllFragrance = () => {
     }
   };
 
+
   return (
     <>
       <Menu />
@@ -271,7 +272,7 @@ const AllFragrance = () => {
             </div>
 
             <div className="m-products">
-              {paginate.map((product, index) => (
+              {paginate.map((product) => (
                 <ProductCard product={product} key={product._id} />
               ))}
             </div>
@@ -285,7 +286,6 @@ const AllFragrance = () => {
           />
         </div>
       </div>
-      <CountDownTimer/>
       <Footer />
     </>
   );
