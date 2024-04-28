@@ -1,11 +1,12 @@
 import React from 'react';
 import Profilepics from '../assets/images/Ellipse 1.png'
 import BlogImg from '../assets/images/image 30.png'
+import BlogImg1 from '../assets/images/image 27.png'
 import '../css/Blog.css'
 
 const BlogCard = ({ product }) => {
     return(
-        <div className="blogs p-4">
+        <div className="blogs ">
             <h1 className='blog-head'>Blogs</h1>
             <div className="blog-display">
             <div className="blog-card">
@@ -31,7 +32,7 @@ const BlogCard = ({ product }) => {
             </div>
             <div className="blog-card">
                 <div className="blog-img">
-                    <img src={BlogImg} alt="" style={{width:"100%", borderRadius: "10px 10px 0 0"}}/>
+                    <img src={BlogImg1} alt="" style={{width:"100%", borderRadius: "10px 10px 0 0"}}/>
                 </div>
                 <div className="blog-details p-4">
                     <div className='blog-id d-flex gap-4'>
@@ -71,9 +72,9 @@ const BlogCard = ({ product }) => {
                     </div>
                 </div>
             </div>
-            <div className="blog-card d-lg-none">
+            <div className="blog-card d-lg-none ">
                 <div className="blog-img">
-                    <img src={BlogImg} alt="" style={{width:"100%", borderRadius: "10px 10px 0 0"}}/>
+                    <img src={BlogImg1} alt="" style={{width:"100%", borderRadius: "10px 10px 0 0"}}/>
                 </div>
                 <div className="blog-details p-4">
                     <div className='blog-id d-flex gap-4'>
