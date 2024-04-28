@@ -219,14 +219,14 @@ import Minus from "../assets/images/ic_sharp-minus.png";
 import { Link } from "react-router-dom";
 
 const DetailCard = ({ product }) => {
-  const { name, description, images, price, quantity, isAvailable, avgRating } = product;
+  const { name, description, images, price, quantity, isAvailable, avgRating, size } = product;
 
-  const [selectedImage, setSelectedImage] = useState(images[1]?.url);
+  const [selectedImage, setSelectedImage] = useState(images[0]?.url);
 
   useEffect(() => {
     // Set the selected image to the first image in the array when component mounts
   
-      setSelectedImage(images[1]?.url);
+      setSelectedImage(images[0]?.url);
  
   }, [images]);
   const [count, setCount] = useState(1);
@@ -287,8 +287,8 @@ const DetailCard = ({ product }) => {
             </div>
             <div className="clickedImg">
               <img
-                src={selectedImage}
-                alt={selectedImage}
+                src={selectedImage || product?.images[0]?.url}
+                alt={selectedImage === product?.images[0]?.url ? "selected" : ""}
                 className="selected"
               />
             </div>
@@ -300,12 +300,12 @@ const DetailCard = ({ product }) => {
             </p>
 
             <div style={{ display: "flex", alignItems: "center" }} className="">
-              <div
+              <span
                 className="imgG d-flex gap-1"
                 style={{ width: "5rem" }}
               >
                 {starRating}
-              </div>
+              </span>
 
               <span
                 style={{
@@ -335,9 +335,22 @@ const DetailCard = ({ product }) => {
               </span>
             </p>
             <p className="mb-2" style={{ fontSize: "1.25rem" }}>
-              Size: <span style={{ fontSize: "1rem" }}>2.3 Oz</span>
+              Size:{" "}
+              <button
+                className="bg-light text-dark border border-dark"
+                style={{
+                  width: "3.69rem",
+                  height: "2.44rem",
+                  fontSize: "0.88rem",
+                  fontWeight: "500",
+                  borderRadius: "4px",
+                }}
+              >
+                {size}Oz
+              </button>
+              
             </p>
-            <div>
+            {/* <div>
               {" "}
               <button
                 className="bg-dark text-light"
@@ -363,7 +376,7 @@ const DetailCard = ({ product }) => {
               >
                 6.3 Oz
               </button>{" "}
-            </div>
+            </div> */}
 
             <div className="d-flex my-2  align-items-center">
               <span className="pe-4" style={{ fontSize: "1.25rem" }}>
