@@ -3,6 +3,7 @@ import Profilepics from '../assets/images/Ellipse 1.png'
 import BlogImg from '../assets/images/image 30.png'
 import BlogImg1 from '../assets/images/image 27.png'
 import '../css/Blog.css'
+import { Link } from 'react-router-dom';
 
 const BlogCard = ({ product }) => {
     return(
@@ -26,7 +27,7 @@ const BlogCard = ({ product }) => {
                     <div className='blog-info'>
                         <h3>Exploring The History Of Perfumes</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Iaculis ultrices molestie pellentesque sed amet amet   molestie pellentesque sed amet amet lorem i... </p>
-                        <h6>Read More...</h6>
+                        <Link to={'/blog'} style={{ textDecoration: "none", color: "black" }}><b>Read More...</b></Link>
                     </div>
                 </div>
             </div>
@@ -47,7 +48,7 @@ const BlogCard = ({ product }) => {
                     <div className='blog-info'>
                         <h3>Exploring The History Of Perfumes</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Iaculis ultrices molestie pellentesque sed amet amet   molestie pellentesque sed amet amet lorem i... </p>
-                        <h6>Read More...</h6>
+                        <Link to={'/blog'} style={{ textDecoration: "none", color: "black" }}><b>Read More...</b></Link>
                     </div>
                 </div>
             </div>
@@ -68,7 +69,7 @@ const BlogCard = ({ product }) => {
                     <div className='blog-info'>
                         <h3>Exploring The History Of Perfumes</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Iaculis ultrices molestie pellentesque sed amet amet   molestie pellentesque sed amet amet lorem i... </p>
-                        <h6>Read More...</h6>
+                        <Link to={'/blog'} style={{ textDecoration: "none", color: "black" }}><b>Read More...</b></Link>
                     </div>
                 </div>
             </div>
@@ -89,7 +90,7 @@ const BlogCard = ({ product }) => {
                     <div className='blog-info'>
                         <h3>Exploring The History Of Perfumes</h3>
                         <p>Lorem ipsum dolor sit amet consectetur. Iaculis ultrices molestie pellentesque sed amet amet   molestie pellentesque sed amet amet lorem i... </p>
-                        <h6>Read More...</h6>
+                        <Link to={'/blog'} style={{ textDecoration: "none", color: "black" }}><b>Read More...</b></Link>
                     </div>
                 </div>
             </div>

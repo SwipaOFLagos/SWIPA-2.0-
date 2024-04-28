@@ -119,7 +119,7 @@ const DetailCard = ({ product }) => {
               <button
                 className="bg-light text-dark border border-dark"
                 style={{
-                  width: "3.69rem",
+                  width: "3.8rem",
                   height: "2.44rem",
                   fontSize: "1.2rem",
                   fontWeight: "500",
@@ -127,7 +127,7 @@ const DetailCard = ({ product }) => {
                   marginLeft:"1.2rem"
                 }}
               >
-                {size}Oz
+                {size} Oz
               </button>
               
             </p>
