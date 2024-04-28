@@ -24,6 +24,9 @@ import AdminCategory from "./pages/admin/Category";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import AdminProduct from "./pages/admin/AdminProduct";
+import AdminProducts from "./pages/admin/AdminProducts";
+import AdminProductDetail from "./pages/admin/AdminProductDetail";
+import AdminProductUpdate from "./pages/admin/AdminProductUpdate";
 
 // WARNING: Do Not change anything in this pages.
 
@@ -40,36 +43,62 @@ function App() {
         <Routes >
           {/* <Route element={<Menu />}> */}
             {/* Public Routes */}
-            <Route path="/" element={<Home />} />
-            <Route path="/all-fragrances" element={<AllFragance />} />
-            <Route path="/cart-empty" element={<CartEmpty />} />
-            <Route path="/customer-details" element={<CustomerDetails />} />
-            <Route path="/cart" element={<CartItems />} />
-            <Route path="/new-arrivals" element={<Newarrival />} />
+            
+            
+           
+            {/* <Route path="/customer-details" element={<CustomerDetails />} />
+            <Route path="/cart" element={<CartItems />} /> */}
+            {/* <Route path="/new-arrivals" element={<Newarrival />} />
             <Route path="/detail/:productId" element={<DetailPages />} />
             <Route path="/search" element={<Search />} />
             <Route path="/admin-category" element={<AdminCategory />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} /> */}
 
             {/* Private Routes */}
-            <Route path="/dashboard" element={<PrivateRoutes />}>
+            {/* <Route path="/dashboard" element={<PrivateRoutes />}>
               <Route path="user" element={<UserDashboard />} />
-              <Route path="order" element={<Order />} />
+              <Route path="order" element={<Order />} /> */}
 
               {/* Admin Routes */}
-              <Route path="" element={<AdminRoutes />}>
+              {/* <Route path="" element={<AdminRoutes />}>
                 <Route path="admin" element={<AdminDashboard />} />
                 <Route path="admin-category" element={<AdminCategory />} />
                 <Route path="admin-product" element={<AdminProduct />} />
 
-              </Route>
-            </Route>
+              </Route> */}
+            {/* </Route> */}
           {/* </Route> */}
 
-
+          <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/cart-empty" element={<CartEmpty />} />
+          <Route path="/customer-details" element={<CustomerDetails />} />
+          <Route path="/cart" element={<CartItems />} />
+          <Route path="/all-fragrances" element={<AllFragance />} />
+          <Route path="/new-arrivals" element={<Newarrival />} />
+          <Route path="/detail/:productId" element={<DetailPages />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/blog" element={<Blog/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/admin-category" element={<AdminCategory />} />
+
+          {/* Private Routes */}
+          <Route path="/dashboard" element={<PrivateRoutes />}>
+            <Route path="user" element={<UserDashboard />} />
+            <Route path="order" element={<Order />} />
+
+            {/* Admin Routes */}
+            <Route path="" element={<AdminRoutes />}>
+              <Route path="admin" element={<AdminDashboard />} />         
+               <Route path="admin-category" element={<AdminCategory/>} />
+               <Route path="admin-product" element={<AdminProduct/>} />
+               <Route path="admin-product/detail/:slug" element={<AdminProductDetail/>} />
+               <Route path="admin-products" element={<AdminProducts/>} />
+               <Route path="admin-product/update/:slug" element={<AdminProductUpdate/>} />
+            </Route>
+          </Route>
         </Routes>
         {/* <Footer/> */}
       </Router>

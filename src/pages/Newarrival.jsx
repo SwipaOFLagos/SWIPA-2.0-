@@ -12,7 +12,10 @@ import ProductCard from "../components/NAProductCard";
 import DetailPage from "../pages/DetailPage";
 import Footer from "../components/Footer";
 import Menu from "../components/NavBar";
+// import styles from "../css/myFooter.module.css"
 import SideNav from "../components/SideNav";
+import Hamburger from "../components/Hamburger";
+// import MyFooterCss from "../css/myFooter.modules.css"
 
 const Newarrival = () => {
   const [currentProducts, setCurrentProducts] = useState(data);
@@ -168,13 +171,13 @@ const Newarrival = () => {
     selectedAlphabet,
   ]);
 
-  const handleFilter = (letter) => {
-    // const filtered = data
-    const filtered = data.filter(
-      (product) => product.brand.charAt(0).toUpperCase() === letter
-    );
-    setCurrentProducts(filtered);
-  };
+  // const handleFilter = (letter) => {
+  //   // const filtered = data
+  //   const filtered = data.filter(
+  //     (product) => product.brand.charAt(0).toUpperCase() === letter
+  //   );
+  //   setCurrentProducts(filtered);
+  // };
 
   const handleCheckboxChange = (event, value, category) => {
     const isChecked = event.target.checked;
@@ -249,60 +252,61 @@ const Newarrival = () => {
       <div className="arrival-desk-div">
         <div className="arrival-top-div-desk">
           <div className="d-none d-md-none d-lg-block">
-            <BreadCrumb />
+            {/* <BreadCrumb /> */}
           </div>
 
-          <div className="d-flex justify-content-between">
-            <div className="d-block d-md-none d-lg-none">
-              <h3>All Featured Fragrance</h3>
-              <span>Showing 1-20 of 500 products</span>
+          <div className="d-flex justify-content-between ">
+            <div className="d-block d-md-none d-lg-none mx-3 my-3">
+              <h3>New Arrivals</h3>
+              <span>Showing {lastIndex} Products</span>
+              {/* <span> Showing {firstIndex + 1} - {lastIndex} of{" "}
+                {currentProducts.length} Products</span> */}
             </div>
             <div className="d-none d-md-block d-lg-block">
-              <h3>All Featured Fragrance</h3>
-              <span>Showing 1-15 of 500 products</span>
+              <h3>New Arrivals</h3>
+              <span>Showing {lastIndex} Products</span>
+              {/* <span>Showing {firstIndex + 1} - {lastIndex} of{" "}
+                {currentProducts.length} Products</span> */}
             </div>
 
-            <div className="d-none d-md-block d-lg-block">
+            <div className="d-none d-md-none d-lg-block">
               <span>
+                {/* Dropdoen for desktop */}
                 <Mydropdown1 />
               </span>
             </div>
           </div>
         </div>
 
-        <div className="d-flex justify-content-between d-md-flex justify-md-content-between arrival-top-div-mob d-block d-md-none d-lg-none my-3">
-          <div className="">
-            <span className="" onClick={handleShow}>
-              <span>
-                <CiFilter />
-              </span>{" "}
-              <b>Filter By </b>
-            </span>
-            {showFilter && (
+        <div className=" d-flex justify-content-between d-md-flex justify-md-content-between arrival-top-div-mob d-block d-md-block d-lg-none px-3 mb-3">
+          <div className="mt-2">
+            
+            
               <div className="arrival-filter-div">
-                <NewAccordion
-                  handleCheckboxChange={handleCheckboxChange}
-                  handleAvailabilityChange={handleAvailabilityChange}
+                <Hamburger placement={'bottom'}
+                handleCheckboxChange={handleCheckboxChange}
+                handleAvailabilityChange={handleAvailabilityChange}
                 />
               </div>
-            )}
+            
           </div>
 
-          <div className="me-3">
+          <div className="me-lg-3 mt-2">
             <span className="" onClick={handleClick}>
               <span>
                 <BiSort />
               </span>{" "}
               <b>Sort By</b>{" "}
             </span>
-            {showSort && <Mydropdown2 />}
+            {/* Dropdown for mobile */}
+            {showSort && <Mydropdown2 />} 
           </div>
         </div>
 
-        <div className="arrival-products-div-mob d-flex justify-content-between flex-wrap gap-3 ">
+        <div className="arrival-products-div-mob d-flex justify-content-center align-items-center flex-wrap gap-3 ">
           {paginate.map((product, index) => {
             return (
-              <div className="d-block d-md-none d-lg-none" key={index}>
+              <div className="d-block d-md-block d-lg-none" key={index}>
                 <ProductCard products={product} />
               </div>
             );
@@ -310,22 +314,22 @@ const Newarrival = () => {
         </div>
 
         <div className="arrival-main-div">
-          <div className="arrival-filter-div d-none d-md-block d-lg-block me-3">
+          <div className="arrival-filter-div d-none d-md-none d-lg-block me-3">
             <h6 className="ms-3 mt-3 mb-2">
               <b>Filter By</b>
             </h6>
             <NewAccordion
               handleCheckboxChange={handleCheckboxChange}
               handleAvailabilityChange={handleAvailabilityChange}
-              handleFilter={handleFilter}
+              // handleFilter={handleFilter}
             />
           </div>
 
-          {/* Desktop and Tablet products div */}
+          {/* Desktop */}
           <div className="arrival-products-div-desk d-flex flex-wrap gap-3">
             {paginate.map((product, index) => {
               return (
-                <div className=" d-none d-md-block d-lg-block" key={index}>
+                <div className=" d-none d-md-none d-lg-block" key={index}>
                   <ProductCard products={product} />
                 </div>
               );
@@ -338,7 +342,10 @@ const Newarrival = () => {
         
       </div>
 
-      <Footer />
+<div className="">
+<Footer/>
+</div>
+      
     </>
   );
 };

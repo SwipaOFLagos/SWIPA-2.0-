@@ -14,7 +14,6 @@ function NewAccordion({ handleCheckboxChange, handleAvailabilityChange}) {
   // const [selectedAlphabet, setSelectedAlphabet] = useState('')
     // Alphabet
   const [selectedAlphabet, setSelectedAlphabet] = useState('');
- 
 
   const genders = Array.from(new Set(data.map((product) => {
     return product.gender
