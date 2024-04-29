@@ -69,6 +69,23 @@
         height: 20px;
     }
 
+    .cart-imgs {
+        display: flex;
+    }
+
+    .cartcount-s {
+        position: relative;
+        height: 18px;
+        bottom: 6px;
+        right: 6px;
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        padding: 0 3px;
+        display: flex;
+        align-items: center;
+    }
+
     .show-header {
         height: 56px;
         width: 100%;
