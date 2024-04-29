@@ -80,9 +80,10 @@ function App() {
           <Route path="/new-arrivals" element={<Newarrival />} />
           <Route path="/detail/:productId" element={<DetailPages />} />
           <Route path="/search" element={<Search />} />
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/admin-category" element={<AdminCategory />} />
+          <Route path="admin-product" element={<AdminProduct />} />
 
           {/* Private Routes */}
           <Route path="/dashboard" element={<PrivateRoutes />}>
