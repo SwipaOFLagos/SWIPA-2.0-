@@ -54,7 +54,7 @@ const AdminProducts = () => {
           <div className="col-md-9">
             <div className="p-3 my-2  bg-light d-flex justify-content-between">
               <h4>
-                All Products <span>({productCount})</span>
+                All Products <span>({productCount || 0})</span>
               </h4>
               <p className="bg-warning px-2 py-1">Page {page}/{totalPages}</p>
             </div>

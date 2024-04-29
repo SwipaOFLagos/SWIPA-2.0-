@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../css/RelatedProd.css";
-<<<<<<< HEAD
-=======
-import { data } from "../DB/ProductDb";
->>>>>>> d6f9bd52ce751e4bcd3fd92ae55f67c5b1ca8b75
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useParams } from "react-router-dom";
