@@ -13,16 +13,21 @@ import CartB from "../assets/icons/blackcart.png";
 import FragLogo from "../assets/images/Frame 579.png";
 import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/Auth";
+import Search from "./forms/Search";
 // import Search from "./forms/Search";
 // import { useNavigate } from "react-router-dom";
 
 function SideNav() {
   const [show, setShow] = useState(false);
+  const [search, setSearch] = useState(false);
   const { auth, login} = useAuth();
 
 
+
+  const handleClose1 = () => setSearch(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleShow1 = () => setSearch(true);
 
   return (
     <>
@@ -38,9 +43,11 @@ function SideNav() {
 
           <div className="right-icons">
             <div className="">
-            <img src={Searchi} alt="" />
+            <img src={Searchi} alt="" onClick={handleShow1} />
             </div>
-
+            <div className='popo'>
+              <Search handleClose1={handleClose1} search={search}/>
+            </div>
          
           {!auth?.user ? (
               <Link to="/login">

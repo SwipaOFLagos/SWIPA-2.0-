@@ -11,7 +11,11 @@ import axios from "axios";
 
 const DetailCard = ({ product }) => {
   const { productId } = useParams();
-  const { name, description, images, price, quantity, isAvailable, avgRating, size } = product;
+  const { name, description, images, price, quantity, isAvailable, avgRating, size} = product;
+
+  let Price = price.toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+  });
 
   const [selectedImage, setSelectedImage] = useState(images[0]?.url);
 
@@ -161,17 +165,17 @@ const DetailCard = ({ product }) => {
                 className=""
                 style={{ fontSize: "1.8rem", fontWeight: "500", marginLeft:"1.2rem"}}
               >
-                &#x20A6;{price}
+                &#x20A6;{Price}
               </span>
             </p>
             <p className="mb-2" style={{ fontSize: "1.25rem" }}>
               Size:{" "}
               <button
-                className="bg-light text-dark border border-dark"
+                className="bg-light text-dark border border-dark btn-sm"
                 style={{
-                  width: "3.8rem",
-                  height: "2.44rem",
-                  fontSize: "1.2rem",
+                  width: "3rem",
+                  height: "2rem",
+                  fontSize: "1rem",
                   fontWeight: "500",
                   borderRadius: "4px",
                   marginLeft:"1.2rem"
