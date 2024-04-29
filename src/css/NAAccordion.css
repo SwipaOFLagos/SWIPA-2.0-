@@ -1,7 +1,11 @@
 
-.accordion-item {
+/* .accordion-item {
     border: none !important; 
+<<<<<<< HEAD
 } 
+=======
+}  */
+>>>>>>> 2e844dcd21fc2285f15069443ad49febc02ca29a
 /* .accordion-button::after {
     background-image: url("../assets/images/Vector_Accordion_Down.png") !important;
   }
@@ -9,4 +13,12 @@
   .accordion-button:not(.collapsed)::after {
     background-image: url("../assets/images/Vector_Accordion_Up.png") !important;
   }   */
+<<<<<<< HEAD
 
+=======
+  .accordion-button:focus {
+    /* z-index: 3;
+    outline: 0; */
+    box-shadow: none !important;
+}
+>>>>>>> 2e844dcd21fc2285f15069443ad49febc02ca29a
