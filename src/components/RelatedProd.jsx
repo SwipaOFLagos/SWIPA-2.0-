@@ -60,30 +60,31 @@ const RelatedProd = () => {
           {relatedProducts
           .slice(0, limit )
           .map((product) => (
-            <Card className="cardG mb-lg-4 px-2" key={product._id}>
-              <Link to={`/detail/${product._id}`} style={{ textDecoration: "none", color: "black" }}>
-                {/* <Card.Img variant="top" src={product?.images[1].url} className="imgGa" /> */}
-                {product.images && product.images.length > 0 && (
-                    <Card.Img variant="top" src={product.images[0]?.url} className="imgGa" />
-                  )}
-                <Card.Body className="row d-flex justify-content-between align-items-center">
-                  <div>
-                    <h1 className="hg" style={{ fontSize: "24px" }}>
-                      {product?.name}
-                    </h1>
-                    <p className="pg" style={{ fontSize: "18px", fontWeight: "400" }}>
-                      {product?.description}
-                    </p>
-                    <p className="ppg" style={{ fontSize: "26px", fontWeight: "700" }}>
-                      &#x20A6;{product.price.toLocaleString(undefined, { minimumFractionDigits: 2 })}
-                    </p>
-                  </div>
-                  <Button variant="dark" className="btnG mx-lg-2  d-block">
-                    Add to Cart
-                  </Button>
-                </Card.Body>
-              </Link>
-            </Card>
+            
+            // <Card className="cardG mb-lg-4 px-2" key={product._id}>
+            //   <Link to={`/detail/${product._id}`} style={{ textDecoration: "none", color: "black" }}>
+            //     {/* <Card.Img variant="top" src={product?.images[1].url} className="imgGa" /> */}
+            //     {product.images && product.images.length > 0 && (
+            //         <Card.Img variant="top" src={product.images[0]?.url} className="imgGa" />
+            //       )}
+            //     <Card.Body className="row d-flex justify-content-between align-items-center">
+            //       <div>
+            //         <h1 className="hg" style={{ fontSize: "24px" }}>
+            //           {product?.name}
+            //         </h1>
+            //         <p className="pg" style={{ fontSize: "18px", fontWeight: "400" }}>
+            //           {product?.description}
+            //         </p>
+            //         <p className="ppg" style={{ fontSize: "26px", fontWeight: "700" }}>
+            //           &#x20A6;{product.price.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+            //         </p>
+            //       </div>
+            //       <Button variant="dark" className="btnG mx-lg-2  d-block">
+            //         Add to Cart
+            //       </Button>
+            //     </Card.Body>
+            //   </Link>
+            // </Card>
           ))}
         </div>
       </div>
