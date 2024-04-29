@@ -21,6 +21,7 @@ function SideNav() {
   const [show, setShow] = useState(false);
   const { auth, login } = useAuth();
 
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 

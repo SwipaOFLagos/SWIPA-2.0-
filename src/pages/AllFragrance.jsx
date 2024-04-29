@@ -99,6 +99,8 @@ useEffect(() => {
   useEffect(() => {
     let filteredProducts = fetchProduct;
 
+    console.log("Selected Gender:", selectedGender);
+  console.log("Selected Brand:", selectedBrand);
     //filter for Gender
     if (selectedGender.length > 0) {
       filteredProducts = filteredProducts.filter((product) =>

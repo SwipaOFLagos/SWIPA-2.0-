@@ -76,9 +76,8 @@
        }
        .cardG{ 
         width: 50% !important;
-        height: auto !important;
-        flex-shrink: 0; /* Prevent shrinking */
-        flex-grow: 0;
+        height: 410px !important;
+        flex: 0 0 60%;
        }
        .imgGa{
         height: 12.5rem;
