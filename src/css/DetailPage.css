@@ -21,7 +21,7 @@
 .relate-p {
   width: 35%;
   margin-top: 40px;
-  max-height: 1100px;
+  /* max-height: 1100px; */
 }
 .youtube-g {
   width: 55%;
@@ -41,7 +41,8 @@
   }
   .youtube-g {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +67,8 @@
       }
       .youtube-g {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
