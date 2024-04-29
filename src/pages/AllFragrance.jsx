@@ -74,7 +74,7 @@ const AllFragrance = () => {
     let filteredProducts = data;
 
     //filter for Gender
-    if (selectedGender.length > 0) {
+     if (selectedGender.length > 0) {
       filteredProducts = filteredProducts.filter((product) =>
         selectedGender.includes(product.gender)
       );
@@ -215,11 +215,11 @@ const AllFragrance = () => {
     }
   };
 
-
   return (
     <>
       <Menu />
       <SideNav />
+      <Breadcrumbs />
       <div className="m-section">
         <div className="m-main">
           <div className="m-title">
