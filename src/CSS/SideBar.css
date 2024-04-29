@@ -76,14 +76,15 @@
     .cartcount-s {
         position: relative;
         height: 18px;
+        width: 18px;
         bottom: 6px;
         right: 6px;
         color: black;
         background-color: white;
         border-radius: 50%;
-        padding: 0 3px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .show-header {
@@ -158,6 +159,8 @@
     padding-left: 0 !important;
     }
 }
+
+
 
 
 

@@ -116,7 +116,7 @@ function SideNav() {
                   to="/"
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                  <li>FAG</li>
+                  <li>FAQ</li>
                 </Link>
 
                 <Link

@@ -63,6 +63,7 @@ const AdminProduct = () => {
     productData.append("about", about);
     productData.append("brand", brand);
     productData.append("scentType", scentType);
+    productData.append("scentProfile", scentProfile);
     productData.append("fragranceType", fragranceType);
     productData.append("size", size);
     images.forEach((image) => {
