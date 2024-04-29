@@ -72,7 +72,7 @@ const AdminProducts = () => {
               <tbody>
                 {products.map((p, i) => (
                   <tr key={p._id}>
-                    <td>{i + 1}</td>
+                    <td>{(page - 1) * limit + i + 1}</td>
                     <td>
                       {p?.images && (
                         <img
@@ -104,6 +104,7 @@ const AdminProducts = () => {
                   className="btn btn-primary mx-2"
                   onClick={() => setPage(page - 1)}
                   disabled={page === 1}
+                  style={{backgroundColor: "#0098B8"}}
                 >
                   Previous
                 </button>
@@ -112,6 +113,7 @@ const AdminProducts = () => {
                   className="btn btn-primary mx-2"
                   onClick={() => setPage(page + 1)}
                   disabled={page === totalPages}
+                  style={{backgroundColor: "#0098B8"}}
                 >
                   Next
                 </button>
