@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Arrow from "../assets/icons/Vector(arrow).png"
 import "../css/RelatedProd.css";
-import { data } from "../DB/ProductDb";
+import { data } from "../Db/ProductDb";
 import { Link } from "react-router-dom";
 
 const RelatedProd = ({ productG }) => {

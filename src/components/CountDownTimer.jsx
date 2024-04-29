@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../css/Countdown.css";
 import flash from "../assets/icons/flash logo.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { data } from "../DB/ProductDb";
+import { data } from "../Db/ProductDb";
 import { Link } from "react-router-dom";
 
 const CountDownTimer = () => {
