@@ -15,6 +15,8 @@ const NewArrivalComponent = ({ title, link }) => {
   const limit_desktop = 4;
   const limitedDataDesktop = data.slice(0, limit_desktop);
 
+  // axios
+
   return (
     <>
       <div className="d-flex justify-content-between home-new-arrival">

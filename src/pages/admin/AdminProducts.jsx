@@ -17,6 +17,7 @@ const AdminProducts = () => {
   const [totalPages, setTotalPage] = useState(null);
   const [productCount, setProductCount] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [limit, setLimit] = useState(4);
 
   useEffect(() => {
     loadProducts();
@@ -24,7 +25,7 @@ const AdminProducts = () => {
 
   const loadProducts = async () => {
     try {
-      const { data } = await axios.get(`/product/all?page=${page}&limit=4`);
+      const { data } = await axios.get(`/product/all?page=${page}&limit=${limit}`);
       setProducts(data?.products);
       setTotalPage(data?.totalPages);
       setProductCount(data?.productCount);
