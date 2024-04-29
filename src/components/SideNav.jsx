@@ -47,7 +47,7 @@ function SideNav() {
               <img src={Searchi} alt="Search" />
             </div>
             <div className="search">
-            {isSearchBarVisible && <Search />}
+            {isSearchBarVisible && <Search toggleSearchBar={toggleSearchBar}/>}
             </div>
 
             {!auth?.user ? (
