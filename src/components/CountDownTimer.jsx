@@ -73,6 +73,7 @@ const CountDownTimer = () => {
               minimumFractionDigits: 2,
             });
             return (
+              <>
               <Link className="link" to={`/detail/${product._id}`}>
                 <div key={_id}>
                   <div className="m-card-Container" key={_id}>
@@ -98,6 +99,7 @@ const CountDownTimer = () => {
                   </div>
                 </div>
               </Link>
+              </>
             );
           })}
         </div>
