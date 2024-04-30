@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Menu from "../components/NavBar";
 import SideNav from "../components/SideNav";
 import CountDownTimer from "../components/CountDownTimer";
+import AllfragranceComponent from "../components/AllfragranceComponent";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Brands />
       <Testimonies />
       <CountDownTimer/>
+      <AllfragranceComponent/>
       <BlogCard />
       <Footer />
     </div>
