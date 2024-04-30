@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import DetailCard from "../components/DetailCard";
-import { data } from "../Db/ProductDb";
 import Accordions from "../components/AccordionG";
 import RelatedProd from "../components/RelatedProd";
 import YouTube from "../components/YouTube";
