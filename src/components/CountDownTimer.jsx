@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../css/Countdown.css";
 import flash from "../assets/icons/flash logo.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-<<<<<<< HEAD
-=======
-import { data } from "../Db/ProductDb";
->>>>>>> 3909d8517de6901e211ffe4fcb7dd19475767310
 import { Link } from "react-router-dom";
 import axios from "axios";
 import ProductCardLoading from "./ProductCardLoadingM";
