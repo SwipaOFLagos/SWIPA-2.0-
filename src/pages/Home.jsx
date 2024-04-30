@@ -7,6 +7,7 @@ import Menu from "../components/NavBar";
 import SideNav from "../components/SideNav";
 import CountDownTimer from "../components/CountDownTimer";
 import AllfragranceComponent from "../components/AllfragranceComponent";
+import NewArrivalComponent from "../components/NewArrivalComponent";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Testimonies />
       <CountDownTimer/>
       <AllfragranceComponent/>
+      <NewArrivalComponent title="New Arrivals" link = "/new-arrivals"/>
       <BlogCard />
       <Footer />
     </>
