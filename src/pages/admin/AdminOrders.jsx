@@ -6,6 +6,9 @@ import axios from "axios";
 import moment from "moment";
 import ProductCardHorizontal from "../../components/cards/ProductCardHorizontal";
 import { toast } from "react-toastify";
+import Accordion from "react-bootstrap/Accordion";
+import { useAccordionButton } from "react-bootstrap/AccordionButton";
+import Card from "react-bootstrap/Card";
 
 const AdminOrders = () => {
   // context
@@ -33,7 +36,7 @@ const AdminOrders = () => {
       const { data } = await axios.put(`/orders/status/${orderId}`, {
         status: value,
       });
-      if(data?.success){
+      if (data?.success) {
         toast.success(data.message);
       }
       // console.log(data);
@@ -43,6 +46,23 @@ const AdminOrders = () => {
       console.log(err);
     }
   };
+
+  function CustomToggle({ children, eventKey }) {
+    const decoratedOnClick = useAccordionButton(eventKey, () =>
+      console.log("totally custom!")
+    );
+
+    return (
+      <button
+        className="btn text-light"
+        type="button"
+        style={{ backgroundColor: "#0098B8" }}
+        onClick={decoratedOnClick}
+      >
+        {children}
+      </button>
+    );
+  }
 
   // console.log(orders);
 
@@ -59,7 +79,10 @@ const AdminOrders = () => {
             <div className="p-3 mt-2 mb-2 h4 bg-light">Orders</div>
 
             {orders?.map((o) => (
-              <div key={o._id} className="border shadow bg-light rounded-4 mb-5">
+              <div
+                key={o._id}
+                className="border shadow bg-light rounded-4 mb-5"
+              >
                 <table className="table">
                   <thead>
                     <tr>
@@ -95,13 +118,27 @@ const AdminOrders = () => {
                   </tbody>
                 </table>
 
-                <div className="container">
-                  <div className="row m-2">
-                    {o.products.map((p) => (
-                      <ProductCardHorizontal key={p._id} p={p} remove={false} />
-                    ))}
-                  </div>
-                </div>
+                {/* accordion */}
+                <Accordion defaultActiveKey="0">
+                  <CustomToggle eventKey="0">
+                    {o.products.length} products
+                  </CustomToggle>
+                  <Accordion.Collapse eventKey="0">
+                    <Card.Body>
+                      <div className="container">
+                        <div className="row m-2">
+                          {o.products.map((p) => (
+                            <ProductCardHorizontal
+                              key={p._id}
+                              p={p}
+                              remove={false}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    </Card.Body>
+                  </Accordion.Collapse>
+                </Accordion>
               </div>
             ))}
           </div>
@@ -112,7 +149,3 @@ const AdminOrders = () => {
 };
 
 export default AdminOrders;
-
-
-
-

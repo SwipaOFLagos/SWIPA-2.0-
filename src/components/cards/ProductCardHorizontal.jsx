@@ -27,7 +27,6 @@ export default function ProductCardHorizontal({ p, remove = true }) {
               height: "150px",
               width: "150px",
               objectFit: "cover",
-              marginLeft: "-12px",
               borderRopRightRadius: "0px",
             }}
           />
@@ -51,7 +50,7 @@ export default function ProductCardHorizontal({ p, remove = true }) {
               Listed {moment(p.createdAt).fromNow()}
             </small>
           </p>
-          { (
+          { remove && (
             <p
               className="text-danger mb-2 pointer"
               onClick={() => removeFromCart(p._id)}
