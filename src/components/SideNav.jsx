@@ -19,15 +19,17 @@ import Search from "./forms/Search";
 
 function SideNav() {
   const [show, setShow] = useState(false);
-  const [search, setSearch] = useState(false);
-  const { auth, login} = useAuth();
+  const { auth, login } = useAuth();
 
 
-
-  const handleClose1 = () => setSearch(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const handleShow1 = () => setSearch(true);
+
+  const [isSearchBarVisible, setIsSearchBarVisible] = useState(false);
+
+  const toggleSearchBar = () => {
+    setIsSearchBarVisible((prev) => !prev);
+  };
 
   return (
     <>
@@ -42,25 +44,29 @@ function SideNav() {
           </div>
 
           <div className="right-icons">
-            <div className="">
-            <img src={Searchi} alt="" onClick={handleShow1} />
+            <div className="search-icon" onClick={toggleSearchBar}>
+              <img src={Searchi} alt="Search" />
             </div>
-            <div className='popo'>
-              <Search handleClose1={handleClose1} search={search}/>
+            <div className="search">
+            {isSearchBarVisible && <Search toggleSearchBar={toggleSearchBar}/>}
             </div>
-         
-          {!auth?.user ? (
+
+            {!auth?.user ? (
               <Link to="/login">
                 <img src={Humani} alt="" />
               </Link>
-            ) : ( 
-              <Link to={auth?.user.role === 1 ? "/dashboard/admin" : "/dashboard/user"}>
-              <img src={Humani} alt="" />
-            </Link> 
-          )}
-          
+            ) : (
+              <Link
+                to={
+                  auth?.user.role === 1 ? "/dashboard/admin" : "/dashboard/user"
+                }
+              >
+                <img src={Humani} alt="" />
+              </Link>
+            )}
+
             <Link to="/cart">
-            <img src={Carti} alt="" />
+              <img src={Carti} alt="" />
             </Link>
           </div>
         </div>
@@ -82,11 +88,17 @@ function SideNav() {
                   <li>Home</li>
                 </Link>
 
-                <Link to="/all-fragrances" style={{ textDecoration: "none", color: "white" }}>
+                <Link
+                  to="/all-fragrances"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   <li>All Fragrance</li>
                 </Link>
 
-                <Link to="/new-arrivals" style={{ textDecoration: "none", color: "white" }}>
+                <Link
+                  to="/new-arrivals"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
                   <li>New Arrival</li>
                 </Link>
 
@@ -104,31 +116,19 @@ function SideNav() {
 
             <div>
               <ul className="last-li">
-                <Link
-                  to="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>My Account</li>
                 </Link>
 
-                <Link
-                  to="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>Help</li>
                 </Link>
 
-                <Link
-                  to="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>FAG</li>
                 </Link>
 
-                <Link
-                  to="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                   <li>Shipping Information</li>
                 </Link>
               </ul>

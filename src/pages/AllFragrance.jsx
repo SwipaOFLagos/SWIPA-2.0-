@@ -16,7 +16,7 @@ import axios from "axios";
 import ProductCardLoading from "../components/ProductCardLoadingM";
 const AllFragrance = () => {
   //general data
-  // const [fetchProduct, setFetchProduct] = useState([]);
+  const [fetchProduct, setFetchProduct] = useState([]);
   const [currentProducts, setCurrentProducts] = useState([]);
   //   
   //pagination
@@ -43,7 +43,7 @@ const fetchData = async () => {
   setLoading(true);
   try {
     const response = await axios.get(`/product/all?page=1&limit=100000`);
-    // setFetchProduct(response?.data?.products);
+    setFetchProduct(response?.data?.products);
     setCurrentProducts(response?.data?.products)
     console.log(response?.data?.products);
   } catch (error) {
@@ -97,7 +97,7 @@ useEffect(() => {
   // ---------------Pagination End---------
 
   useEffect(() => {
-    let filteredProducts = currentProducts;
+    let filteredProducts = fetchProduct;
 
     console.log("Selected Gender:", selectedGender);
   console.log("Selected Brand:", selectedBrand);
@@ -242,7 +242,10 @@ useEffect(() => {
         break;
     }
   };
-
+  const reverseArray = (array) => {
+    return array.slice().reverse();
+  };
+  const reversedProducts = reverseArray(paginate);
 
   return (
     <>
