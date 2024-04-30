@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
 import "../css/AccordionM.css";
 import { IoSearch } from "react-icons/io5";
+<<<<<<< HEAD
 // import { data } from "../Db/ProductDb";
+=======
+import { data } from "../Db/ProductDb";
+>>>>>>> 3909d8517de6901e211ffe4fcb7dd19475767310
 import { GoDotFill } from "react-icons/go";
 import axios from "axios";
 

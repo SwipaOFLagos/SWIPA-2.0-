@@ -11,16 +11,26 @@ import SearchB from "../assets/icons/Vector (searchb).png";
 import HumanB from "../assets/icons/humprofile.png";
 import CartB from "../assets/icons/blackcart.png";
 import FragLogo from "../assets/images/Frame 579.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/Auth";
 import Search from "./forms/Search";
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 function SideNav() {
   const [show, setShow] = useState(false);
-  const { auth, login} = useAuth();
+  const { auth, login, logout} = useAuth();
+
+  const navigate = useNavigate();
+
   
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
 
   return (
     <>
@@ -98,12 +108,39 @@ function SideNav() {
 
             <div>
               <ul className="last-li">
-                <Link
-                  to="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <li>My Account</li>
-                </Link>
+              <Dropdown>
+      <Dropdown.Toggle variant="none" id="dropdown-basic" align="end" drop="end" size="lg" title="Drop-large" className="bg-none text-light">
+        My Account
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        {auth.user? (
+          <div>
+          <Dropdown.Item>
+            <Link to={auth?.user.role === 1? "/dashboard/admin" : "/dashboard/user"} className="text-decoration-none text-dark">
+             Dashboard
+            </Link>
+          </Dropdown.Item>
+          <Dropdown.Item onClick={handleLogout} className="text-decoration-none text-dark">
+              Logout
+          </Dropdown.Item>
+          </div>
+        ) : (
+          <div>
+        <Dropdown.Item>
+          <Link to="/signup" className="text-decoration-none text-dark">
+          Sign Up
+          </Link>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Link to="/login" className="text-decoration-none text-dark">
+          Login
+          </Link>
+        </Dropdown.Item>
+          </div>
+        )}
+      </Dropdown.Menu>
+    </Dropdown>
 
                 <Link
                   to="/"
