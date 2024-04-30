@@ -1,4 +1,5 @@
-# Ecommerce Fullstack Project (DEC2023)
+# Ecommerce Fullstack Project (DEC2023) BY EDDIE
+
 
 ![Project Logo](public/readme.png)
 
