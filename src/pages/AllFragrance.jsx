@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "../css/AllFragance.css";
 import ProductCard from "../components/ProductCardM";
-import { data } from "../Db/ProductDb";
 import Accord from "../components/AccordionM";
 import Pagination from "../components/PaginationM";
 import { BiSort } from "react-icons/bi";
@@ -102,7 +101,7 @@ useEffect(() => {
     console.log("Selected Gender:", selectedGender);
   console.log("Selected Brand:", selectedBrand);
     //filter for Gender
-    if (selectedGender.length > 0) {
+     if (selectedGender.length > 0) {
       filteredProducts = filteredProducts.filter((product) =>
         selectedGender.includes(product.gender)
       );
@@ -251,6 +250,7 @@ useEffect(() => {
     <>
       <Menu />
       <SideNav />
+      <Breadcrumbs />
       <div className="m-section">
         <div className="m-main">
           <div className="m-title">
